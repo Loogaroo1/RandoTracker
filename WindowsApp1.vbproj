@@ -105,12 +105,6 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -194,7 +188,6 @@
     <Content Include="chestbigkeyflipper.png" />
     <Content Include="chestbigkeylamp.png" />
     <Content Include="chestbigkeymaybe.png" />
-    <Content Include="chestblocked.png" />
     <Content Include="chestflippers.png" />
     <Content Include="chestheart.png" />
     <Content Include="chestmaybe.png" />

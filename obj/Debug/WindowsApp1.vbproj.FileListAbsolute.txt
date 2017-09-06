@@ -14,3 +14,19 @@ C:\Users\Tim\source\repos\WindowsApp1\WindowsApp1\obj\Debug\ALTTP Tracker.applic
 C:\Users\Tim\source\repos\WindowsApp1\WindowsApp1\obj\Debug\ALTTP Tracker.exe
 C:\Users\Tim\source\repos\WindowsApp1\WindowsApp1\obj\Debug\ALTTP Tracker.xml
 C:\Users\Tim\source\repos\WindowsApp1\WindowsApp1\obj\Debug\ALTTP Tracker.pdb
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\WindowsApp1.vbprojResolveAssemblyReference.cache
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\WindowsApp1.Form1.resources
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\WindowsApp1.vbproj.GenerateResource.Cache
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\ALTTP Tracker.exe
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\ALTTP Tracker.xml
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\ALTTP Tracker.pdb
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\ALTTP Tracker.exe.manifest
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.exe.config
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.exe.manifest
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.application
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.exe
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.pdb
+C:\Users\naki\Documents\GitHub\RandoTracker\bin\Debug\ALTTP Tracker.xml
+C:\Users\naki\Documents\GitHub\RandoTracker\obj\Debug\ALTTP Tracker.application

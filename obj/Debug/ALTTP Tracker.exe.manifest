@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALTTP Tracker.exe" size="1507288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALTTP Tracker.exe" size="1506776">
       <assemblyIdentity name="ALTTP Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8ctKzV+c3glww/VRBk1bGW26e8pgX2UdRmu13KlyG4g=</dsig:DigestValue>
+        <dsig:DigestValue>5Gg5KYEEd18op6ZO9ERYOPCUCUiC+o26kcGbSbYR/iQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -240,15 +240,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>kxXTcw1M+7uau0UBA2fIYkGaBQnXECr5LKc3mFqSsSU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="chestblocked.png" size="3652">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Xv5JNotqLvckWhI0lPQwF0Ycwg86leg6avlmcy+h6GQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="chestflippers.png" size="4105">
