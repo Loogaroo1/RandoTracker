@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87CA931E-5268-445A-A85B-A88A31631F8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>ALTTP Tracker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ALTTP Tracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ALTTP Tracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C4E0A2BEB7E9AC14C3CB13E17E0FBA5AD2B09AEF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsApp1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="WindowsApp1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chestbigkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="torch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chestlamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aganhim.png" />
+    <Content Include="blueboom.png" />
+    <Content Include="bluemail.png" />
+    <Content Include="bombos.png" />
+    <Content Include="bombosMMTR.png" />
+    <Content Include="bombs.png" />
+    <Content Include="book.png" />
+    <Content Include="boots.png" />
+    <Content Include="bossdead.png" />
+    <Content Include="bossflippers.png" />
+    <Content Include="bosslamp.png" />
+    <Content Include="bossmaybe.png" />
+    <Content Include="bottle.png" />
+    <Content Include="bow.png" />
+    <Content Include="bugnet.png" />
+    <Content Include="byrna.png" />
+    <Content Include="cape.png" />
+    <Content Include="chestbigkeyflipper.png" />
+    <Content Include="chestbigkeylamp.png" />
+    <Content Include="chestbigkeymaybe.png" />
+    <Content Include="chestblocked.png" />
+    <Content Include="chestflippers.png" />
+    <Content Include="chestheart.png" />
+    <Content Include="chestmaybe.png" />
+    <Content Include="chestopen.png" />
+    <Content Include="crystal.png" />
+    <Content Include="DP1.png" />
+    <Content Include="DP2.png" />
+    <Content Include="DP3.png" />
+    <Content Include="DP4.png" />
+    <Content Include="DP5.png" />
+    <Content Include="DPBoss.png" />
+    <Content Include="EP1.png" />
+    <Content Include="EP2.png" />
+    <Content Include="EP3.png" />
+    <Content Include="EP4.png" />
+    <Content Include="EP5.png" />
+    <Content Include="EPBoss.png" />
+    <Content Include="ether.png" />
+    <Content Include="etherMMTR.png" />
+    <Content Include="fairycrystal.png" />
+    <Content Include="firerod.png" />
+    <Content Include="flippers.png" />
+    <Content Include="flute.png" />
+    <Content Include="glove.png" />
+    <Content Include="greenmail.png" />
+    <Content Include="greenpendant.png" />
+    <Content Include="hammer.png" />
+    <Content Include="hookshot.png" />
+    <Content Include="icerod.png" />
+    <Content Include="IP1.png" />
+    <Content Include="IP2.png" />
+    <Content Include="IP3.png" />
+    <Content Include="IP4.png" />
+    <Content Include="IP5.png" />
+    <Content Include="IP6.png" />
+    <Content Include="IP7.png" />
+    <Content Include="IPBoss.png" />
+    <Content Include="lamp.png" />
+    <Content Include="mirror.png" />
+    <Content Include="mitt.png" />
+    <Content Include="MM1.png" />
+    <Content Include="MM2.png" />
+    <Content Include="MM3.png" />
+    <Content Include="MM4.png" />
+    <Content Include="MM5.png" />
+    <Content Include="MM6.png" />
+    <Content Include="MM7.png" />
+    <Content Include="MMBoss.png" />
+    <Content Include="mushroom.png" />
+    <Content Include="noaganhim.png" />
+    <Content Include="nobombos.png" />
+    <Content Include="nobombs.png" />
+    <Content Include="nobook.png" />
+    <Content Include="noboom.png" />
+    <Content Include="noboomerang.png" />
+    <Content Include="noboots.png" />
+    <Content Include="nobottle.png" />
+    <Content Include="nobow.png" />
+    <Content Include="nobugnet.png" />
+    <Content Include="nobyrna.png" />
+    <Content Include="nocape.png" />
+    <Content Include="noether.png" />
+    <Content Include="nofirerod.png" />
+    <Content Include="noflippers.png" />
+    <Content Include="noflute.png" />
+    <Content Include="noglove.png" />
+    <Content Include="nohammer.png" />
+    <Content Include="nohook.png" />
+    <Content Include="noicerod.png" />
+    <Content Include="nolamp.png" />
+    <Content Include="nomirror.png" />
+    <Content Include="nomushroom.png" />
+    <Content Include="nopearl.png" />
+    <Content Include="nopowder.png" />
+    <Content Include="noquake.png" />
+    <Content Include="noshield.png" />
+    <Content Include="noshovel.png" />
+    <Content Include="nosomaria.png" />
+    <Content Include="nosword.png" />
+    <Content Include="otherpendant.png" />
+    <Content Include="pearl.png" />
+    <Content Include="POD1.png" />
+    <Content Include="POD10.png" />
+    <Content Include="POD11.png" />
+    <Content Include="POD12.png" />
+    <Content Include="POD13.png" />
+    <Content Include="POD2.png" />
+    <Content Include="POD3.png" />
+    <Content Include="POD4.png" />
+    <Content Include="POD5.png" />
+    <Content Include="POD6.png" />
+    <Content Include="POD7.png" />
+    <Content Include="POD8.png" />
+    <Content Include="POD9.png" />
+    <Content Include="PODBoss.png" />
+    <Content Include="powder.png" />
+    <Content Include="quake.png" />
+    <Content Include="quakeMMTR.png" />
+    <Content Include="redboom.png" />
+    <Content Include="redmail.png" />
+    <Content Include="shield1.png" />
+    <Content Include="shield2.png" />
+    <Content Include="shield3.png" />
+    <Content Include="shovel.png" />
+    <Content Include="silvers.png" />
+    <Content Include="somaria.png" />
+    <Content Include="SP1.png" />
+    <Content Include="SP2.png" />
+    <Content Include="SP3.png" />
+    <Content Include="SP4.png" />
+    <Content Include="SP5.png" />
+    <Content Include="SP6.png" />
+    <Content Include="SP7.png" />
+    <Content Include="SP8.png" />
+    <Content Include="SP9.png" />
+    <Content Include="SPBoss.png" />
+    <Content Include="SW1.png" />
+    <Content Include="SW2.png" />
+    <Content Include="SW3.png" />
+    <Content Include="SW4.png" />
+    <Content Include="SW5.png" />
+    <Content Include="SW6.png" />
+    <Content Include="SW7.png" />
+    <Content Include="SWBoss.png" />
+    <Content Include="sword1.png" />
+    <Content Include="sword2.png" />
+    <Content Include="sword3.png" />
+    <Content Include="sword4.png" />
+    <Content Include="TOH1.png" />
+    <Content Include="TOH2.png" />
+    <Content Include="TOH3.png" />
+    <Content Include="TOH4.png" />
+    <Content Include="TOH5.png" />
+    <Content Include="TOHBoss.png" />
+    <Content Include="TR1.png" />
+    <Content Include="TR10.png" />
+    <Content Include="TR11.png" />
+    <Content Include="TR2.png" />
+    <Content Include="TR3.png" />
+    <Content Include="TR4.png" />
+    <Content Include="TR5.png" />
+    <Content Include="TR6.png" />
+    <Content Include="TR7.png" />
+    <Content Include="TR8.png" />
+    <Content Include="TR9.png" />
+    <Content Include="TRBoss.png" />
+    <Content Include="TT1.png" />
+    <Content Include="TT2.png" />
+    <Content Include="TT3.png" />
+    <Content Include="TT4.png" />
+    <Content Include="TT5.png" />
+    <Content Include="TT6.png" />
+    <Content Include="TT7.png" />
+    <Content Include="TTBoss.png" />
+    <Content Include="whatmedallion.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

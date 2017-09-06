@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ALTTP Tracker.exe" version="1.0.0.1" publicKeyToken="7d4fb45e42535b78" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ALTTP Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ALTTP Tracker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALTTP Tracker.exe" size="668632">
+      <assemblyIdentity name="ALTTP Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oeHQn3L3UlExWB6i5RdC1leDgzV9KbCxmKa+q8M9NJY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ALTTP Tracker.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-QGIGM17\Tim" issuerKeyHash="f619ba12f0446a0e295726cd039ba4a2db16ab69" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>E86d6eiBWH9JN+gPJJi34Z6qXN6ey4CcavKyrBXFzds=</DigestValue></Reference></SignedInfo><SignatureValue>msljub85hlhxTJDWdE15U0zxECXEoMABCQTgQPaKiWXi21AHKNJlh2IG8TKtqAoxDjpnpYpLfmmCQC/UjP1TdNh+MSocJq3RDPkfiz7E4D/ivf107PfmOUoq9KY4meBlVbX7VKwGslhBfEj/6Ma4Nfg7dMykxM1gIZXRMZy1hqc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0rsR0WCFf2/lljXQrF83kq5nG+c7ePYVFHC6UB5BvYF5SKO8nZDY12dkeJ/TSagT2iVRviNW+3HCMQG64OYbCtGOFo5WyQkIEbJ90EaOOGFYQYzopSADZOCr+/5gpgA4DsPGRWVx/hZd1Nw1S4y2MyiChLlJPWS9NI3dEi9dEIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dbcdc515acb2f26a9c80cb9ede5caa9ee1b798240fe837497f5881e8e99dce13" Description="" Url=""><as:assemblyIdentity name="ALTTP Tracker.exe" version="1.0.0.1" publicKeyToken="7d4fb45e42535b78" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-QGIGM17\Tim</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>L/JPaYzC/OMTxGciQwByXo8Cv10FfHAtBXJ/CH4AHwg=</DigestValue></Reference></SignedInfo><SignatureValue>xSExQifEks8eEOn6RiyGYaarU+1+IVcn7oG60fU9UQD/VAeeYgF9MYD1B+CZAzdyYOjGfMejfNe0C31AM8n1aeRsEM9u+3RfHbZFsLc37fBQnjXCliRlhS3GVMeSqCeMl+a5F5pblPDhiM7B1nKuftK9itmiu18LVDgs3TCg9NE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0rsR0WCFf2/lljXQrF83kq5nG+c7ePYVFHC6UB5BvYF5SKO8nZDY12dkeJ/TSagT2iVRviNW+3HCMQG64OYbCtGOFo5WyQkIEbJ90EaOOGFYQYzopSADZOCr+/5gpgA4DsPGRWVx/hZd1Nw1S4y2MyiChLlJPWS9NI3dEi9dEIk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQe2jlgaicRoJH8xbQAdsRSzANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAFEARwBJAEcATQAxADcAXABUAGkAbTAeFw0xNzA4MjYyMzE2MzRaFw0xODA4MjcwNTE2MzRaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AUQBHAEkARwBNADEANwBcAFQAaQBtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSuxHRYIV/b+WWNdCsXzeSrmcb5zt49hUUcLpQHkG9gXlIo7ydkNjXZ2R4n9NJqBPaJVG+I1b7ccIxAbrg5hsK0Y4WjlbJCQgRsn3QRo44YVhBjOilIANk4Kv7/mCmADgOw8ZFZXH+Fl3U3DVLjLYzKIKEuUk9ZL00jd0SL10QiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFOKi0A8hIzo3EFgEbExHtCqxC+kNuObtP8yZ5+7rKMNYW/XlNYKCVoajw7Kas1zCToZw591TiTYa05mt7jVvhkuj/x6jRp54F+TtGvRDnWfd1vBQEy0yONgFomeSg76Oj5dcZAJXZNDvd0BS42FJ1WkHI+D2X9rYi/lK+Q7W92u</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
