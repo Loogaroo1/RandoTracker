@@ -512,7 +512,7 @@
             DW14.BackColor = Color.Red
         End If
 
-        '' Hookshot Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Mitt, Hookshot or Hammer+Mirror (Partially blocked without Hookshot)
+        '' Hookshot Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Mitt, Hookshot or Hammer+Mirror+Boots (Partially blocked without Hookshot)
         If Pearl = True And Glove = 2 And Hookshot = True Then
             If Flute = True Or Lamp = True Then
                 DW15.Enabled = True
@@ -521,7 +521,7 @@
                 DW15.Enabled = True
                 DW15.BackColor = Color.Orange
             End If
-        ElseIf Pearl = True And Glove = 2 And Hammer = True And Mirror = True Then
+        ElseIf Pearl = True And Glove = 2 And Hammer = True And Mirror = True And Boots = True Then
             DW15.Enabled = True
             DW15.BackColor = Color.Yellow
         Else
@@ -1089,25 +1089,25 @@
     Private Sub SPInfo(sender As Object, e As EventArgs) Handles SP1.MouseHover, SP2.MouseHover, SP3.MouseHover, SP4.MouseHover, SP5.MouseHover, SP6.MouseHover, SP7.MouseHover, SP8.MouseHover, SP9.MouseHover, SPBoss.MouseHover
         Select Case DirectCast(sender, CheckBox).Name
             Case "SP1"
-                If POD1.Checked = False Then PictureBox1.Image = My.Resources.SP1
+                If SP1.Checked = False Then PictureBox1.Image = My.Resources.SP1
             Case "SP2"
-                If POD2.Checked = False Then PictureBox1.Image = My.Resources.SP2
+                If SP2.Checked = False Then PictureBox1.Image = My.Resources.SP2
             Case "SP3"
-                If POD3.Checked = False Then PictureBox1.Image = My.Resources.SP3
+                If SP3.Checked = False Then PictureBox1.Image = My.Resources.SP3
             Case "SP4"
-                If POD4.Checked = False Then PictureBox1.Image = My.Resources.SP4
+                If SP4.Checked = False Then PictureBox1.Image = My.Resources.SP4
             Case "SP5"
-                If POD5.Checked = False Then PictureBox1.Image = My.Resources.SP5
+                If SP5.Checked = False Then PictureBox1.Image = My.Resources.SP5
             Case "SP6"
-                If POD6.Checked = False Then PictureBox1.Image = My.Resources.SP6
+                If SP6.Checked = False Then PictureBox1.Image = My.Resources.SP6
             Case "SP7"
-                If POD7.Checked = False Then PictureBox1.Image = My.Resources.SP7
+                If SP7.Checked = False Then PictureBox1.Image = My.Resources.SP7
             Case "SP8"
-                If POD8.Checked = False Then PictureBox1.Image = My.Resources.SP8
+                If SP8.Checked = False Then PictureBox1.Image = My.Resources.SP8
             Case "SP9"
-                If POD9.Checked = False Then PictureBox1.Image = My.Resources.SP9
+                If SP9.Checked = False Then PictureBox1.Image = My.Resources.SP9
             Case "SPBoss"
-                If PODBoss.Checked = False Then PictureBox1.Image = My.Resources.SPBoss
+                If SPBoss.Checked = False Then PictureBox1.Image = My.Resources.SPBoss
         End Select
     End Sub
 
@@ -1221,6 +1221,10 @@
 
     Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles PictureBox1.MouseHover
         PictureBox1.Image = Nothing
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
     Private Sub SWInfo(sender As Object, e As EventArgs) Handles SW1.MouseHover, SW2.MouseHover, SW3.MouseHover, SW4.MouseHover, SW5.MouseHover, SW6.MouseHover, SW7.MouseHover, SWBoss.MouseHover
@@ -1354,7 +1358,7 @@
                     IP6.Enabled = True
                     IP6.Image = My.Resources.chest
                     IP7.Enabled = True
-                    IP7.Image = My.Resources.chest
+                    IP7.Image = My.Resources.chestbigkey
                     IPBoss.Enabled = True
                     IPBoss.Image = My.Resources.boss
                 Else
@@ -1363,7 +1367,7 @@
                     IP6.Enabled = False
                     IP6.Image = My.Resources.chest
                     IP7.Enabled = True
-                    IP7.Image = My.Resources.chestmaybe
+                    IP7.Image = My.Resources.chestbigkeymaybe
                     IPBoss.Enabled = False
                     IPBoss.Image = My.Resources.boss
                 End If
@@ -1387,7 +1391,7 @@
                     IP6.Enabled = True
                     IP6.Image = My.Resources.chestflippers
                     IP7.Enabled = True
-                    IP7.Image = My.Resources.chestflippers
+                    IP7.Image = My.Resources.chestbigkeyflipper
                     IPBoss.Enabled = True
                     IPBoss.Image = My.Resources.bossflippers
                 Else
@@ -1396,7 +1400,7 @@
                     IP6.Enabled = False
                     IP6.Image = My.Resources.chest
                     IP7.Enabled = True
-                    IP7.Image = My.Resources.chestmaybe
+                    IP7.Image = My.Resources.chestbigkeymaybe
                     IPBoss.Enabled = False
                     IPBoss.Image = My.Resources.boss
                 End If

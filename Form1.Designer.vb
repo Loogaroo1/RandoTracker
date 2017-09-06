@@ -3747,9 +3747,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.Transparent
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "ALTTP Tracker (Logic v8.26)"
+        Me.Text = "ALTTP RandoTracker (Logic v8.26)"
         Me.TransparencyKey = System.Drawing.Color.DimGray
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
