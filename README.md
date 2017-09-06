@@ -12,5 +12,5 @@ Next to each dungeon label is a button that can be clicked to alternate between 
 For overworld usage:
 Any location that is open to the player is seen as a white button. Locations that are either partially blocked depending on inventory (usually bombs) are yellow. Locations that require a sequence break (Example: Hobo without flippers) are orange. Locations that are inaccessible are red and unclickable.
 
-Special thanks to the developer community on the ALTTP Discord for helping me bring this to you guys.
+Special thanks to the developer community on the ALTTP Discord for helping me bring this to you guys. This is my first attempt at coding in roughly 15 years so there's bound to be issues; feel free to send me a PM in the Discord channel if you have any questions.
 
