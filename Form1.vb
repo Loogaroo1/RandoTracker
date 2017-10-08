@@ -148,7 +148,7 @@
         End If
 
         '' Cave south of Grove, Graveyard Cave - Mirror, Access via Dark World
-        If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0))) Then
+        If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And Flippers = True And Glove > 0)) Then
             LW28.Enabled = True
             LW28.BackColor = Color.WhiteSmoke
             LW30.Enabled = True
@@ -180,8 +180,13 @@
         Else
             LW32.Enabled = True
             LW32.BackColor = Color.Orange
-            LW35.Enabled = False
-            LW35.BackColor = Color.Red
+            If Pearl = True Then
+                LW35.Enabled = True
+                LW35.BackColor = Color.Orange
+            Else
+                LW35.Enabled = False
+                LW35.BackColor = Color.Red
+            End If
             LW37.Enabled = False
             LW37.BackColor = Color.Red
         End If
@@ -530,7 +535,7 @@
         End If
 
         '' Fat Fairy - Crystals 5 & 6, Pearl, Hammer, Glove or Aganhim
-        If Pearl = True And FairyCrystal = 2 And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Mirror = True)) Then
+        If Pearl = True And FairyCrystal = 2 And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Mirror = True) Or (Aganhim = True And Hammer = True)) Then
             DW16.Enabled = True
             DW16.BackColor = Color.WhiteSmoke
         Else
@@ -808,9 +813,9 @@
     End Sub
     Public Sub AgaCheck()
         If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
-            AgaButton.Enabled = True
+            AgaButton.Visible = True
         Else
-            AgaButton.Enabled = False
+            AgaButton.Visible = False
         End If
     End Sub
     Private Sub PODClick(sender As Object, e As EventArgs) Handles POD1.CheckedChanged, POD2.CheckedChanged, POD3.CheckedChanged, POD4.CheckedChanged, POD5.CheckedChanged, POD6.CheckedChanged, POD7.CheckedChanged, POD8.CheckedChanged, POD9.CheckedChanged, POD10.CheckedChanged, POD11.CheckedChanged, POD12.CheckedChanged, POD13.CheckedChanged, PODBoss.CheckedChanged
@@ -1181,8 +1186,13 @@
                 SW6.Image = My.Resources.chest
                 SW7.Enabled = True
                 SW7.Image = My.Resources.chestbigkey
-                SWBoss.Enabled = True
-                SWBoss.Image = My.Resources.boss
+                If Sword > 0 Then
+                    SWBoss.Enabled = True
+                    SWBoss.Image = My.Resources.boss
+                Else
+                    SWBoss.Enabled = False
+                    SWBoss.Image = My.Resources.boss
+                End If
             Else
                 SW6.Enabled = False
                 SW6.Image = My.Resources.chest
@@ -1351,6 +1361,10 @@
                 Else
                     IP4.Enabled = True
                     IP4.Image = My.Resources.chestmaybe
+                    IP5.Enabled = True
+                    IP5.Image = My.Resources.chestmaybe
+                    IP6.Enabled = True
+                    IP6.Image = My.Resources.chestmaybe
                 End If
                 If Hammer = True Then
                     IP5.Enabled = True
@@ -1381,9 +1395,17 @@
                 If Hookshot = True Then
                     IP4.Enabled = True
                     IP4.Image = My.Resources.chestflippers
+                    IP5.Enabled = True
+                    IP5.Image = My.Resources.chestflippers
+                    IP6.Enabled = True
+                    IP6.Image = My.Resources.chestflippers
                 Else
                     IP4.Enabled = True
                     IP4.Image = My.Resources.chestmaybe
+                    IP5.Enabled = True
+                    IP5.Image = My.Resources.chestmaybe
+                    IP6.Enabled = True
+                    IP6.Image = My.Resources.chestmaybe
                 End If
                 If Hammer = True Then
                     IP5.Enabled = True
@@ -2350,4 +2372,200 @@
         TRCheck()
     End Sub
 
+    Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
+        Select Case (e.KeyChar)
+            Case "!"
+                EP1.Checked = True
+                EP1.Image = My.Resources.chestopen
+                EP2.Checked = True
+                EP2.Image = My.Resources.chestopen
+                EP3.Checked = True
+                EP3.Image = My.Resources.chestopen
+                EP4.Checked = True
+                EP4.Image = My.Resources.chestopen
+                EP5.Checked = True
+                EP5.Image = My.Resources.chestopen
+                EPBoss.Checked = True
+                EPBoss.Image = My.Resources.bossdead
+                EPLabel.BackColor = Color.Green
+            Case "@"
+                DP1.Checked = True
+                DP1.Image = My.Resources.chestopen
+                DP2.Checked = True
+                DP2.Image = My.Resources.chestopen
+                DP3.Checked = True
+                DP3.Image = My.Resources.chestopen
+                DP4.Checked = True
+                DP4.Image = My.Resources.chestopen
+                DP5.Checked = True
+                DP5.Image = My.Resources.chestopen
+                DPBoss.Checked = True
+                DPBoss.Image = My.Resources.bossdead
+                DPLabel.BackColor = Color.Green
+            Case "#"
+                Hera1.Checked = True
+                Hera1.Image = My.Resources.chestopen
+                Hera2.Checked = True
+                Hera2.Image = My.Resources.chestopen
+                Hera3.Checked = True
+                Hera3.Image = My.Resources.chestopen
+                Hera4.Checked = True
+                Hera4.Image = My.Resources.chestopen
+                Hera5.Checked = True
+                Hera5.Image = My.Resources.chestopen
+                HeraBoss.Checked = True
+                HeraBoss.Image = My.Resources.bossdead
+                TOHLabel.BackColor = Color.Green
+            Case "$"
+                POD1.Checked = True
+                POD1.Image = My.Resources.chestopen
+                POD2.Checked = True
+                POD2.Image = My.Resources.chestopen
+                POD3.Checked = True
+                POD3.Image = My.Resources.chestopen
+                POD4.Checked = True
+                POD4.Image = My.Resources.chestopen
+                POD5.Checked = True
+                POD5.Image = My.Resources.chestopen
+                POD6.Checked = True
+                POD6.Image = My.Resources.chestopen
+                POD7.Checked = True
+                POD7.Image = My.Resources.chestopen
+                POD8.Checked = True
+                POD8.Image = My.Resources.chestopen
+                POD9.Checked = True
+                POD9.Image = My.Resources.chestopen
+                POD10.Checked = True
+                POD10.Image = My.Resources.chestopen
+                POD11.Checked = True
+                POD11.Image = My.Resources.chestopen
+                POD12.Checked = True
+                POD12.Image = My.Resources.chestopen
+                POD13.Checked = True
+                POD13.Image = My.Resources.chestopen
+                PODBoss.Checked = True
+                PODBoss.Image = My.Resources.bossdead
+                PODLabel.BackColor = Color.Green
+            Case "%"
+                SP1.Checked = True
+                SP1.Image = My.Resources.chestopen
+                SP2.Checked = True
+                SP2.Image = My.Resources.chestopen
+                SP3.Checked = True
+                SP3.Image = My.Resources.chestopen
+                SP4.Checked = True
+                SP4.Image = My.Resources.chestopen
+                SP5.Checked = True
+                SP5.Image = My.Resources.chestopen
+                SP6.Checked = True
+                SP6.Image = My.Resources.chestopen
+                SP7.Checked = True
+                SP7.Image = My.Resources.chestopen
+                SP8.Checked = True
+                SP8.Image = My.Resources.chestopen
+                SP9.Checked = True
+                SP9.Image = My.Resources.chestopen
+                SPBoss.Checked = True
+                SPBoss.Image = My.Resources.bossdead
+                SPLabel.BackColor = Color.Green
+            Case "^"
+                SW1.Checked = True
+                SW1.Image = My.Resources.chestopen
+                SW2.Checked = True
+                SW2.Image = My.Resources.chestopen
+                SW3.Checked = True
+                SW3.Image = My.Resources.chestopen
+                SW4.Checked = True
+                SW4.Image = My.Resources.chestopen
+                SW5.Checked = True
+                SW5.Image = My.Resources.chestopen
+                SW6.Checked = True
+                SW6.Image = My.Resources.chestopen
+                SW7.Checked = True
+                SW7.Image = My.Resources.chestopen
+                SWBoss.Checked = True
+                SWBoss.Image = My.Resources.bossdead
+                SWLabel.BackColor = Color.Green
+            Case "&"
+                TT1.Checked = True
+                TT1.Image = My.Resources.chestopen
+                TT2.Checked = True
+                TT2.Image = My.Resources.chestopen
+                TT3.Checked = True
+                TT3.Image = My.Resources.chestopen
+                TT4.Checked = True
+                TT4.Image = My.Resources.chestopen
+                TT5.Checked = True
+                TT5.Image = My.Resources.chestopen
+                TT6.Checked = True
+                TT6.Image = My.Resources.chestopen
+                TT7.Checked = True
+                TT7.Image = My.Resources.chestopen
+                TTBoss.Checked = True
+                TTBoss.Image = My.Resources.bossdead
+                TTLabel.BackColor = Color.Green
+            Case "*"
+                IP1.Checked = True
+                IP1.Image = My.Resources.chestopen
+                IP2.Checked = True
+                IP2.Image = My.Resources.chestopen
+                IP3.Checked = True
+                IP3.Image = My.Resources.chestopen
+                IP4.Checked = True
+                IP4.Image = My.Resources.chestopen
+                IP5.Checked = True
+                IP5.Image = My.Resources.chestopen
+                IP6.Checked = True
+                IP6.Image = My.Resources.chestopen
+                IP7.Checked = True
+                IP7.Image = My.Resources.chestopen
+                IPBoss.Checked = True
+                IPBoss.Image = My.Resources.bossdead
+                IPLabel.BackColor = Color.Green
+            Case "("
+                MM1.Checked = True
+                MM1.Image = My.Resources.chestopen
+                MM2.Checked = True
+                MM2.Image = My.Resources.chestopen
+                MM3.Checked = True
+                MM3.Image = My.Resources.chestopen
+                MM4.Checked = True
+                MM4.Image = My.Resources.chestopen
+                MM5.Checked = True
+                MM5.Image = My.Resources.chestopen
+                MM6.Checked = True
+                MM6.Image = My.Resources.chestopen
+                MM7.Checked = True
+                MM7.Image = My.Resources.chestopen
+                MMBoss.Checked = True
+                MMBoss.Image = My.Resources.bossdead
+                MMLabel.BackColor = Color.Green
+            Case ")"
+                TR1.Checked = True
+                TR1.Image = My.Resources.chestopen
+                TR2.Checked = True
+                TR2.Image = My.Resources.chestopen
+                TR3.Checked = True
+                TR3.Image = My.Resources.chestopen
+                TR4.Checked = True
+                TR4.Image = My.Resources.chestopen
+                TR5.Checked = True
+                TR5.Image = My.Resources.chestopen
+                TR6.Checked = True
+                TR6.Image = My.Resources.chestopen
+                TR7.Checked = True
+                TR7.Image = My.Resources.chestopen
+                TR8.Checked = True
+                TR8.Image = My.Resources.chestopen
+                TR9.Checked = True
+                TR10.Image = My.Resources.chestopen
+                TR10.Checked = True
+                TR11.Image = My.Resources.chestopen
+                TR11.Checked = True
+                TR11.Image = My.Resources.chestopen
+                TRBoss.Checked = True
+                TRBoss.Image = My.Resources.bossdead
+                TRLabel.BackColor = Color.Green
+        End Select
+    End Sub
 End Class

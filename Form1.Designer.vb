@@ -204,38 +204,71 @@ Partial Class Form1
         Me.EP3 = New System.Windows.Forms.CheckBox()
         Me.EP2 = New System.Windows.Forms.CheckBox()
         Me.EP1 = New System.Windows.Forms.CheckBox()
-        Me.AgaButton = New System.Windows.Forms.Button()
-        Me.ShieldButton = New System.Windows.Forms.Button()
-        Me.ArmorButton = New System.Windows.Forms.Button()
-        Me.SwordButton = New System.Windows.Forms.Button()
-        Me.ShovelButton = New System.Windows.Forms.Button()
-        Me.MushButton = New System.Windows.Forms.Button()
-        Me.PearlButton = New System.Windows.Forms.Button()
-        Me.FlipperButton = New System.Windows.Forms.Button()
-        Me.GloveButton = New System.Windows.Forms.Button()
-        Me.BootButton = New System.Windows.Forms.Button()
-        Me.MirrorButton = New System.Windows.Forms.Button()
-        Me.CapeButton = New System.Windows.Forms.Button()
-        Me.ByrnaButton = New System.Windows.Forms.Button()
-        Me.SomariaButton = New System.Windows.Forms.Button()
-        Me.BottleButton = New System.Windows.Forms.Button()
-        Me.BookButton = New System.Windows.Forms.Button()
-        Me.NetButton = New System.Windows.Forms.Button()
-        Me.FluteButton = New System.Windows.Forms.Button()
-        Me.HammerButton = New System.Windows.Forms.Button()
-        Me.LampButton = New System.Windows.Forms.Button()
-        Me.QuakeButton = New System.Windows.Forms.Button()
-        Me.EtherButton = New System.Windows.Forms.Button()
-        Me.BombosButton = New System.Windows.Forms.Button()
-        Me.IceButton = New System.Windows.Forms.Button()
-        Me.FireButton = New System.Windows.Forms.Button()
-        Me.PowderButton = New System.Windows.Forms.Button()
-        Me.BombButton = New System.Windows.Forms.Button()
-        Me.HookButton = New System.Windows.Forms.Button()
-        Me.BoomButton = New System.Windows.Forms.Button()
-        Me.BowButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BowButton = New System.Windows.Forms.PictureBox()
+        Me.BoomButton = New System.Windows.Forms.PictureBox()
+        Me.HookButton = New System.Windows.Forms.PictureBox()
+        Me.BombButton = New System.Windows.Forms.PictureBox()
+        Me.PowderButton = New System.Windows.Forms.PictureBox()
+        Me.FireButton = New System.Windows.Forms.PictureBox()
+        Me.IceButton = New System.Windows.Forms.PictureBox()
+        Me.BombosButton = New System.Windows.Forms.PictureBox()
+        Me.EtherButton = New System.Windows.Forms.PictureBox()
+        Me.QuakeButton = New System.Windows.Forms.PictureBox()
+        Me.LampButton = New System.Windows.Forms.PictureBox()
+        Me.HammerButton = New System.Windows.Forms.PictureBox()
+        Me.FluteButton = New System.Windows.Forms.PictureBox()
+        Me.NetButton = New System.Windows.Forms.PictureBox()
+        Me.BookButton = New System.Windows.Forms.PictureBox()
+        Me.BottleButton = New System.Windows.Forms.PictureBox()
+        Me.SomariaButton = New System.Windows.Forms.PictureBox()
+        Me.ByrnaButton = New System.Windows.Forms.PictureBox()
+        Me.CapeButton = New System.Windows.Forms.PictureBox()
+        Me.MirrorButton = New System.Windows.Forms.PictureBox()
+        Me.BootButton = New System.Windows.Forms.PictureBox()
+        Me.GloveButton = New System.Windows.Forms.PictureBox()
+        Me.FlipperButton = New System.Windows.Forms.PictureBox()
+        Me.PearlButton = New System.Windows.Forms.PictureBox()
+        Me.MushButton = New System.Windows.Forms.PictureBox()
+        Me.ShovelButton = New System.Windows.Forms.PictureBox()
+        Me.SwordButton = New System.Windows.Forms.PictureBox()
+        Me.ArmorButton = New System.Windows.Forms.PictureBox()
+        Me.ShieldButton = New System.Windows.Forms.PictureBox()
+        Me.AgaButton = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BowButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HookButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BombButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PowderButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FireButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IceButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BombosButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EtherButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QuakeButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LampButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HammerButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FluteButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NetButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BottleButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SomariaButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ByrnaButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CapeButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MirrorButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BootButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GloveButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FlipperButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PearlButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MushButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ShovelButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwordButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ArmorButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ShieldButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AgaButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'EPLabel
@@ -688,7 +721,7 @@ Partial Class Form1
         Me.LW32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW32.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW32.ForeColor = System.Drawing.Color.Black
-        Me.LW32.Location = New System.Drawing.Point(605, 519)
+        Me.LW32.Location = New System.Drawing.Point(684, 159)
         Me.LW32.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW32.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW32.Name = "LW32"
@@ -707,7 +740,7 @@ Partial Class Form1
         Me.LW31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW31.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW31.ForeColor = System.Drawing.Color.Black
-        Me.LW31.Location = New System.Drawing.Point(605, 495)
+        Me.LW31.Location = New System.Drawing.Point(605, 471)
         Me.LW31.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW31.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW31.Name = "LW31"
@@ -726,7 +759,7 @@ Partial Class Form1
         Me.LW30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW30.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW30.ForeColor = System.Drawing.Color.Black
-        Me.LW30.Location = New System.Drawing.Point(605, 471)
+        Me.LW30.Location = New System.Drawing.Point(605, 447)
         Me.LW30.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW30.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW30.Name = "LW30"
@@ -745,7 +778,7 @@ Partial Class Form1
         Me.LW29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW29.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW29.ForeColor = System.Drawing.Color.Black
-        Me.LW29.Location = New System.Drawing.Point(605, 447)
+        Me.LW29.Location = New System.Drawing.Point(605, 423)
         Me.LW29.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW29.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW29.Name = "LW29"
@@ -764,7 +797,7 @@ Partial Class Form1
         Me.LW28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW28.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW28.ForeColor = System.Drawing.Color.Black
-        Me.LW28.Location = New System.Drawing.Point(605, 423)
+        Me.LW28.Location = New System.Drawing.Point(605, 399)
         Me.LW28.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW28.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW28.Name = "LW28"
@@ -783,7 +816,7 @@ Partial Class Form1
         Me.LW27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW27.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW27.ForeColor = System.Drawing.Color.Black
-        Me.LW27.Location = New System.Drawing.Point(605, 399)
+        Me.LW27.Location = New System.Drawing.Point(605, 519)
         Me.LW27.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW27.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW27.Name = "LW27"
@@ -898,7 +931,7 @@ Partial Class Form1
         Me.LW21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW21.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW21.ForeColor = System.Drawing.Color.Black
-        Me.LW21.Location = New System.Drawing.Point(605, 255)
+        Me.LW21.Location = New System.Drawing.Point(605, 159)
         Me.LW21.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW21.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW21.Name = "LW21"
@@ -936,7 +969,7 @@ Partial Class Form1
         Me.LW19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW19.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW19.ForeColor = System.Drawing.Color.Black
-        Me.LW19.Location = New System.Drawing.Point(605, 207)
+        Me.LW19.Location = New System.Drawing.Point(605, 255)
         Me.LW19.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW19.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW19.Name = "LW19"
@@ -955,7 +988,7 @@ Partial Class Form1
         Me.LW18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW18.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW18.ForeColor = System.Drawing.Color.Black
-        Me.LW18.Location = New System.Drawing.Point(605, 183)
+        Me.LW18.Location = New System.Drawing.Point(605, 207)
         Me.LW18.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW18.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW18.Name = "LW18"
@@ -972,7 +1005,7 @@ Partial Class Form1
         Me.LW17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW17.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW17.ForeColor = System.Drawing.Color.Black
-        Me.LW17.Location = New System.Drawing.Point(605, 159)
+        Me.LW17.Location = New System.Drawing.Point(605, 183)
         Me.LW17.MaximumSize = New System.Drawing.Size(80, 25)
         Me.LW17.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW17.Name = "LW17"
@@ -1011,9 +1044,9 @@ Partial Class Form1
         Me.LW47.ForeColor = System.Drawing.Color.Black
         Me.LW47.Location = New System.Drawing.Point(684, 495)
         Me.LW47.MaximumSize = New System.Drawing.Size(80, 0)
-        Me.LW47.MinimumSize = New System.Drawing.Size(80, 0)
+        Me.LW47.MinimumSize = New System.Drawing.Size(50, 0)
         Me.LW47.Name = "LW47"
-        Me.LW47.Size = New System.Drawing.Size(80, 25)
+        Me.LW47.Size = New System.Drawing.Size(52, 25)
         Me.LW47.TabIndex = 254
         Me.LW47.Text = "Pedestal"
         Me.LW47.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1199,7 +1232,7 @@ Partial Class Form1
         Me.LW37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW37.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW37.ForeColor = System.Drawing.Color.Black
-        Me.LW37.Location = New System.Drawing.Point(684, 255)
+        Me.LW37.Location = New System.Drawing.Point(684, 231)
         Me.LW37.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW37.MinimumSize = New System.Drawing.Size(50, 0)
         Me.LW37.Name = "LW37"
@@ -1218,7 +1251,7 @@ Partial Class Form1
         Me.LW36.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW36.ForeColor = System.Drawing.Color.Black
         Me.LW36.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LW36.Location = New System.Drawing.Point(684, 231)
+        Me.LW36.Location = New System.Drawing.Point(684, 207)
         Me.LW36.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW36.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW36.Name = "LW36"
@@ -1237,7 +1270,7 @@ Partial Class Form1
         Me.LW35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW35.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW35.ForeColor = System.Drawing.Color.Black
-        Me.LW35.Location = New System.Drawing.Point(684, 207)
+        Me.LW35.Location = New System.Drawing.Point(684, 183)
         Me.LW35.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW35.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW35.Name = "LW35"
@@ -1256,7 +1289,7 @@ Partial Class Form1
         Me.LW34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW34.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW34.ForeColor = System.Drawing.Color.Black
-        Me.LW34.Location = New System.Drawing.Point(684, 183)
+        Me.LW34.Location = New System.Drawing.Point(605, 495)
         Me.LW34.MaximumSize = New System.Drawing.Size(80, 0)
         Me.LW34.MinimumSize = New System.Drawing.Size(80, 0)
         Me.LW34.Name = "LW34"
@@ -1274,11 +1307,11 @@ Partial Class Form1
         Me.LW33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW33.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW33.ForeColor = System.Drawing.Color.Black
-        Me.LW33.Location = New System.Drawing.Point(684, 159)
+        Me.LW33.Location = New System.Drawing.Point(684, 255)
         Me.LW33.MaximumSize = New System.Drawing.Size(80, 25)
-        Me.LW33.MinimumSize = New System.Drawing.Size(55, 0)
+        Me.LW33.MinimumSize = New System.Drawing.Size(50, 0)
         Me.LW33.Name = "LW33"
-        Me.LW33.Size = New System.Drawing.Size(55, 25)
+        Me.LW33.Size = New System.Drawing.Size(51, 25)
         Me.LW33.TabIndex = 240
         Me.LW33.Text = "Island"
         Me.LW33.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1369,7 +1402,7 @@ Partial Class Form1
         Me.DW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW12.ForeColor = System.Drawing.Color.Black
-        Me.DW12.Location = New System.Drawing.Point(763, 423)
+        Me.DW12.Location = New System.Drawing.Point(763, 183)
         Me.DW12.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW12.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW12.Name = "DW12"
@@ -1388,7 +1421,7 @@ Partial Class Form1
         Me.DW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW11.ForeColor = System.Drawing.Color.Black
-        Me.DW11.Location = New System.Drawing.Point(763, 399)
+        Me.DW11.Location = New System.Drawing.Point(763, 375)
         Me.DW11.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW11.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW11.Name = "DW11"
@@ -1407,7 +1440,7 @@ Partial Class Form1
         Me.DW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW10.ForeColor = System.Drawing.Color.Black
-        Me.DW10.Location = New System.Drawing.Point(763, 375)
+        Me.DW10.Location = New System.Drawing.Point(763, 351)
         Me.DW10.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW10.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW10.Name = "DW10"
@@ -1426,7 +1459,7 @@ Partial Class Form1
         Me.DW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW9.ForeColor = System.Drawing.Color.Black
-        Me.DW9.Location = New System.Drawing.Point(763, 351)
+        Me.DW9.Location = New System.Drawing.Point(763, 303)
         Me.DW9.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW9.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW9.Name = "DW9"
@@ -1464,7 +1497,7 @@ Partial Class Form1
         Me.DW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW7.ForeColor = System.Drawing.Color.Black
-        Me.DW7.Location = New System.Drawing.Point(763, 303)
+        Me.DW7.Location = New System.Drawing.Point(763, 399)
         Me.DW7.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW7.MinimumSize = New System.Drawing.Size(50, 0)
         Me.DW7.Name = "DW7"
@@ -1483,7 +1516,7 @@ Partial Class Form1
         Me.DW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW6.ForeColor = System.Drawing.Color.Black
-        Me.DW6.Location = New System.Drawing.Point(763, 279)
+        Me.DW6.Location = New System.Drawing.Point(763, 423)
         Me.DW6.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW6.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW6.Name = "DW6"
@@ -1502,7 +1535,7 @@ Partial Class Form1
         Me.DW5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW5.ForeColor = System.Drawing.Color.Black
-        Me.DW5.Location = New System.Drawing.Point(763, 255)
+        Me.DW5.Location = New System.Drawing.Point(763, 279)
         Me.DW5.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW5.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW5.Name = "DW5"
@@ -1521,7 +1554,7 @@ Partial Class Form1
         Me.DW4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW4.ForeColor = System.Drawing.Color.Black
-        Me.DW4.Location = New System.Drawing.Point(763, 231)
+        Me.DW4.Location = New System.Drawing.Point(763, 255)
         Me.DW4.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW4.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW4.Name = "DW4"
@@ -1540,7 +1573,7 @@ Partial Class Form1
         Me.DW3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW3.ForeColor = System.Drawing.Color.Black
-        Me.DW3.Location = New System.Drawing.Point(763, 207)
+        Me.DW3.Location = New System.Drawing.Point(763, 231)
         Me.DW3.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW3.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW3.Name = "DW3"
@@ -1559,7 +1592,7 @@ Partial Class Form1
         Me.DW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW2.ForeColor = System.Drawing.Color.Black
-        Me.DW2.Location = New System.Drawing.Point(763, 183)
+        Me.DW2.Location = New System.Drawing.Point(763, 207)
         Me.DW2.MaximumSize = New System.Drawing.Size(80, 0)
         Me.DW2.MinimumSize = New System.Drawing.Size(80, 0)
         Me.DW2.Name = "DW2"
@@ -1572,7 +1605,7 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(586, 286)
+        Me.CheckBox1.Location = New System.Drawing.Point(583, 286)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox1.TabIndex = 272
@@ -1581,7 +1614,7 @@ Partial Class Form1
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(586, 502)
+        Me.CheckBox2.Location = New System.Drawing.Point(583, 502)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox2.TabIndex = 273
@@ -1599,7 +1632,7 @@ Partial Class Form1
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(744, 261)
+        Me.CheckBox4.Location = New System.Drawing.Point(741, 238)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox4.TabIndex = 275
@@ -1608,7 +1641,7 @@ Partial Class Form1
         'CheckBox5
         '
         Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(744, 334)
+        Me.CheckBox5.Location = New System.Drawing.Point(741, 334)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox5.TabIndex = 276
@@ -1617,7 +1650,7 @@ Partial Class Form1
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(744, 429)
+        Me.CheckBox6.Location = New System.Drawing.Point(741, 429)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox6.TabIndex = 277
@@ -1626,7 +1659,7 @@ Partial Class Form1
         'CheckBox7
         '
         Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(823, 309)
+        Me.CheckBox7.Location = New System.Drawing.Point(823, 405)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox7.TabIndex = 278
@@ -1635,7 +1668,7 @@ Partial Class Form1
         'CheckBox8
         '
         Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(586, 525)
+        Me.CheckBox8.Location = New System.Drawing.Point(583, 525)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox8.TabIndex = 279
@@ -1644,7 +1677,7 @@ Partial Class Form1
         'CheckBox9
         '
         Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Location = New System.Drawing.Point(742, 165)
+        Me.CheckBox9.Location = New System.Drawing.Point(741, 262)
         Me.CheckBox9.Name = "CheckBox9"
         Me.CheckBox9.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox9.TabIndex = 280
@@ -3096,429 +3129,6 @@ Partial Class Form1
         Me.EP1.TabStop = False
         Me.EP1.UseVisualStyleBackColor = False
         '
-        'AgaButton
-        '
-        Me.AgaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.AgaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AgaButton.Enabled = False
-        Me.AgaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AgaButton.ForeColor = System.Drawing.Color.White
-        Me.AgaButton.Image = Global.WindowsApp1.My.Resources.Resources.noaganhim
-        Me.AgaButton.Location = New System.Drawing.Point(184, 103)
-        Me.AgaButton.Name = "AgaButton"
-        Me.AgaButton.Size = New System.Drawing.Size(34, 34)
-        Me.AgaButton.TabIndex = 29
-        Me.AgaButton.TabStop = False
-        Me.AgaButton.UseVisualStyleBackColor = False
-        '
-        'ShieldButton
-        '
-        Me.ShieldButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ShieldButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ShieldButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ShieldButton.ForeColor = System.Drawing.Color.White
-        Me.ShieldButton.Image = Global.WindowsApp1.My.Resources.Resources.noshield
-        Me.ShieldButton.Location = New System.Drawing.Point(184, 70)
-        Me.ShieldButton.Name = "ShieldButton"
-        Me.ShieldButton.Size = New System.Drawing.Size(34, 34)
-        Me.ShieldButton.TabIndex = 28
-        Me.ShieldButton.TabStop = False
-        Me.ShieldButton.UseVisualStyleBackColor = False
-        '
-        'ArmorButton
-        '
-        Me.ArmorButton.BackColor = System.Drawing.Color.Green
-        Me.ArmorButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ArmorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ArmorButton.ForeColor = System.Drawing.Color.White
-        Me.ArmorButton.Image = Global.WindowsApp1.My.Resources.Resources.greenmail
-        Me.ArmorButton.Location = New System.Drawing.Point(184, 37)
-        Me.ArmorButton.Name = "ArmorButton"
-        Me.ArmorButton.Size = New System.Drawing.Size(34, 34)
-        Me.ArmorButton.TabIndex = 27
-        Me.ArmorButton.TabStop = False
-        Me.ArmorButton.UseVisualStyleBackColor = False
-        '
-        'SwordButton
-        '
-        Me.SwordButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SwordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SwordButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.SwordButton.ForeColor = System.Drawing.Color.White
-        Me.SwordButton.Image = Global.WindowsApp1.My.Resources.Resources.nosword
-        Me.SwordButton.Location = New System.Drawing.Point(184, 4)
-        Me.SwordButton.Name = "SwordButton"
-        Me.SwordButton.Size = New System.Drawing.Size(34, 34)
-        Me.SwordButton.TabIndex = 26
-        Me.SwordButton.TabStop = False
-        Me.SwordButton.UseVisualStyleBackColor = False
-        '
-        'ShovelButton
-        '
-        Me.ShovelButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ShovelButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ShovelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ShovelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ShovelButton.ForeColor = System.Drawing.Color.White
-        Me.ShovelButton.Image = Global.WindowsApp1.My.Resources.Resources.noshovel
-        Me.ShovelButton.Location = New System.Drawing.Point(144, 159)
-        Me.ShovelButton.Name = "ShovelButton"
-        Me.ShovelButton.Size = New System.Drawing.Size(34, 18)
-        Me.ShovelButton.TabIndex = 25
-        Me.ShovelButton.TabStop = False
-        Me.ShovelButton.UseVisualStyleBackColor = False
-        '
-        'MushButton
-        '
-        Me.MushButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MushButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MushButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.MushButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MushButton.ForeColor = System.Drawing.Color.White
-        Me.MushButton.Image = Global.WindowsApp1.My.Resources.Resources.nomushroom
-        Me.MushButton.Location = New System.Drawing.Point(144, 142)
-        Me.MushButton.Name = "MushButton"
-        Me.MushButton.Size = New System.Drawing.Size(34, 18)
-        Me.MushButton.TabIndex = 24
-        Me.MushButton.TabStop = False
-        Me.MushButton.UseVisualStyleBackColor = False
-        '
-        'PearlButton
-        '
-        Me.PearlButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PearlButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PearlButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.PearlButton.ForeColor = System.Drawing.Color.White
-        Me.PearlButton.Image = Global.WindowsApp1.My.Resources.Resources.nopearl
-        Me.PearlButton.Location = New System.Drawing.Point(109, 142)
-        Me.PearlButton.Name = "PearlButton"
-        Me.PearlButton.Size = New System.Drawing.Size(34, 35)
-        Me.PearlButton.TabIndex = 23
-        Me.PearlButton.TabStop = False
-        Me.PearlButton.UseVisualStyleBackColor = False
-        '
-        'FlipperButton
-        '
-        Me.FlipperButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.FlipperButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.FlipperButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.FlipperButton.ForeColor = System.Drawing.Color.White
-        Me.FlipperButton.Image = Global.WindowsApp1.My.Resources.Resources.noflippers
-        Me.FlipperButton.Location = New System.Drawing.Point(74, 142)
-        Me.FlipperButton.Name = "FlipperButton"
-        Me.FlipperButton.Size = New System.Drawing.Size(34, 35)
-        Me.FlipperButton.TabIndex = 22
-        Me.FlipperButton.TabStop = False
-        Me.FlipperButton.UseVisualStyleBackColor = False
-        '
-        'GloveButton
-        '
-        Me.GloveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GloveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.GloveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.GloveButton.ForeColor = System.Drawing.Color.White
-        Me.GloveButton.Image = Global.WindowsApp1.My.Resources.Resources.noglove
-        Me.GloveButton.Location = New System.Drawing.Point(39, 142)
-        Me.GloveButton.Name = "GloveButton"
-        Me.GloveButton.Size = New System.Drawing.Size(34, 35)
-        Me.GloveButton.TabIndex = 21
-        Me.GloveButton.TabStop = False
-        Me.GloveButton.UseVisualStyleBackColor = False
-        '
-        'BootButton
-        '
-        Me.BootButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BootButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BootButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BootButton.ForeColor = System.Drawing.Color.White
-        Me.BootButton.Image = Global.WindowsApp1.My.Resources.Resources.noboots
-        Me.BootButton.Location = New System.Drawing.Point(4, 142)
-        Me.BootButton.Name = "BootButton"
-        Me.BootButton.Size = New System.Drawing.Size(34, 35)
-        Me.BootButton.TabIndex = 20
-        Me.BootButton.TabStop = False
-        Me.BootButton.UseVisualStyleBackColor = False
-        '
-        'MirrorButton
-        '
-        Me.MirrorButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MirrorButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MirrorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.MirrorButton.ForeColor = System.Drawing.Color.White
-        Me.MirrorButton.Image = Global.WindowsApp1.My.Resources.Resources.nomirror
-        Me.MirrorButton.Location = New System.Drawing.Point(144, 103)
-        Me.MirrorButton.Name = "MirrorButton"
-        Me.MirrorButton.Size = New System.Drawing.Size(34, 34)
-        Me.MirrorButton.TabIndex = 19
-        Me.MirrorButton.TabStop = False
-        Me.MirrorButton.UseVisualStyleBackColor = False
-        '
-        'CapeButton
-        '
-        Me.CapeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CapeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CapeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.CapeButton.ForeColor = System.Drawing.Color.White
-        Me.CapeButton.Image = Global.WindowsApp1.My.Resources.Resources.nocape
-        Me.CapeButton.Location = New System.Drawing.Point(109, 103)
-        Me.CapeButton.Name = "CapeButton"
-        Me.CapeButton.Size = New System.Drawing.Size(34, 34)
-        Me.CapeButton.TabIndex = 18
-        Me.CapeButton.TabStop = False
-        Me.CapeButton.UseVisualStyleBackColor = False
-        '
-        'ByrnaButton
-        '
-        Me.ByrnaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ByrnaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ByrnaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ByrnaButton.ForeColor = System.Drawing.Color.White
-        Me.ByrnaButton.Image = Global.WindowsApp1.My.Resources.Resources.nobyrna
-        Me.ByrnaButton.Location = New System.Drawing.Point(74, 103)
-        Me.ByrnaButton.Name = "ByrnaButton"
-        Me.ByrnaButton.Size = New System.Drawing.Size(34, 34)
-        Me.ByrnaButton.TabIndex = 17
-        Me.ByrnaButton.TabStop = False
-        Me.ByrnaButton.UseVisualStyleBackColor = False
-        '
-        'SomariaButton
-        '
-        Me.SomariaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SomariaButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SomariaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.SomariaButton.ForeColor = System.Drawing.Color.White
-        Me.SomariaButton.Image = Global.WindowsApp1.My.Resources.Resources.nosomaria
-        Me.SomariaButton.Location = New System.Drawing.Point(39, 103)
-        Me.SomariaButton.Name = "SomariaButton"
-        Me.SomariaButton.Size = New System.Drawing.Size(34, 34)
-        Me.SomariaButton.TabIndex = 16
-        Me.SomariaButton.TabStop = False
-        Me.SomariaButton.UseVisualStyleBackColor = False
-        '
-        'BottleButton
-        '
-        Me.BottleButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BottleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BottleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BottleButton.ForeColor = System.Drawing.Color.White
-        Me.BottleButton.Image = Global.WindowsApp1.My.Resources.Resources.nobottle
-        Me.BottleButton.Location = New System.Drawing.Point(4, 103)
-        Me.BottleButton.Name = "BottleButton"
-        Me.BottleButton.Size = New System.Drawing.Size(34, 34)
-        Me.BottleButton.TabIndex = 15
-        Me.BottleButton.TabStop = False
-        Me.BottleButton.UseVisualStyleBackColor = False
-        '
-        'BookButton
-        '
-        Me.BookButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BookButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BookButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BookButton.ForeColor = System.Drawing.Color.White
-        Me.BookButton.Image = Global.WindowsApp1.My.Resources.Resources.nobook
-        Me.BookButton.Location = New System.Drawing.Point(144, 70)
-        Me.BookButton.Name = "BookButton"
-        Me.BookButton.Size = New System.Drawing.Size(34, 34)
-        Me.BookButton.TabIndex = 14
-        Me.BookButton.TabStop = False
-        Me.BookButton.UseVisualStyleBackColor = False
-        '
-        'NetButton
-        '
-        Me.NetButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.NetButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.NetButton.ForeColor = System.Drawing.Color.White
-        Me.NetButton.Image = Global.WindowsApp1.My.Resources.Resources.nobugnet
-        Me.NetButton.Location = New System.Drawing.Point(109, 70)
-        Me.NetButton.Name = "NetButton"
-        Me.NetButton.Size = New System.Drawing.Size(34, 34)
-        Me.NetButton.TabIndex = 13
-        Me.NetButton.TabStop = False
-        Me.NetButton.UseVisualStyleBackColor = False
-        '
-        'FluteButton
-        '
-        Me.FluteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.FluteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.FluteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.FluteButton.ForeColor = System.Drawing.Color.White
-        Me.FluteButton.Image = Global.WindowsApp1.My.Resources.Resources.noflute
-        Me.FluteButton.Location = New System.Drawing.Point(74, 70)
-        Me.FluteButton.Name = "FluteButton"
-        Me.FluteButton.Size = New System.Drawing.Size(34, 34)
-        Me.FluteButton.TabIndex = 12
-        Me.FluteButton.TabStop = False
-        Me.FluteButton.UseVisualStyleBackColor = False
-        '
-        'HammerButton
-        '
-        Me.HammerButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.HammerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.HammerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.HammerButton.ForeColor = System.Drawing.Color.White
-        Me.HammerButton.Image = Global.WindowsApp1.My.Resources.Resources.nohammer
-        Me.HammerButton.Location = New System.Drawing.Point(39, 70)
-        Me.HammerButton.Name = "HammerButton"
-        Me.HammerButton.Size = New System.Drawing.Size(34, 34)
-        Me.HammerButton.TabIndex = 11
-        Me.HammerButton.TabStop = False
-        Me.HammerButton.UseVisualStyleBackColor = False
-        '
-        'LampButton
-        '
-        Me.LampButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LampButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LampButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LampButton.ForeColor = System.Drawing.Color.White
-        Me.LampButton.Image = Global.WindowsApp1.My.Resources.Resources.nolamp
-        Me.LampButton.Location = New System.Drawing.Point(4, 70)
-        Me.LampButton.Name = "LampButton"
-        Me.LampButton.Size = New System.Drawing.Size(34, 34)
-        Me.LampButton.TabIndex = 10
-        Me.LampButton.TabStop = False
-        Me.LampButton.UseVisualStyleBackColor = False
-        '
-        'QuakeButton
-        '
-        Me.QuakeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.QuakeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.QuakeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.QuakeButton.ForeColor = System.Drawing.Color.White
-        Me.QuakeButton.Image = Global.WindowsApp1.My.Resources.Resources.noquake
-        Me.QuakeButton.Location = New System.Drawing.Point(144, 37)
-        Me.QuakeButton.Name = "QuakeButton"
-        Me.QuakeButton.Size = New System.Drawing.Size(34, 34)
-        Me.QuakeButton.TabIndex = 9
-        Me.QuakeButton.TabStop = False
-        Me.QuakeButton.UseVisualStyleBackColor = False
-        '
-        'EtherButton
-        '
-        Me.EtherButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.EtherButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.EtherButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.EtherButton.ForeColor = System.Drawing.Color.White
-        Me.EtherButton.Image = Global.WindowsApp1.My.Resources.Resources.noether
-        Me.EtherButton.Location = New System.Drawing.Point(109, 37)
-        Me.EtherButton.Name = "EtherButton"
-        Me.EtherButton.Size = New System.Drawing.Size(34, 34)
-        Me.EtherButton.TabIndex = 8
-        Me.EtherButton.TabStop = False
-        Me.EtherButton.UseVisualStyleBackColor = False
-        '
-        'BombosButton
-        '
-        Me.BombosButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BombosButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BombosButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BombosButton.ForeColor = System.Drawing.Color.White
-        Me.BombosButton.Image = Global.WindowsApp1.My.Resources.Resources.nobombos
-        Me.BombosButton.Location = New System.Drawing.Point(74, 37)
-        Me.BombosButton.Name = "BombosButton"
-        Me.BombosButton.Size = New System.Drawing.Size(34, 34)
-        Me.BombosButton.TabIndex = 7
-        Me.BombosButton.TabStop = False
-        Me.BombosButton.UseVisualStyleBackColor = False
-        '
-        'IceButton
-        '
-        Me.IceButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.IceButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.IceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.IceButton.ForeColor = System.Drawing.Color.White
-        Me.IceButton.Image = Global.WindowsApp1.My.Resources.Resources.noicerod
-        Me.IceButton.Location = New System.Drawing.Point(39, 37)
-        Me.IceButton.Name = "IceButton"
-        Me.IceButton.Size = New System.Drawing.Size(34, 34)
-        Me.IceButton.TabIndex = 6
-        Me.IceButton.TabStop = False
-        Me.IceButton.UseVisualStyleBackColor = False
-        '
-        'FireButton
-        '
-        Me.FireButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.FireButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.FireButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.FireButton.ForeColor = System.Drawing.Color.White
-        Me.FireButton.Image = Global.WindowsApp1.My.Resources.Resources.nofirerod
-        Me.FireButton.Location = New System.Drawing.Point(4, 37)
-        Me.FireButton.Name = "FireButton"
-        Me.FireButton.Size = New System.Drawing.Size(34, 34)
-        Me.FireButton.TabIndex = 5
-        Me.FireButton.TabStop = False
-        Me.FireButton.UseVisualStyleBackColor = False
-        '
-        'PowderButton
-        '
-        Me.PowderButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PowderButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PowderButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.PowderButton.ForeColor = System.Drawing.Color.White
-        Me.PowderButton.Image = Global.WindowsApp1.My.Resources.Resources.nopowder
-        Me.PowderButton.Location = New System.Drawing.Point(144, 4)
-        Me.PowderButton.Name = "PowderButton"
-        Me.PowderButton.Size = New System.Drawing.Size(34, 34)
-        Me.PowderButton.TabIndex = 4
-        Me.PowderButton.TabStop = False
-        Me.PowderButton.UseVisualStyleBackColor = False
-        '
-        'BombButton
-        '
-        Me.BombButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BombButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BombButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BombButton.ForeColor = System.Drawing.Color.White
-        Me.BombButton.Image = Global.WindowsApp1.My.Resources.Resources.nobombs
-        Me.BombButton.Location = New System.Drawing.Point(109, 4)
-        Me.BombButton.Name = "BombButton"
-        Me.BombButton.Size = New System.Drawing.Size(34, 34)
-        Me.BombButton.TabIndex = 3
-        Me.BombButton.TabStop = False
-        Me.BombButton.UseVisualStyleBackColor = False
-        '
-        'HookButton
-        '
-        Me.HookButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.HookButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.HookButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.HookButton.ForeColor = System.Drawing.Color.White
-        Me.HookButton.Image = Global.WindowsApp1.My.Resources.Resources.nohook
-        Me.HookButton.Location = New System.Drawing.Point(74, 4)
-        Me.HookButton.Name = "HookButton"
-        Me.HookButton.Size = New System.Drawing.Size(34, 34)
-        Me.HookButton.TabIndex = 2
-        Me.HookButton.TabStop = False
-        Me.HookButton.UseVisualStyleBackColor = False
-        '
-        'BoomButton
-        '
-        Me.BoomButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BoomButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BoomButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BoomButton.ForeColor = System.Drawing.Color.White
-        Me.BoomButton.Image = Global.WindowsApp1.My.Resources.Resources.noboomerang
-        Me.BoomButton.Location = New System.Drawing.Point(39, 4)
-        Me.BoomButton.Name = "BoomButton"
-        Me.BoomButton.Size = New System.Drawing.Size(34, 34)
-        Me.BoomButton.TabIndex = 1
-        Me.BoomButton.TabStop = False
-        Me.BoomButton.UseVisualStyleBackColor = False
-        '
-        'BowButton
-        '
-        Me.BowButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BowButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BowButton.ForeColor = System.Drawing.Color.White
-        Me.BowButton.Image = Global.WindowsApp1.My.Resources.Resources.nobow
-        Me.BowButton.Location = New System.Drawing.Point(4, 4)
-        Me.BowButton.Name = "BowButton"
-        Me.BowButton.Size = New System.Drawing.Size(34, 34)
-        Me.BowButton.TabIndex = 0
-        Me.BowButton.TabStop = False
-        Me.BowButton.UseVisualStyleBackColor = False
-        '
         'Label1
         '
         Me.Label1.Location = New System.Drawing.Point(536, 41)
@@ -3528,12 +3138,363 @@ Partial Class Form1
         Me.Label1.Text = "Mouse over to clear picture"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'BowButton
+        '
+        Me.BowButton.Image = Global.WindowsApp1.My.Resources.Resources.nobow
+        Me.BowButton.Location = New System.Drawing.Point(4, 4)
+        Me.BowButton.Name = "BowButton"
+        Me.BowButton.Size = New System.Drawing.Size(32, 32)
+        Me.BowButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BowButton.TabIndex = 286
+        Me.BowButton.TabStop = False
+        '
+        'BoomButton
+        '
+        Me.BoomButton.Image = Global.WindowsApp1.My.Resources.Resources.noboomerang
+        Me.BoomButton.Location = New System.Drawing.Point(39, 4)
+        Me.BoomButton.Name = "BoomButton"
+        Me.BoomButton.Size = New System.Drawing.Size(32, 32)
+        Me.BoomButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BoomButton.TabIndex = 287
+        Me.BoomButton.TabStop = False
+        '
+        'HookButton
+        '
+        Me.HookButton.Image = Global.WindowsApp1.My.Resources.Resources.nohook
+        Me.HookButton.Location = New System.Drawing.Point(74, 4)
+        Me.HookButton.Name = "HookButton"
+        Me.HookButton.Size = New System.Drawing.Size(32, 32)
+        Me.HookButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.HookButton.TabIndex = 288
+        Me.HookButton.TabStop = False
+        '
+        'BombButton
+        '
+        Me.BombButton.Image = Global.WindowsApp1.My.Resources.Resources.nobombs
+        Me.BombButton.Location = New System.Drawing.Point(109, 4)
+        Me.BombButton.Name = "BombButton"
+        Me.BombButton.Size = New System.Drawing.Size(32, 32)
+        Me.BombButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BombButton.TabIndex = 289
+        Me.BombButton.TabStop = False
+        '
+        'PowderButton
+        '
+        Me.PowderButton.Image = Global.WindowsApp1.My.Resources.Resources.nopowder
+        Me.PowderButton.Location = New System.Drawing.Point(144, 4)
+        Me.PowderButton.Name = "PowderButton"
+        Me.PowderButton.Size = New System.Drawing.Size(32, 32)
+        Me.PowderButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PowderButton.TabIndex = 290
+        Me.PowderButton.TabStop = False
+        '
+        'FireButton
+        '
+        Me.FireButton.Image = Global.WindowsApp1.My.Resources.Resources.nofirerod
+        Me.FireButton.Location = New System.Drawing.Point(4, 39)
+        Me.FireButton.Name = "FireButton"
+        Me.FireButton.Size = New System.Drawing.Size(32, 32)
+        Me.FireButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.FireButton.TabIndex = 291
+        Me.FireButton.TabStop = False
+        '
+        'IceButton
+        '
+        Me.IceButton.Image = Global.WindowsApp1.My.Resources.Resources.noicerod
+        Me.IceButton.Location = New System.Drawing.Point(39, 39)
+        Me.IceButton.Name = "IceButton"
+        Me.IceButton.Size = New System.Drawing.Size(32, 32)
+        Me.IceButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.IceButton.TabIndex = 292
+        Me.IceButton.TabStop = False
+        '
+        'BombosButton
+        '
+        Me.BombosButton.Image = Global.WindowsApp1.My.Resources.Resources.nobombos
+        Me.BombosButton.Location = New System.Drawing.Point(74, 39)
+        Me.BombosButton.Name = "BombosButton"
+        Me.BombosButton.Size = New System.Drawing.Size(32, 32)
+        Me.BombosButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BombosButton.TabIndex = 293
+        Me.BombosButton.TabStop = False
+        '
+        'EtherButton
+        '
+        Me.EtherButton.Image = Global.WindowsApp1.My.Resources.Resources.noether
+        Me.EtherButton.Location = New System.Drawing.Point(109, 39)
+        Me.EtherButton.Name = "EtherButton"
+        Me.EtherButton.Size = New System.Drawing.Size(32, 32)
+        Me.EtherButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.EtherButton.TabIndex = 294
+        Me.EtherButton.TabStop = False
+        '
+        'QuakeButton
+        '
+        Me.QuakeButton.Image = Global.WindowsApp1.My.Resources.Resources.noquake
+        Me.QuakeButton.Location = New System.Drawing.Point(144, 39)
+        Me.QuakeButton.Name = "QuakeButton"
+        Me.QuakeButton.Size = New System.Drawing.Size(32, 32)
+        Me.QuakeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.QuakeButton.TabIndex = 295
+        Me.QuakeButton.TabStop = False
+        '
+        'LampButton
+        '
+        Me.LampButton.Image = Global.WindowsApp1.My.Resources.Resources.nolamp
+        Me.LampButton.Location = New System.Drawing.Point(4, 74)
+        Me.LampButton.Name = "LampButton"
+        Me.LampButton.Size = New System.Drawing.Size(32, 32)
+        Me.LampButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.LampButton.TabIndex = 296
+        Me.LampButton.TabStop = False
+        '
+        'HammerButton
+        '
+        Me.HammerButton.Image = Global.WindowsApp1.My.Resources.Resources.nohammer
+        Me.HammerButton.Location = New System.Drawing.Point(39, 74)
+        Me.HammerButton.Name = "HammerButton"
+        Me.HammerButton.Size = New System.Drawing.Size(32, 32)
+        Me.HammerButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.HammerButton.TabIndex = 297
+        Me.HammerButton.TabStop = False
+        '
+        'FluteButton
+        '
+        Me.FluteButton.Image = Global.WindowsApp1.My.Resources.Resources.noflute
+        Me.FluteButton.Location = New System.Drawing.Point(74, 74)
+        Me.FluteButton.Name = "FluteButton"
+        Me.FluteButton.Size = New System.Drawing.Size(32, 32)
+        Me.FluteButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.FluteButton.TabIndex = 298
+        Me.FluteButton.TabStop = False
+        '
+        'NetButton
+        '
+        Me.NetButton.Image = Global.WindowsApp1.My.Resources.Resources.nobugnet
+        Me.NetButton.Location = New System.Drawing.Point(109, 74)
+        Me.NetButton.Name = "NetButton"
+        Me.NetButton.Size = New System.Drawing.Size(32, 32)
+        Me.NetButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.NetButton.TabIndex = 299
+        Me.NetButton.TabStop = False
+        '
+        'BookButton
+        '
+        Me.BookButton.Image = Global.WindowsApp1.My.Resources.Resources.nobook
+        Me.BookButton.Location = New System.Drawing.Point(144, 74)
+        Me.BookButton.Name = "BookButton"
+        Me.BookButton.Size = New System.Drawing.Size(32, 32)
+        Me.BookButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BookButton.TabIndex = 300
+        Me.BookButton.TabStop = False
+        '
+        'BottleButton
+        '
+        Me.BottleButton.Image = Global.WindowsApp1.My.Resources.Resources.nobottle
+        Me.BottleButton.Location = New System.Drawing.Point(4, 109)
+        Me.BottleButton.Name = "BottleButton"
+        Me.BottleButton.Size = New System.Drawing.Size(32, 32)
+        Me.BottleButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BottleButton.TabIndex = 301
+        Me.BottleButton.TabStop = False
+        '
+        'SomariaButton
+        '
+        Me.SomariaButton.Image = Global.WindowsApp1.My.Resources.Resources.nosomaria
+        Me.SomariaButton.Location = New System.Drawing.Point(39, 109)
+        Me.SomariaButton.Name = "SomariaButton"
+        Me.SomariaButton.Size = New System.Drawing.Size(32, 32)
+        Me.SomariaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.SomariaButton.TabIndex = 302
+        Me.SomariaButton.TabStop = False
+        '
+        'ByrnaButton
+        '
+        Me.ByrnaButton.Image = Global.WindowsApp1.My.Resources.Resources.nobyrna
+        Me.ByrnaButton.Location = New System.Drawing.Point(74, 109)
+        Me.ByrnaButton.Name = "ByrnaButton"
+        Me.ByrnaButton.Size = New System.Drawing.Size(32, 32)
+        Me.ByrnaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.ByrnaButton.TabIndex = 303
+        Me.ByrnaButton.TabStop = False
+        '
+        'CapeButton
+        '
+        Me.CapeButton.Image = Global.WindowsApp1.My.Resources.Resources.nocape
+        Me.CapeButton.Location = New System.Drawing.Point(109, 109)
+        Me.CapeButton.Name = "CapeButton"
+        Me.CapeButton.Size = New System.Drawing.Size(32, 32)
+        Me.CapeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.CapeButton.TabIndex = 304
+        Me.CapeButton.TabStop = False
+        '
+        'MirrorButton
+        '
+        Me.MirrorButton.Image = Global.WindowsApp1.My.Resources.Resources.nomirror
+        Me.MirrorButton.Location = New System.Drawing.Point(144, 109)
+        Me.MirrorButton.Name = "MirrorButton"
+        Me.MirrorButton.Size = New System.Drawing.Size(32, 32)
+        Me.MirrorButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.MirrorButton.TabIndex = 305
+        Me.MirrorButton.TabStop = False
+        '
+        'BootButton
+        '
+        Me.BootButton.Image = Global.WindowsApp1.My.Resources.Resources.noboots
+        Me.BootButton.Location = New System.Drawing.Point(4, 146)
+        Me.BootButton.Name = "BootButton"
+        Me.BootButton.Size = New System.Drawing.Size(32, 32)
+        Me.BootButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BootButton.TabIndex = 306
+        Me.BootButton.TabStop = False
+        '
+        'GloveButton
+        '
+        Me.GloveButton.Image = Global.WindowsApp1.My.Resources.Resources.noglove
+        Me.GloveButton.Location = New System.Drawing.Point(39, 146)
+        Me.GloveButton.Name = "GloveButton"
+        Me.GloveButton.Size = New System.Drawing.Size(32, 32)
+        Me.GloveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.GloveButton.TabIndex = 307
+        Me.GloveButton.TabStop = False
+        '
+        'FlipperButton
+        '
+        Me.FlipperButton.Image = Global.WindowsApp1.My.Resources.Resources.noflippers
+        Me.FlipperButton.Location = New System.Drawing.Point(74, 146)
+        Me.FlipperButton.Name = "FlipperButton"
+        Me.FlipperButton.Size = New System.Drawing.Size(32, 32)
+        Me.FlipperButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.FlipperButton.TabIndex = 308
+        Me.FlipperButton.TabStop = False
+        '
+        'PearlButton
+        '
+        Me.PearlButton.Image = Global.WindowsApp1.My.Resources.Resources.nopearl
+        Me.PearlButton.Location = New System.Drawing.Point(109, 146)
+        Me.PearlButton.Name = "PearlButton"
+        Me.PearlButton.Size = New System.Drawing.Size(32, 32)
+        Me.PearlButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PearlButton.TabIndex = 309
+        Me.PearlButton.TabStop = False
+        '
+        'MushButton
+        '
+        Me.MushButton.Image = Global.WindowsApp1.My.Resources.Resources.nomushroom
+        Me.MushButton.Location = New System.Drawing.Point(144, 146)
+        Me.MushButton.Name = "MushButton"
+        Me.MushButton.Size = New System.Drawing.Size(32, 16)
+        Me.MushButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.MushButton.TabIndex = 310
+        Me.MushButton.TabStop = False
+        '
+        'ShovelButton
+        '
+        Me.ShovelButton.Image = Global.WindowsApp1.My.Resources.Resources.noshovel
+        Me.ShovelButton.Location = New System.Drawing.Point(144, 162)
+        Me.ShovelButton.Name = "ShovelButton"
+        Me.ShovelButton.Size = New System.Drawing.Size(32, 16)
+        Me.ShovelButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.ShovelButton.TabIndex = 311
+        Me.ShovelButton.TabStop = False
+        '
+        'SwordButton
+        '
+        Me.SwordButton.Image = Global.WindowsApp1.My.Resources.Resources.nosword
+        Me.SwordButton.Location = New System.Drawing.Point(184, 4)
+        Me.SwordButton.Name = "SwordButton"
+        Me.SwordButton.Size = New System.Drawing.Size(32, 32)
+        Me.SwordButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.SwordButton.TabIndex = 312
+        Me.SwordButton.TabStop = False
+        '
+        'ArmorButton
+        '
+        Me.ArmorButton.Image = Global.WindowsApp1.My.Resources.Resources.greenmail
+        Me.ArmorButton.Location = New System.Drawing.Point(184, 39)
+        Me.ArmorButton.Name = "ArmorButton"
+        Me.ArmorButton.Size = New System.Drawing.Size(32, 32)
+        Me.ArmorButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.ArmorButton.TabIndex = 313
+        Me.ArmorButton.TabStop = False
+        '
+        'ShieldButton
+        '
+        Me.ShieldButton.Image = Global.WindowsApp1.My.Resources.Resources.noshield
+        Me.ShieldButton.Location = New System.Drawing.Point(184, 74)
+        Me.ShieldButton.Name = "ShieldButton"
+        Me.ShieldButton.Size = New System.Drawing.Size(32, 32)
+        Me.ShieldButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.ShieldButton.TabIndex = 314
+        Me.ShieldButton.TabStop = False
+        '
+        'AgaButton
+        '
+        Me.AgaButton.Enabled = False
+        Me.AgaButton.Image = Global.WindowsApp1.My.Resources.Resources.noaganhim
+        Me.AgaButton.Location = New System.Drawing.Point(184, 109)
+        Me.AgaButton.Name = "AgaButton"
+        Me.AgaButton.Size = New System.Drawing.Size(32, 32)
+        Me.AgaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.AgaButton.TabIndex = 315
+        Me.AgaButton.TabStop = False
+        Me.AgaButton.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 4)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(213, 174)
+        Me.PictureBox2.TabIndex = 316
+        Me.PictureBox2.TabStop = False
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Location = New System.Drawing.Point(741, 501)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox10.TabIndex = 317
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(847, 548)
+        Me.Controls.Add(Me.CheckBox10)
+        Me.Controls.Add(Me.AgaButton)
+        Me.Controls.Add(Me.ShieldButton)
+        Me.Controls.Add(Me.ArmorButton)
+        Me.Controls.Add(Me.SwordButton)
+        Me.Controls.Add(Me.ShovelButton)
+        Me.Controls.Add(Me.MushButton)
+        Me.Controls.Add(Me.PearlButton)
+        Me.Controls.Add(Me.FlipperButton)
+        Me.Controls.Add(Me.GloveButton)
+        Me.Controls.Add(Me.BootButton)
+        Me.Controls.Add(Me.MirrorButton)
+        Me.Controls.Add(Me.CapeButton)
+        Me.Controls.Add(Me.ByrnaButton)
+        Me.Controls.Add(Me.SomariaButton)
+        Me.Controls.Add(Me.BottleButton)
+        Me.Controls.Add(Me.BookButton)
+        Me.Controls.Add(Me.NetButton)
+        Me.Controls.Add(Me.FluteButton)
+        Me.Controls.Add(Me.HammerButton)
+        Me.Controls.Add(Me.LampButton)
+        Me.Controls.Add(Me.QuakeButton)
+        Me.Controls.Add(Me.EtherButton)
+        Me.Controls.Add(Me.BombosButton)
+        Me.Controls.Add(Me.IceButton)
+        Me.Controls.Add(Me.FireButton)
+        Me.Controls.Add(Me.PowderButton)
+        Me.Controls.Add(Me.BombButton)
+        Me.Controls.Add(Me.HookButton)
+        Me.Controls.Add(Me.BoomButton)
+        Me.Controls.Add(Me.BowButton)
         Me.Controls.Add(Me.SW1)
         Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.CheckBox8)
@@ -3714,78 +3675,52 @@ Partial Class Form1
         Me.Controls.Add(Me.EP3)
         Me.Controls.Add(Me.EP2)
         Me.Controls.Add(Me.EP1)
-        Me.Controls.Add(Me.AgaButton)
-        Me.Controls.Add(Me.ShieldButton)
-        Me.Controls.Add(Me.ArmorButton)
-        Me.Controls.Add(Me.SwordButton)
-        Me.Controls.Add(Me.ShovelButton)
-        Me.Controls.Add(Me.MushButton)
-        Me.Controls.Add(Me.PearlButton)
-        Me.Controls.Add(Me.FlipperButton)
-        Me.Controls.Add(Me.GloveButton)
-        Me.Controls.Add(Me.BootButton)
-        Me.Controls.Add(Me.MirrorButton)
-        Me.Controls.Add(Me.CapeButton)
-        Me.Controls.Add(Me.ByrnaButton)
-        Me.Controls.Add(Me.SomariaButton)
-        Me.Controls.Add(Me.BottleButton)
-        Me.Controls.Add(Me.BookButton)
-        Me.Controls.Add(Me.NetButton)
-        Me.Controls.Add(Me.FluteButton)
-        Me.Controls.Add(Me.HammerButton)
-        Me.Controls.Add(Me.LampButton)
-        Me.Controls.Add(Me.QuakeButton)
-        Me.Controls.Add(Me.EtherButton)
-        Me.Controls.Add(Me.BombosButton)
-        Me.Controls.Add(Me.IceButton)
-        Me.Controls.Add(Me.FireButton)
-        Me.Controls.Add(Me.PowderButton)
-        Me.Controls.Add(Me.BombButton)
-        Me.Controls.Add(Me.HookButton)
-        Me.Controls.Add(Me.BoomButton)
-        Me.Controls.Add(Me.BowButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox2)
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "ALTTP RandoTracker (Logic v8.26)"
         Me.TransparencyKey = System.Drawing.Color.DimGray
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BowButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HookButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BombButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PowderButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FireButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IceButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BombosButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EtherButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuakeButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LampButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HammerButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FluteButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NetButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BottleButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SomariaButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ByrnaButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CapeButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MirrorButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BootButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GloveButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FlipperButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PearlButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MushButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ShovelButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwordButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ArmorButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ShieldButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AgaButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents BoomButton As Button
-    Friend WithEvents HookButton As Button
-    Friend WithEvents BombButton As Button
-    Friend WithEvents PowderButton As Button
-    Friend WithEvents QuakeButton As Button
-    Friend WithEvents EtherButton As Button
-    Friend WithEvents BombosButton As Button
-    Friend WithEvents IceButton As Button
-    Friend WithEvents FireButton As Button
-    Friend WithEvents BookButton As Button
-    Friend WithEvents NetButton As Button
-    Friend WithEvents FluteButton As Button
-    Friend WithEvents HammerButton As Button
-    Friend WithEvents LampButton As Button
-    Friend WithEvents MirrorButton As Button
-    Friend WithEvents CapeButton As Button
-    Friend WithEvents ByrnaButton As Button
-    Friend WithEvents SomariaButton As Button
-    Friend WithEvents BottleButton As Button
-    Friend WithEvents MushButton As Button
-    Friend WithEvents PearlButton As Button
-    Friend WithEvents FlipperButton As Button
-    Friend WithEvents GloveButton As Button
-    Friend WithEvents BootButton As Button
-    Friend WithEvents ShovelButton As Button
-    Friend WithEvents AgaButton As Button
-    Friend WithEvents ShieldButton As Button
-    Friend WithEvents ArmorButton As Button
-    Friend WithEvents SwordButton As Button
     Friend WithEvents EP1 As CheckBox
     Friend WithEvents EP2 As CheckBox
     Friend WithEvents EP4 As CheckBox
@@ -3967,6 +3902,37 @@ Partial Class Form1
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents CheckBox9 As CheckBox
     Friend WithEvents PictureBox1 As PictureBox
-    Protected Friend WithEvents BowButton As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents BowButton As PictureBox
+    Friend WithEvents BoomButton As PictureBox
+    Friend WithEvents HookButton As PictureBox
+    Friend WithEvents BombButton As PictureBox
+    Friend WithEvents PowderButton As PictureBox
+    Friend WithEvents FireButton As PictureBox
+    Friend WithEvents IceButton As PictureBox
+    Friend WithEvents BombosButton As PictureBox
+    Friend WithEvents EtherButton As PictureBox
+    Friend WithEvents QuakeButton As PictureBox
+    Friend WithEvents LampButton As PictureBox
+    Friend WithEvents HammerButton As PictureBox
+    Friend WithEvents FluteButton As PictureBox
+    Friend WithEvents NetButton As PictureBox
+    Friend WithEvents BookButton As PictureBox
+    Friend WithEvents BottleButton As PictureBox
+    Friend WithEvents SomariaButton As PictureBox
+    Friend WithEvents ByrnaButton As PictureBox
+    Friend WithEvents CapeButton As PictureBox
+    Friend WithEvents MirrorButton As PictureBox
+    Friend WithEvents BootButton As PictureBox
+    Friend WithEvents GloveButton As PictureBox
+    Friend WithEvents FlipperButton As PictureBox
+    Friend WithEvents PearlButton As PictureBox
+    Friend WithEvents MushButton As PictureBox
+    Friend WithEvents ShovelButton As PictureBox
+    Friend WithEvents SwordButton As PictureBox
+    Friend WithEvents ArmorButton As PictureBox
+    Friend WithEvents ShieldButton As PictureBox
+    Friend WithEvents AgaButton As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CheckBox10 As CheckBox
 End Class
