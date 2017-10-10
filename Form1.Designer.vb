@@ -3430,7 +3430,6 @@ Partial Class Form1
         '
         'AgaButton
         '
-        Me.AgaButton.Enabled = False
         Me.AgaButton.Image = Global.WindowsApp1.My.Resources.Resources.noaganhim
         Me.AgaButton.Location = New System.Drawing.Point(184, 109)
         Me.AgaButton.Name = "AgaButton"
