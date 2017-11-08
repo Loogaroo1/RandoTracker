@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
     <RootNamespace>WindowsApp1</RootNamespace>
-    <AssemblyName>ALTTP Tracker</AssemblyName>
+    <AssemblyName>Keysanity RandoTracker</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>20</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ALTTP Tracker.xml</DocumentationFile>
+    <DocumentationFile>Keysanity RandoTracker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -46,7 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ALTTP Tracker.xml</DocumentationFile>
+    <DocumentationFile>Keysanity RandoTracker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -99,10 +99,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Keysanity.Designer.vb">
+      <DependentUpon>Keysanity.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Keysanity.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -122,8 +122,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Keysanity.resx">
+      <DependentUpon>Keysanity.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -179,6 +179,7 @@
     <Content Include="bossdead.png" />
     <Content Include="bossflippers.png" />
     <Content Include="bosslamp.png" />
+    <None Include="bossmaster.png" />
     <Content Include="bossmaybe.png" />
     <Content Include="bottle.png" />
     <Content Include="bow.png" />
@@ -288,6 +289,14 @@
     <Content Include="quakeMMTR.png" />
     <Content Include="redboom.png" />
     <Content Include="redmail.png" />
+    <None Include="Resources\bigkey1.png" />
+    <None Include="Resources\compass1.png" />
+    <None Include="Resources\key1.png" />
+    <None Include="Resources\map1.png" />
+    <None Include="Resources\nobigkey1.png" />
+    <None Include="Resources\nocompass1.png" />
+    <None Include="Resources\nokey1.png" />
+    <None Include="Resources\nomap1.png" />
     <Content Include="shield1.png" />
     <Content Include="shield2.png" />
     <Content Include="shield3.png" />
