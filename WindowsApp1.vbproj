@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationRevision>24</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -213,6 +213,7 @@
     <Content Include="flippers.png" />
     <Content Include="flute.png" />
     <Content Include="glove.png" />
+    <Content Include="greenchest.png" />
     <Content Include="greenmail.png" />
     <Content Include="greenpendant.png" />
     <Content Include="hammer.png" />
@@ -288,6 +289,7 @@
     <Content Include="quake.png" />
     <Content Include="quakeMMTR.png" />
     <Content Include="redboom.png" />
+    <Content Include="redchest.png" />
     <Content Include="redmail.png" />
     <None Include="Resources\bigkey1.png" />
     <None Include="Resources\compass1.png" />
@@ -297,6 +299,8 @@
     <None Include="Resources\nocompass1.png" />
     <None Include="Resources\nokey1.png" />
     <None Include="Resources\nomap1.png" />
+    <None Include="Resources\greenchest.png" />
+    <None Include="Resources\redchest.png" />
     <Content Include="shield1.png" />
     <Content Include="shield2.png" />
     <Content Include="shield3.png" />

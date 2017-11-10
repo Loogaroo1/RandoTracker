@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, LJacks, Library, MazeRace, SpecRock, Floater, DPLedge, ZoraLedge, Island, Pedestal, Bumper As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -13,6 +13,8 @@
         IPReward = -1
         MMReward = -1
         TRReward = -1
+        LJacks = 0
+
     End Sub
 
     Public Sub LWCheck()
@@ -711,6 +713,10 @@
             DPLabel2.BackColor = Color.Green
             DPLabel2.ForeColor = Color.White
             DPBoss.Enabled = True
+        ElseIf Book = True Or (Flute = True And Mirror = True And Glove = 2) And (FireRod = True Or Lamp = True) And Glove > 0 And DP6.Checked = True Then
+            DPLabel2.BackColor = Color.Yellow
+            DPLabel2.ForeColor = Color.Black
+            DPBoss.Enabled = True
         ElseIf Book = True Or (Flute = True And Mirror = True And Glove = 2) Then
             DPLabel2.BackColor = Color.Yellow
             DPLabel2.ForeColor = Color.Black
@@ -785,10 +791,14 @@
         CrystalCheck()
     End Sub
     Public Sub AgaCheck()
-        If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+        If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AG1.Checked = True And AG2.Checked = True Then
             AgaButton.Visible = True
             AgaLabel.BackColor = Color.Green
             AgaLabel.ForeColor = Color.White
+        ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+            AgaButton.Visible = False
+            AgaLabel.BackColor = Color.Yellow
+            AgaLabel.ForeColor = Color.Black
         Else
             AgaButton.Visible = False
             AgaLabel.BackColor = Color.Red
@@ -1157,6 +1167,117 @@
         MMCheck()
         CrystalCheck()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Library = (Library + 1) Mod 3
+        Select Case Library
+            Case 0
+                Button2.Image = My.Resources.chestmaybe
+            Case 1
+                Button2.Image = My.Resources.redchest
+            Case 2
+                Button2.Image = My.Resources.greenchest
+        End Select
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        MazeRace = (MazeRace + 1) Mod 3
+        Select Case MazeRace
+            Case 0
+                Button3.Image = My.Resources.chestmaybe
+            Case 1
+                Button3.Image = My.Resources.redchest
+            Case 2
+                Button3.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        SpecRock = (SpecRock + 1) Mod 3
+        Select Case SpecRock
+            Case 0
+                Button4.Image = My.Resources.chestmaybe
+            Case 1
+                Button4.Image = My.Resources.redchest
+            Case 2
+                Button4.Image = My.Resources.greenchest
+        End Select
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Floater = (Floater + 1) Mod 3
+        Select Case Floater
+            Case 0
+                Button5.Image = My.Resources.chestmaybe
+            Case 1
+                Button5.Image = My.Resources.redchest
+            Case 2
+                Button5.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        DPLedge = (DPLedge + 1) Mod 3
+        Select Case DPLedge
+            Case 0
+                Button6.Image = My.Resources.chestmaybe
+            Case 1
+                Button6.Image = My.Resources.redchest
+            Case 2
+                Button6.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        ZoraLedge = (ZoraLedge + 1) Mod 3
+        Select Case ZoraLedge
+            Case 0
+                Button7.Image = My.Resources.chestmaybe
+            Case 1
+                Button7.Image = My.Resources.redchest
+            Case 2
+                Button7.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Island = (Island + 1) Mod 3
+        Select Case Island
+            Case 0
+                Button8.Image = My.Resources.chestmaybe
+            Case 1
+                Button8.Image = My.Resources.redchest
+            Case 2
+                Button8.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Pedestal = (Pedestal + 1) Mod 3
+        Select Case Pedestal
+            Case 0
+                Button9.Image = My.Resources.chestmaybe
+            Case 1
+                Button9.Image = My.Resources.redchest
+            Case 2
+                Button9.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Bumper = (Bumper + 1) Mod 3
+        Select Case Bumper
+            Case 0
+                Button10.Image = My.Resources.chestmaybe
+            Case 1
+                Button10.Image = My.Resources.redchest
+            Case 2
+                Button10.Image = My.Resources.greenchest
+        End Select
+    End Sub
+
     Public Sub MMCheck()
         If Pearl = True And Glove = 2 And Flute = True And Somaria = True And Lamp = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And MM8.Checked = True Then
             MMLabel2.BackColor = Color.Green
@@ -1316,6 +1437,7 @@
                 TurtleBEQ.Image = My.Resources.quakeMMTR
         End Select
         TRCheck()
+        DWCheck()
     End Sub
 
     Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.Click, DPButton.Click, TOHButton.Click, PODButton.Click, SPButton.Click, SWButton.Click, TTButton.Click, IPButton.Click, MMButton.Click, TRButton.Click
@@ -1446,6 +1568,18 @@
 
     Private Sub HCPrizes_Click(sender As Object, e As EventArgs) Handles HCPrizes.Click
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        LJacks = (LJacks + 1) Mod 3
+        Select Case LJacks
+            Case 0
+                Button1.Image = My.Resources.chestmaybe
+            Case 1
+                Button1.Image = My.Resources.redchest
+            Case 2
+                Button1.Image = My.Resources.greenchest
+        End Select
     End Sub
 
     Public Sub CrystalCheck()

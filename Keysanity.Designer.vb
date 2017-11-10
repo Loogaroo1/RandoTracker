@@ -93,22 +93,10 @@ Partial Class Form1
         Me.DW4 = New System.Windows.Forms.CheckBox()
         Me.DW3 = New System.Windows.Forms.CheckBox()
         Me.DW2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.SPLabel2 = New System.Windows.Forms.Label()
@@ -131,6 +119,45 @@ Partial Class Form1
         Me.IPPrizes = New System.Windows.Forms.Label()
         Me.TTPrizes = New System.Windows.Forms.Label()
         Me.SWPrizes = New System.Windows.Forms.Label()
+        Me.GTPrizes = New System.Windows.Forms.Label()
+        Me.GTLabel = New System.Windows.Forms.Label()
+        Me.HCPrizes = New System.Windows.Forms.Label()
+        Me.HCLabel = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.AgaPrizes = New System.Windows.Forms.Label()
+        Me.AgaLabel = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.AG2 = New System.Windows.Forms.CheckBox()
+        Me.AG1 = New System.Windows.Forms.CheckBox()
+        Me.TRBoss = New System.Windows.Forms.CheckBox()
+        Me.MMBoss = New System.Windows.Forms.CheckBox()
+        Me.IPBoss = New System.Windows.Forms.CheckBox()
+        Me.TTBoss = New System.Windows.Forms.CheckBox()
+        Me.SWBoss = New System.Windows.Forms.CheckBox()
+        Me.SPBoss = New System.Windows.Forms.CheckBox()
+        Me.PODBoss = New System.Windows.Forms.CheckBox()
+        Me.HeraBoss = New System.Windows.Forms.CheckBox()
+        Me.DPBoss = New System.Windows.Forms.CheckBox()
+        Me.EPBoss = New System.Windows.Forms.CheckBox()
+        Me.HC2 = New System.Windows.Forms.CheckBox()
+        Me.HC1 = New System.Windows.Forms.CheckBox()
+        Me.GT4 = New System.Windows.Forms.CheckBox()
+        Me.GT5 = New System.Windows.Forms.CheckBox()
+        Me.GT3 = New System.Windows.Forms.CheckBox()
+        Me.GT2 = New System.Windows.Forms.CheckBox()
+        Me.GT7 = New System.Windows.Forms.CheckBox()
+        Me.GT6 = New System.Windows.Forms.CheckBox()
+        Me.GT1 = New System.Windows.Forms.CheckBox()
         Me.TRButton = New System.Windows.Forms.PictureBox()
         Me.MMButton = New System.Windows.Forms.PictureBox()
         Me.IPButton = New System.Windows.Forms.PictureBox()
@@ -226,35 +253,6 @@ Partial Class Form1
         Me.EP5 = New System.Windows.Forms.CheckBox()
         Me.EP4 = New System.Windows.Forms.CheckBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.GTPrizes = New System.Windows.Forms.Label()
-        Me.GTLabel = New System.Windows.Forms.Label()
-        Me.GT5 = New System.Windows.Forms.CheckBox()
-        Me.GT3 = New System.Windows.Forms.CheckBox()
-        Me.GT2 = New System.Windows.Forms.CheckBox()
-        Me.GT7 = New System.Windows.Forms.CheckBox()
-        Me.GT6 = New System.Windows.Forms.CheckBox()
-        Me.GT1 = New System.Windows.Forms.CheckBox()
-        Me.GT4 = New System.Windows.Forms.CheckBox()
-        Me.HCPrizes = New System.Windows.Forms.Label()
-        Me.HCLabel = New System.Windows.Forms.Label()
-        Me.HC2 = New System.Windows.Forms.CheckBox()
-        Me.HC1 = New System.Windows.Forms.CheckBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.EPBoss = New System.Windows.Forms.CheckBox()
-        Me.DPBoss = New System.Windows.Forms.CheckBox()
-        Me.HeraBoss = New System.Windows.Forms.CheckBox()
-        Me.PODBoss = New System.Windows.Forms.CheckBox()
-        Me.SPBoss = New System.Windows.Forms.CheckBox()
-        Me.SWBoss = New System.Windows.Forms.CheckBox()
-        Me.TTBoss = New System.Windows.Forms.CheckBox()
-        Me.IPBoss = New System.Windows.Forms.CheckBox()
-        Me.MMBoss = New System.Windows.Forms.CheckBox()
-        Me.TRBoss = New System.Windows.Forms.CheckBox()
-        Me.AgaPrizes = New System.Windows.Forms.Label()
-        Me.AgaLabel = New System.Windows.Forms.Label()
-        Me.AG1 = New System.Windows.Forms.CheckBox()
-        Me.AG2 = New System.Windows.Forms.CheckBox()
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MMButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IPButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -465,11 +463,11 @@ Partial Class Form1
         Me.LW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW1.ForeColor = System.Drawing.Color.Black
-        Me.LW1.Location = New System.Drawing.Point(397, 249)
-        Me.LW1.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW1.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW1.Location = New System.Drawing.Point(405, 178)
+        Me.LW1.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW1.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW1.Name = "LW1"
-        Me.LW1.Size = New System.Drawing.Size(85, 25)
+        Me.LW1.Size = New System.Drawing.Size(90, 30)
         Me.LW1.TabIndex = 208
         Me.LW1.Text = "Link's House"
         Me.LW1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -483,11 +481,11 @@ Partial Class Form1
         Me.LW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW2.ForeColor = System.Drawing.Color.Black
-        Me.LW2.Location = New System.Drawing.Point(397, 273)
-        Me.LW2.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW2.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW2.Location = New System.Drawing.Point(405, 207)
+        Me.LW2.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW2.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW2.Name = "LW2"
-        Me.LW2.Size = New System.Drawing.Size(85, 25)
+        Me.LW2.Size = New System.Drawing.Size(90, 30)
         Me.LW2.TabIndex = 209
         Me.LW2.Text = "Uncle/Passage"
         Me.LW2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -501,11 +499,11 @@ Partial Class Form1
         Me.LW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW8.ForeColor = System.Drawing.Color.Black
-        Me.LW8.Location = New System.Drawing.Point(397, 345)
-        Me.LW8.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW8.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW8.Location = New System.Drawing.Point(405, 294)
+        Me.LW8.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW8.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW8.Name = "LW8"
-        Me.LW8.Size = New System.Drawing.Size(85, 25)
+        Me.LW8.Size = New System.Drawing.Size(90, 30)
         Me.LW8.TabIndex = 215
         Me.LW8.Text = "Woods Hideout"
         Me.LW8.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -519,11 +517,11 @@ Partial Class Form1
         Me.LW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW7.ForeColor = System.Drawing.Color.Black
-        Me.LW7.Location = New System.Drawing.Point(397, 321)
-        Me.LW7.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW7.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW7.Location = New System.Drawing.Point(405, 265)
+        Me.LW7.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW7.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW7.Name = "LW7"
-        Me.LW7.Size = New System.Drawing.Size(85, 25)
+        Me.LW7.Size = New System.Drawing.Size(90, 30)
         Me.LW7.TabIndex = 214
         Me.LW7.Text = "Mushroom Spot"
         Me.LW7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -538,13 +536,13 @@ Partial Class Form1
         Me.LW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW6.ForeColor = System.Drawing.Color.Black
-        Me.LW6.Location = New System.Drawing.Point(397, 297)
-        Me.LW6.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW6.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW6.Location = New System.Drawing.Point(405, 236)
+        Me.LW6.MaximumSize = New System.Drawing.Size(60, 30)
+        Me.LW6.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW6.Name = "LW6"
-        Me.LW6.Size = New System.Drawing.Size(60, 25)
+        Me.LW6.Size = New System.Drawing.Size(60, 30)
         Me.LW6.TabIndex = 213
-        Me.LW6.Text = "LJack"
+        Me.LW6.Text = "Aga Tree"
         Me.LW6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.LW6.UseVisualStyleBackColor = False
         '
@@ -557,11 +555,11 @@ Partial Class Form1
         Me.LW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW16.ForeColor = System.Drawing.Color.Black
-        Me.LW16.Location = New System.Drawing.Point(397, 561)
-        Me.LW16.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW16.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW16.Location = New System.Drawing.Point(405, 555)
+        Me.LW16.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW16.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW16.Name = "LW16"
-        Me.LW16.Size = New System.Drawing.Size(60, 25)
+        Me.LW16.Size = New System.Drawing.Size(60, 30)
         Me.LW16.TabIndex = 223
         Me.LW16.Text = "Maze"
         Me.LW16.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -576,11 +574,11 @@ Partial Class Form1
         Me.LW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW15.ForeColor = System.Drawing.Color.Black
-        Me.LW15.Location = New System.Drawing.Point(397, 537)
-        Me.LW15.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW15.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW15.Location = New System.Drawing.Point(405, 526)
+        Me.LW15.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW15.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW15.Name = "LW15"
-        Me.LW15.Size = New System.Drawing.Size(60, 25)
+        Me.LW15.Size = New System.Drawing.Size(60, 30)
         Me.LW15.TabIndex = 222
         Me.LW15.Text = "Library"
         Me.LW15.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -595,11 +593,11 @@ Partial Class Form1
         Me.LW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW14.ForeColor = System.Drawing.Color.Black
-        Me.LW14.Location = New System.Drawing.Point(397, 489)
-        Me.LW14.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW14.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW14.Location = New System.Drawing.Point(405, 468)
+        Me.LW14.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW14.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW14.Name = "LW14"
-        Me.LW14.Size = New System.Drawing.Size(85, 25)
+        Me.LW14.Size = New System.Drawing.Size(90, 30)
         Me.LW14.TabIndex = 221
         Me.LW14.Text = "Sick Kid"
         Me.LW14.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -613,11 +611,11 @@ Partial Class Form1
         Me.LW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW13.ForeColor = System.Drawing.Color.Black
-        Me.LW13.Location = New System.Drawing.Point(397, 465)
-        Me.LW13.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW13.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW13.Location = New System.Drawing.Point(405, 439)
+        Me.LW13.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW13.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW13.Name = "LW13"
-        Me.LW13.Size = New System.Drawing.Size(85, 25)
+        Me.LW13.Size = New System.Drawing.Size(90, 30)
         Me.LW13.TabIndex = 220
         Me.LW13.Text = "Tavern"
         Me.LW13.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -632,11 +630,11 @@ Partial Class Form1
         Me.LW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW12.ForeColor = System.Drawing.Color.Black
-        Me.LW12.Location = New System.Drawing.Point(397, 441)
-        Me.LW12.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW12.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW12.Location = New System.Drawing.Point(405, 410)
+        Me.LW12.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW12.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW12.Name = "LW12"
-        Me.LW12.Size = New System.Drawing.Size(85, 25)
+        Me.LW12.Size = New System.Drawing.Size(90, 30)
         Me.LW12.TabIndex = 219
         Me.LW12.Text = "Chicken House"
         Me.LW12.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -650,11 +648,11 @@ Partial Class Form1
         Me.LW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW11.ForeColor = System.Drawing.Color.Black
-        Me.LW11.Location = New System.Drawing.Point(397, 417)
-        Me.LW11.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW11.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW11.Location = New System.Drawing.Point(405, 381)
+        Me.LW11.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW11.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW11.Name = "LW11"
-        Me.LW11.Size = New System.Drawing.Size(85, 25)
+        Me.LW11.Size = New System.Drawing.Size(90, 30)
         Me.LW11.TabIndex = 218
         Me.LW11.Text = "Bottle Vendor"
         Me.LW11.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -668,11 +666,11 @@ Partial Class Form1
         Me.LW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW10.ForeColor = System.Drawing.Color.Black
-        Me.LW10.Location = New System.Drawing.Point(397, 393)
-        Me.LW10.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW10.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW10.Location = New System.Drawing.Point(405, 352)
+        Me.LW10.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW10.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW10.Name = "LW10"
-        Me.LW10.Size = New System.Drawing.Size(85, 25)
+        Me.LW10.Size = New System.Drawing.Size(90, 30)
         Me.LW10.TabIndex = 217
         Me.LW10.Text = "Kaka Well (5)"
         Me.LW10.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -686,11 +684,11 @@ Partial Class Form1
         Me.LW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW9.ForeColor = System.Drawing.Color.Black
-        Me.LW9.Location = New System.Drawing.Point(397, 369)
-        Me.LW9.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW9.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW9.Location = New System.Drawing.Point(405, 323)
+        Me.LW9.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW9.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW9.Name = "LW9"
-        Me.LW9.Size = New System.Drawing.Size(85, 25)
+        Me.LW9.Size = New System.Drawing.Size(90, 30)
         Me.LW9.TabIndex = 216
         Me.LW9.Text = "Blind House (5)"
         Me.LW9.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -704,11 +702,11 @@ Partial Class Form1
         Me.LW32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW32.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW32.ForeColor = System.Drawing.Color.Black
-        Me.LW32.Location = New System.Drawing.Point(565, 441)
-        Me.LW32.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW32.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW32.Location = New System.Drawing.Point(583, 410)
+        Me.LW32.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW32.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW32.Name = "LW32"
-        Me.LW32.Size = New System.Drawing.Size(85, 25)
+        Me.LW32.Size = New System.Drawing.Size(90, 30)
         Me.LW32.TabIndex = 239
         Me.LW32.Text = "Hobo"
         Me.LW32.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -723,11 +721,11 @@ Partial Class Form1
         Me.LW31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW31.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW31.ForeColor = System.Drawing.Color.Black
-        Me.LW31.Location = New System.Drawing.Point(481, 537)
-        Me.LW31.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW31.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW31.Location = New System.Drawing.Point(494, 526)
+        Me.LW31.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW31.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW31.Name = "LW31"
-        Me.LW31.Size = New System.Drawing.Size(85, 25)
+        Me.LW31.Size = New System.Drawing.Size(90, 30)
         Me.LW31.TabIndex = 238
         Me.LW31.Text = "King's Tomb"
         Me.LW31.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -742,11 +740,11 @@ Partial Class Form1
         Me.LW30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW30.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW30.ForeColor = System.Drawing.Color.Black
-        Me.LW30.Location = New System.Drawing.Point(481, 513)
-        Me.LW30.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW30.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW30.Location = New System.Drawing.Point(494, 497)
+        Me.LW30.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW30.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW30.Name = "LW30"
-        Me.LW30.Size = New System.Drawing.Size(85, 25)
+        Me.LW30.Size = New System.Drawing.Size(90, 30)
         Me.LW30.TabIndex = 237
         Me.LW30.Text = "Grave Ledge"
         Me.LW30.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -761,11 +759,11 @@ Partial Class Form1
         Me.LW29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW29.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW29.ForeColor = System.Drawing.Color.Black
-        Me.LW29.Location = New System.Drawing.Point(481, 489)
-        Me.LW29.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW29.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW29.Location = New System.Drawing.Point(494, 468)
+        Me.LW29.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW29.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW29.Name = "LW29"
-        Me.LW29.Size = New System.Drawing.Size(85, 25)
+        Me.LW29.Size = New System.Drawing.Size(90, 30)
         Me.LW29.TabIndex = 236
         Me.LW29.Text = "Pegasus Rocks"
         Me.LW29.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -780,11 +778,11 @@ Partial Class Form1
         Me.LW28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW28.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW28.ForeColor = System.Drawing.Color.Black
-        Me.LW28.Location = New System.Drawing.Point(397, 585)
-        Me.LW28.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW28.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW28.Location = New System.Drawing.Point(405, 584)
+        Me.LW28.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW28.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW28.Name = "LW28"
-        Me.LW28.Size = New System.Drawing.Size(85, 25)
+        Me.LW28.Size = New System.Drawing.Size(90, 30)
         Me.LW28.TabIndex = 235
         Me.LW28.Text = "Grove Cave/45"
         Me.LW28.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -799,11 +797,11 @@ Partial Class Form1
         Me.LW27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW27.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW27.ForeColor = System.Drawing.Color.Black
-        Me.LW27.Location = New System.Drawing.Point(481, 585)
-        Me.LW27.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW27.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW27.Location = New System.Drawing.Point(494, 584)
+        Me.LW27.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW27.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW27.Name = "LW27"
-        Me.LW27.Size = New System.Drawing.Size(85, 25)
+        Me.LW27.Size = New System.Drawing.Size(90, 30)
         Me.LW27.TabIndex = 234
         Me.LW27.Text = "Flute Spot"
         Me.LW27.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -818,11 +816,11 @@ Partial Class Form1
         Me.LW26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW26.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW26.ForeColor = System.Drawing.Color.Black
-        Me.LW26.Location = New System.Drawing.Point(397, 513)
-        Me.LW26.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW26.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW26.Location = New System.Drawing.Point(405, 497)
+        Me.LW26.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW26.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW26.Name = "LW26"
-        Me.LW26.Size = New System.Drawing.Size(85, 25)
+        Me.LW26.Size = New System.Drawing.Size(90, 30)
         Me.LW26.TabIndex = 233
         Me.LW26.Text = "Magic Bat"
         Me.LW26.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -837,11 +835,11 @@ Partial Class Form1
         Me.LW25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW25.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW25.ForeColor = System.Drawing.Color.Black
-        Me.LW25.Location = New System.Drawing.Point(481, 441)
-        Me.LW25.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW25.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW25.Location = New System.Drawing.Point(494, 410)
+        Me.LW25.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW25.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW25.Name = "LW25"
-        Me.LW25.Size = New System.Drawing.Size(85, 25)
+        Me.LW25.Size = New System.Drawing.Size(90, 30)
         Me.LW25.TabIndex = 232
         Me.LW25.Text = "Blacksmith"
         Me.LW25.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -856,11 +854,11 @@ Partial Class Form1
         Me.LW24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW24.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW24.ForeColor = System.Drawing.Color.Black
-        Me.LW24.Location = New System.Drawing.Point(565, 417)
-        Me.LW24.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW24.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW24.Location = New System.Drawing.Point(583, 381)
+        Me.LW24.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW24.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW24.Name = "LW24"
-        Me.LW24.Size = New System.Drawing.Size(85, 25)
+        Me.LW24.Size = New System.Drawing.Size(90, 30)
         Me.LW24.TabIndex = 231
         Me.LW24.Text = "Checkerboard"
         Me.LW24.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -875,11 +873,11 @@ Partial Class Form1
         Me.LW23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW23.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW23.ForeColor = System.Drawing.Color.Black
-        Me.LW23.Location = New System.Drawing.Point(565, 393)
-        Me.LW23.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW23.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW23.Location = New System.Drawing.Point(583, 352)
+        Me.LW23.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW23.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW23.Name = "LW23"
-        Me.LW23.Size = New System.Drawing.Size(85, 25)
+        Me.LW23.Size = New System.Drawing.Size(90, 30)
         Me.LW23.TabIndex = 230
         Me.LW23.Text = "Bombos Tablet"
         Me.LW23.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -894,12 +892,12 @@ Partial Class Form1
         Me.LW22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW22.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW22.ForeColor = System.Drawing.Color.Black
-        Me.LW22.Location = New System.Drawing.Point(565, 369)
+        Me.LW22.Location = New System.Drawing.Point(583, 323)
         Me.LW22.Margin = New System.Windows.Forms.Padding(0)
-        Me.LW22.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW22.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW22.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW22.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW22.Name = "LW22"
-        Me.LW22.Size = New System.Drawing.Size(60, 25)
+        Me.LW22.Size = New System.Drawing.Size(60, 30)
         Me.LW22.TabIndex = 229
         Me.LW22.Text = "DP Ledge"
         Me.LW22.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -914,11 +912,11 @@ Partial Class Form1
         Me.LW21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW21.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW21.ForeColor = System.Drawing.Color.Black
-        Me.LW21.Location = New System.Drawing.Point(565, 249)
-        Me.LW21.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW21.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW21.Location = New System.Drawing.Point(583, 178)
+        Me.LW21.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW21.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW21.Name = "LW21"
-        Me.LW21.Size = New System.Drawing.Size(85, 25)
+        Me.LW21.Size = New System.Drawing.Size(90, 30)
         Me.LW21.TabIndex = 228
         Me.LW21.Text = "Sahasrahla (3)"
         Me.LW21.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -933,11 +931,11 @@ Partial Class Form1
         Me.LW20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW20.ForeColor = System.Drawing.Color.Black
-        Me.LW20.Location = New System.Drawing.Point(565, 321)
-        Me.LW20.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW20.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW20.Location = New System.Drawing.Point(583, 265)
+        Me.LW20.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW20.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW20.Name = "LW20"
-        Me.LW20.Size = New System.Drawing.Size(85, 25)
+        Me.LW20.Size = New System.Drawing.Size(90, 30)
         Me.LW20.TabIndex = 227
         Me.LW20.Text = "Ice Cave"
         Me.LW20.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -952,11 +950,11 @@ Partial Class Form1
         Me.LW19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW19.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW19.ForeColor = System.Drawing.Color.Black
-        Me.LW19.Location = New System.Drawing.Point(565, 345)
-        Me.LW19.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW19.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW19.Location = New System.Drawing.Point(583, 294)
+        Me.LW19.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW19.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW19.Name = "LW19"
-        Me.LW19.Size = New System.Drawing.Size(85, 25)
+        Me.LW19.Size = New System.Drawing.Size(90, 30)
         Me.LW19.TabIndex = 226
         Me.LW19.Text = "Aginah"
         Me.LW19.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -971,11 +969,11 @@ Partial Class Form1
         Me.LW18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW18.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW18.ForeColor = System.Drawing.Color.Black
-        Me.LW18.Location = New System.Drawing.Point(565, 297)
-        Me.LW18.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW18.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW18.Location = New System.Drawing.Point(583, 236)
+        Me.LW18.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW18.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW18.Name = "LW18"
-        Me.LW18.Size = New System.Drawing.Size(85, 25)
+        Me.LW18.Size = New System.Drawing.Size(90, 30)
         Me.LW18.TabIndex = 225
         Me.LW18.Text = "Moldorm (5)"
         Me.LW18.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -988,11 +986,11 @@ Partial Class Form1
         Me.LW17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW17.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW17.ForeColor = System.Drawing.Color.Black
-        Me.LW17.Location = New System.Drawing.Point(565, 273)
-        Me.LW17.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW17.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW17.Location = New System.Drawing.Point(583, 207)
+        Me.LW17.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW17.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW17.Name = "LW17"
-        Me.LW17.Size = New System.Drawing.Size(85, 25)
+        Me.LW17.Size = New System.Drawing.Size(90, 30)
         Me.LW17.TabIndex = 224
         Me.LW17.Text = "Flood/Sunken"
         Me.LW17.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1006,11 +1004,11 @@ Partial Class Form1
         Me.DW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW1.ForeColor = System.Drawing.Color.Black
-        Me.DW1.Location = New System.Drawing.Point(649, 249)
-        Me.DW1.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW1.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW1.Location = New System.Drawing.Point(672, 178)
+        Me.DW1.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW1.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW1.Name = "DW1"
-        Me.DW1.Size = New System.Drawing.Size(85, 25)
+        Me.DW1.Size = New System.Drawing.Size(90, 30)
         Me.DW1.TabIndex = 255
         Me.DW1.Text = "Pyramid"
         Me.DW1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1025,11 +1023,11 @@ Partial Class Form1
         Me.LW47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW47.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW47.ForeColor = System.Drawing.Color.Black
-        Me.LW47.Location = New System.Drawing.Point(565, 585)
-        Me.LW47.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW47.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW47.Location = New System.Drawing.Point(583, 584)
+        Me.LW47.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW47.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW47.Name = "LW47"
-        Me.LW47.Size = New System.Drawing.Size(60, 25)
+        Me.LW47.Size = New System.Drawing.Size(60, 30)
         Me.LW47.TabIndex = 254
         Me.LW47.Text = "Pedestal"
         Me.LW47.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1044,11 +1042,11 @@ Partial Class Form1
         Me.LW46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW46.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW46.ForeColor = System.Drawing.Color.Black
-        Me.LW46.Location = New System.Drawing.Point(565, 561)
-        Me.LW46.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW46.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW46.Location = New System.Drawing.Point(583, 555)
+        Me.LW46.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW46.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW46.Name = "LW46"
-        Me.LW46.Size = New System.Drawing.Size(85, 25)
+        Me.LW46.Size = New System.Drawing.Size(90, 30)
         Me.LW46.TabIndex = 253
         Me.LW46.Text = "Green Pendant"
         Me.LW46.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1063,11 +1061,11 @@ Partial Class Form1
         Me.LW45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW45.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW45.ForeColor = System.Drawing.Color.Black
-        Me.LW45.Location = New System.Drawing.Point(481, 417)
-        Me.LW45.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW45.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW45.Location = New System.Drawing.Point(494, 381)
+        Me.LW45.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW45.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW45.Name = "LW45"
-        Me.LW45.Size = New System.Drawing.Size(85, 25)
+        Me.LW45.Size = New System.Drawing.Size(90, 30)
         Me.LW45.TabIndex = 252
         Me.LW45.Text = "Mimic Cave"
         Me.LW45.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1082,11 +1080,11 @@ Partial Class Form1
         Me.LW44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW44.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW44.ForeColor = System.Drawing.Color.Black
-        Me.LW44.Location = New System.Drawing.Point(481, 393)
-        Me.LW44.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW44.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW44.Location = New System.Drawing.Point(494, 352)
+        Me.LW44.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW44.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW44.Name = "LW44"
-        Me.LW44.Size = New System.Drawing.Size(60, 25)
+        Me.LW44.Size = New System.Drawing.Size(60, 30)
         Me.LW44.TabIndex = 251
         Me.LW44.Text = "Floating"
         Me.LW44.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1101,11 +1099,11 @@ Partial Class Form1
         Me.LW43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW43.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW43.ForeColor = System.Drawing.Color.Black
-        Me.LW43.Location = New System.Drawing.Point(481, 369)
-        Me.LW43.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW43.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW43.Location = New System.Drawing.Point(494, 323)
+        Me.LW43.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW43.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW43.Name = "LW43"
-        Me.LW43.Size = New System.Drawing.Size(85, 25)
+        Me.LW43.Size = New System.Drawing.Size(90, 30)
         Me.LW43.TabIndex = 250
         Me.LW43.Text = "Spiral Cave"
         Me.LW43.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1120,11 +1118,11 @@ Partial Class Form1
         Me.LW42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW42.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW42.ForeColor = System.Drawing.Color.Black
-        Me.LW42.Location = New System.Drawing.Point(481, 345)
-        Me.LW42.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW42.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW42.Location = New System.Drawing.Point(494, 294)
+        Me.LW42.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW42.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW42.Name = "LW42"
-        Me.LW42.Size = New System.Drawing.Size(85, 25)
+        Me.LW42.Size = New System.Drawing.Size(90, 30)
         Me.LW42.TabIndex = 249
         Me.LW42.Text = "Paradox (7)"
         Me.LW42.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1139,11 +1137,11 @@ Partial Class Form1
         Me.LW41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW41.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW41.ForeColor = System.Drawing.Color.Black
-        Me.LW41.Location = New System.Drawing.Point(481, 321)
-        Me.LW41.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW41.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW41.Location = New System.Drawing.Point(494, 265)
+        Me.LW41.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW41.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW41.Name = "LW41"
-        Me.LW41.Size = New System.Drawing.Size(85, 25)
+        Me.LW41.Size = New System.Drawing.Size(90, 30)
         Me.LW41.TabIndex = 248
         Me.LW41.Text = "Ether Tablet"
         Me.LW41.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1158,11 +1156,11 @@ Partial Class Form1
         Me.LW40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW40.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW40.ForeColor = System.Drawing.Color.Black
-        Me.LW40.Location = New System.Drawing.Point(481, 297)
-        Me.LW40.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW40.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW40.Location = New System.Drawing.Point(494, 236)
+        Me.LW40.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW40.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW40.Name = "LW40"
-        Me.LW40.Size = New System.Drawing.Size(60, 25)
+        Me.LW40.Size = New System.Drawing.Size(60, 30)
         Me.LW40.TabIndex = 247
         Me.LW40.Text = "S Rock"
         Me.LW40.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1177,11 +1175,11 @@ Partial Class Form1
         Me.LW39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW39.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW39.ForeColor = System.Drawing.Color.Black
-        Me.LW39.Location = New System.Drawing.Point(481, 273)
-        Me.LW39.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW39.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW39.Location = New System.Drawing.Point(494, 207)
+        Me.LW39.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW39.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW39.Name = "LW39"
-        Me.LW39.Size = New System.Drawing.Size(85, 25)
+        Me.LW39.Size = New System.Drawing.Size(90, 30)
         Me.LW39.TabIndex = 246
         Me.LW39.Text = "Spectacle Cave"
         Me.LW39.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1196,11 +1194,11 @@ Partial Class Form1
         Me.LW38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW38.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW38.ForeColor = System.Drawing.Color.Black
-        Me.LW38.Location = New System.Drawing.Point(481, 249)
-        Me.LW38.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW38.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW38.Location = New System.Drawing.Point(494, 178)
+        Me.LW38.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW38.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW38.Name = "LW38"
-        Me.LW38.Size = New System.Drawing.Size(85, 25)
+        Me.LW38.Size = New System.Drawing.Size(90, 30)
         Me.LW38.TabIndex = 245
         Me.LW38.Text = "Old Man"
         Me.LW38.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1215,11 +1213,11 @@ Partial Class Form1
         Me.LW37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW37.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW37.ForeColor = System.Drawing.Color.Black
-        Me.LW37.Location = New System.Drawing.Point(565, 513)
-        Me.LW37.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW37.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW37.Location = New System.Drawing.Point(583, 497)
+        Me.LW37.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW37.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW37.Name = "LW37"
-        Me.LW37.Size = New System.Drawing.Size(60, 25)
+        Me.LW37.Size = New System.Drawing.Size(60, 30)
         Me.LW37.TabIndex = 244
         Me.LW37.Text = "Z Ledge"
         Me.LW37.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1234,11 +1232,11 @@ Partial Class Form1
         Me.LW36.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW36.ForeColor = System.Drawing.Color.Black
         Me.LW36.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LW36.Location = New System.Drawing.Point(565, 489)
-        Me.LW36.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW36.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW36.Location = New System.Drawing.Point(583, 468)
+        Me.LW36.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW36.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW36.Name = "LW36"
-        Me.LW36.Size = New System.Drawing.Size(85, 25)
+        Me.LW36.Size = New System.Drawing.Size(90, 30)
         Me.LW36.TabIndex = 243
         Me.LW36.Text = "King Zora"
         Me.LW36.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1253,11 +1251,11 @@ Partial Class Form1
         Me.LW35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW35.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW35.ForeColor = System.Drawing.Color.Black
-        Me.LW35.Location = New System.Drawing.Point(565, 465)
-        Me.LW35.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW35.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW35.Location = New System.Drawing.Point(583, 439)
+        Me.LW35.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW35.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW35.Name = "LW35"
-        Me.LW35.Size = New System.Drawing.Size(85, 25)
+        Me.LW35.Size = New System.Drawing.Size(90, 30)
         Me.LW35.TabIndex = 242
         Me.LW35.Text = "Waterfall (2)"
         Me.LW35.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1272,11 +1270,11 @@ Partial Class Form1
         Me.LW34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW34.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW34.ForeColor = System.Drawing.Color.Black
-        Me.LW34.Location = New System.Drawing.Point(481, 561)
-        Me.LW34.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.LW34.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.LW34.Location = New System.Drawing.Point(494, 555)
+        Me.LW34.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW34.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW34.Name = "LW34"
-        Me.LW34.Size = New System.Drawing.Size(85, 25)
+        Me.LW34.Size = New System.Drawing.Size(90, 30)
         Me.LW34.TabIndex = 241
         Me.LW34.Text = "Potion Shop"
         Me.LW34.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1290,11 +1288,11 @@ Partial Class Form1
         Me.LW33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW33.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW33.ForeColor = System.Drawing.Color.Black
-        Me.LW33.Location = New System.Drawing.Point(565, 537)
-        Me.LW33.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.LW33.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.LW33.Location = New System.Drawing.Point(583, 526)
+        Me.LW33.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.LW33.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW33.Name = "LW33"
-        Me.LW33.Size = New System.Drawing.Size(60, 25)
+        Me.LW33.Size = New System.Drawing.Size(60, 30)
         Me.LW33.TabIndex = 240
         Me.LW33.Text = "Lake Isle"
         Me.LW33.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1309,11 +1307,11 @@ Partial Class Form1
         Me.DW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW16.ForeColor = System.Drawing.Color.Black
-        Me.DW16.Location = New System.Drawing.Point(649, 585)
-        Me.DW16.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW16.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW16.Location = New System.Drawing.Point(672, 584)
+        Me.DW16.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW16.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW16.Name = "DW16"
-        Me.DW16.Size = New System.Drawing.Size(85, 25)
+        Me.DW16.Size = New System.Drawing.Size(90, 30)
         Me.DW16.TabIndex = 271
         Me.DW16.Text = "Pyr Fairy (2)"
         Me.DW16.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1328,11 +1326,11 @@ Partial Class Form1
         Me.DW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW15.ForeColor = System.Drawing.Color.Black
-        Me.DW15.Location = New System.Drawing.Point(649, 561)
-        Me.DW15.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW15.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW15.Location = New System.Drawing.Point(672, 555)
+        Me.DW15.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW15.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW15.Name = "DW15"
-        Me.DW15.Size = New System.Drawing.Size(85, 25)
+        Me.DW15.Size = New System.Drawing.Size(90, 30)
         Me.DW15.TabIndex = 270
         Me.DW15.Text = "Hookshot (4)"
         Me.DW15.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1347,11 +1345,11 @@ Partial Class Form1
         Me.DW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW14.ForeColor = System.Drawing.Color.Black
-        Me.DW14.Location = New System.Drawing.Point(649, 537)
-        Me.DW14.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW14.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW14.Location = New System.Drawing.Point(672, 526)
+        Me.DW14.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW14.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW14.Name = "DW14"
-        Me.DW14.Size = New System.Drawing.Size(85, 25)
+        Me.DW14.Size = New System.Drawing.Size(90, 30)
         Me.DW14.TabIndex = 268
         Me.DW14.Text = "Super Bunny (2)"
         Me.DW14.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1366,11 +1364,11 @@ Partial Class Form1
         Me.DW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW13.ForeColor = System.Drawing.Color.Black
-        Me.DW13.Location = New System.Drawing.Point(649, 513)
-        Me.DW13.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW13.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW13.Location = New System.Drawing.Point(672, 497)
+        Me.DW13.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW13.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW13.Name = "DW13"
-        Me.DW13.Size = New System.Drawing.Size(85, 25)
+        Me.DW13.Size = New System.Drawing.Size(90, 30)
         Me.DW13.TabIndex = 267
         Me.DW13.Text = "Spike Cave"
         Me.DW13.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1385,11 +1383,11 @@ Partial Class Form1
         Me.DW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW12.ForeColor = System.Drawing.Color.Black
-        Me.DW12.Location = New System.Drawing.Point(649, 273)
-        Me.DW12.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW12.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW12.Location = New System.Drawing.Point(672, 207)
+        Me.DW12.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW12.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW12.Name = "DW12"
-        Me.DW12.Size = New System.Drawing.Size(85, 25)
+        Me.DW12.Size = New System.Drawing.Size(90, 30)
         Me.DW12.TabIndex = 266
         Me.DW12.Text = "Catfish"
         Me.DW12.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1404,11 +1402,11 @@ Partial Class Form1
         Me.DW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW11.ForeColor = System.Drawing.Color.Black
-        Me.DW11.Location = New System.Drawing.Point(649, 441)
-        Me.DW11.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW11.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW11.Location = New System.Drawing.Point(672, 410)
+        Me.DW11.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW11.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW11.Name = "DW11"
-        Me.DW11.Size = New System.Drawing.Size(85, 25)
+        Me.DW11.Size = New System.Drawing.Size(90, 30)
         Me.DW11.TabIndex = 265
         Me.DW11.Text = "Hype Cave (5)"
         Me.DW11.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1423,11 +1421,11 @@ Partial Class Form1
         Me.DW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW10.ForeColor = System.Drawing.Color.Black
-        Me.DW10.Location = New System.Drawing.Point(649, 417)
-        Me.DW10.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW10.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW10.Location = New System.Drawing.Point(672, 381)
+        Me.DW10.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW10.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW10.Name = "DW10"
-        Me.DW10.Size = New System.Drawing.Size(85, 25)
+        Me.DW10.Size = New System.Drawing.Size(90, 30)
         Me.DW10.TabIndex = 264
         Me.DW10.Text = "Stumpy"
         Me.DW10.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1442,11 +1440,11 @@ Partial Class Form1
         Me.DW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW9.ForeColor = System.Drawing.Color.Black
-        Me.DW9.Location = New System.Drawing.Point(649, 393)
-        Me.DW9.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW9.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW9.Location = New System.Drawing.Point(672, 352)
+        Me.DW9.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW9.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW9.Name = "DW9"
-        Me.DW9.Size = New System.Drawing.Size(85, 25)
+        Me.DW9.Size = New System.Drawing.Size(90, 30)
         Me.DW9.TabIndex = 263
         Me.DW9.Text = "Hammer Pegs"
         Me.DW9.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1461,11 +1459,11 @@ Partial Class Form1
         Me.DW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW8.ForeColor = System.Drawing.Color.Black
-        Me.DW8.Location = New System.Drawing.Point(481, 465)
-        Me.DW8.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW8.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW8.Location = New System.Drawing.Point(494, 439)
+        Me.DW8.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW8.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW8.Name = "DW8"
-        Me.DW8.Size = New System.Drawing.Size(85, 25)
+        Me.DW8.Size = New System.Drawing.Size(90, 30)
         Me.DW8.TabIndex = 262
         Me.DW8.Text = "Purple Chest"
         Me.DW8.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1480,11 +1478,11 @@ Partial Class Form1
         Me.DW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW7.ForeColor = System.Drawing.Color.Black
-        Me.DW7.Location = New System.Drawing.Point(649, 465)
-        Me.DW7.MaximumSize = New System.Drawing.Size(60, 25)
-        Me.DW7.MinimumSize = New System.Drawing.Size(60, 25)
+        Me.DW7.Location = New System.Drawing.Point(672, 439)
+        Me.DW7.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW7.MinimumSize = New System.Drawing.Size(60, 30)
         Me.DW7.Name = "DW7"
-        Me.DW7.Size = New System.Drawing.Size(60, 25)
+        Me.DW7.Size = New System.Drawing.Size(60, 30)
         Me.DW7.TabIndex = 261
         Me.DW7.Text = "Bumper"
         Me.DW7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1499,11 +1497,11 @@ Partial Class Form1
         Me.DW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW6.ForeColor = System.Drawing.Color.Black
-        Me.DW6.Location = New System.Drawing.Point(649, 489)
-        Me.DW6.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW6.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW6.Location = New System.Drawing.Point(672, 468)
+        Me.DW6.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW6.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW6.Name = "DW6"
-        Me.DW6.Size = New System.Drawing.Size(85, 25)
+        Me.DW6.Size = New System.Drawing.Size(90, 30)
         Me.DW6.TabIndex = 260
         Me.DW6.Text = "Mire Cave (2)"
         Me.DW6.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1518,11 +1516,11 @@ Partial Class Form1
         Me.DW5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW5.ForeColor = System.Drawing.Color.Black
-        Me.DW5.Location = New System.Drawing.Point(649, 369)
-        Me.DW5.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW5.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW5.Location = New System.Drawing.Point(672, 323)
+        Me.DW5.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW5.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW5.Name = "DW5"
-        Me.DW5.Size = New System.Drawing.Size(85, 25)
+        Me.DW5.Size = New System.Drawing.Size(90, 30)
         Me.DW5.TabIndex = 259
         Me.DW5.Text = "Digging Game"
         Me.DW5.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1537,11 +1535,11 @@ Partial Class Form1
         Me.DW4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW4.ForeColor = System.Drawing.Color.Black
-        Me.DW4.Location = New System.Drawing.Point(649, 345)
-        Me.DW4.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW4.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW4.Location = New System.Drawing.Point(672, 294)
+        Me.DW4.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW4.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW4.Name = "DW4"
-        Me.DW4.Size = New System.Drawing.Size(85, 25)
+        Me.DW4.Size = New System.Drawing.Size(90, 30)
         Me.DW4.TabIndex = 258
         Me.DW4.Text = "Sealed Brewery"
         Me.DW4.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1556,11 +1554,11 @@ Partial Class Form1
         Me.DW3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW3.ForeColor = System.Drawing.Color.Black
-        Me.DW3.Location = New System.Drawing.Point(649, 321)
-        Me.DW3.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW3.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW3.Location = New System.Drawing.Point(672, 265)
+        Me.DW3.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW3.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW3.Name = "DW3"
-        Me.DW3.Size = New System.Drawing.Size(85, 25)
+        Me.DW3.Size = New System.Drawing.Size(90, 30)
         Me.DW3.TabIndex = 257
         Me.DW3.Text = "C-Shape House"
         Me.DW3.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -1575,106 +1573,15 @@ Partial Class Form1
         Me.DW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW2.ForeColor = System.Drawing.Color.Black
-        Me.DW2.Location = New System.Drawing.Point(649, 297)
-        Me.DW2.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.DW2.MinimumSize = New System.Drawing.Size(85, 25)
+        Me.DW2.Location = New System.Drawing.Point(672, 236)
+        Me.DW2.MaximumSize = New System.Drawing.Size(90, 30)
+        Me.DW2.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW2.Name = "DW2"
-        Me.DW2.Size = New System.Drawing.Size(85, 25)
+        Me.DW2.Size = New System.Drawing.Size(90, 30)
         Me.DW2.TabIndex = 256
         Me.DW2.Text = "Chest Game"
         Me.DW2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.DW2.UseVisualStyleBackColor = False
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(463, 304)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 272
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(463, 544)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 273
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(629, 376)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox3.TabIndex = 274
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(629, 520)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox4.TabIndex = 275
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(545, 304)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox5.TabIndex = 276
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(545, 399)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox6.TabIndex = 277
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(713, 471)
-        Me.CheckBox7.MaximumSize = New System.Drawing.Size(85, 25)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox7.TabIndex = 278
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(463, 567)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox8.TabIndex = 279
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Location = New System.Drawing.Point(629, 544)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox9.TabIndex = 280
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(629, 591)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox10.TabIndex = 317
-        Me.CheckBox10.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -1711,24 +1618,6 @@ Partial Class Form1
         Me.Label5.Size = New System.Drawing.Size(180, 13)
         Me.Label5.TabIndex = 321
         Me.Label5.Text = "Yellow locations are partially blocked"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(405, 152)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(123, 13)
-        Me.Label7.TabIndex = 323
-        Me.Label7.Text = "Press Shift+(1-0) to claim"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(405, 165)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(126, 13)
-        Me.Label8.TabIndex = 324
-        Me.Label8.Text = "dungeon pendant/crystal"
         '
         'Label9
         '
@@ -2067,6 +1956,522 @@ Partial Class Form1
         Me.SWPrizes.TabIndex = 352
         Me.SWPrizes.Text = "8"
         Me.SWPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GTPrizes
+        '
+        Me.GTPrizes.AutoSize = True
+        Me.GTPrizes.BackColor = System.Drawing.Color.Black
+        Me.GTPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTPrizes.ForeColor = System.Drawing.Color.White
+        Me.GTPrizes.Location = New System.Drawing.Point(38, 583)
+        Me.GTPrizes.Margin = New System.Windows.Forms.Padding(0)
+        Me.GTPrizes.MinimumSize = New System.Drawing.Size(28, 28)
+        Me.GTPrizes.Name = "GTPrizes"
+        Me.GTPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
+        Me.GTPrizes.Size = New System.Drawing.Size(28, 28)
+        Me.GTPrizes.TabIndex = 365
+        Me.GTPrizes.Text = "27"
+        Me.GTPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GTLabel
+        '
+        Me.GTLabel.AutoSize = True
+        Me.GTLabel.BackColor = System.Drawing.Color.Red
+        Me.GTLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTLabel.ForeColor = System.Drawing.Color.Black
+        Me.GTLabel.Location = New System.Drawing.Point(6, 583)
+        Me.GTLabel.Margin = New System.Windows.Forms.Padding(0)
+        Me.GTLabel.MinimumSize = New System.Drawing.Size(32, 28)
+        Me.GTLabel.Name = "GTLabel"
+        Me.GTLabel.Padding = New System.Windows.Forms.Padding(4, 4, 3, 3)
+        Me.GTLabel.Size = New System.Drawing.Size(32, 28)
+        Me.GTLabel.TabIndex = 364
+        Me.GTLabel.Text = "GT"
+        Me.GTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'HCPrizes
+        '
+        Me.HCPrizes.AutoSize = True
+        Me.HCPrizes.BackColor = System.Drawing.Color.Black
+        Me.HCPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCPrizes.ForeColor = System.Drawing.Color.White
+        Me.HCPrizes.Location = New System.Drawing.Point(38, 187)
+        Me.HCPrizes.Margin = New System.Windows.Forms.Padding(0)
+        Me.HCPrizes.MinimumSize = New System.Drawing.Size(28, 28)
+        Me.HCPrizes.Name = "HCPrizes"
+        Me.HCPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
+        Me.HCPrizes.Size = New System.Drawing.Size(28, 28)
+        Me.HCPrizes.TabIndex = 372
+        Me.HCPrizes.Text = "8"
+        Me.HCPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'HCLabel
+        '
+        Me.HCLabel.AutoSize = True
+        Me.HCLabel.BackColor = System.Drawing.Color.Yellow
+        Me.HCLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCLabel.ForeColor = System.Drawing.Color.Black
+        Me.HCLabel.Location = New System.Drawing.Point(6, 187)
+        Me.HCLabel.Margin = New System.Windows.Forms.Padding(0)
+        Me.HCLabel.MinimumSize = New System.Drawing.Size(32, 28)
+        Me.HCLabel.Name = "HCLabel"
+        Me.HCLabel.Padding = New System.Windows.Forms.Padding(6, 4, 2, 3)
+        Me.HCLabel.Size = New System.Drawing.Size(32, 28)
+        Me.HCLabel.TabIndex = 371
+        Me.HCLabel.Text = "HC"
+        Me.HCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(404, 127)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(156, 13)
+        Me.Label6.TabIndex = 373
+        Me.Label6.Text = "Shift-click keys to mark as used"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(404, 59)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(159, 13)
+        Me.Label1.TabIndex = 374
+        Me.Label1.Text = "Green/White locations are open"
+        '
+        'AgaPrizes
+        '
+        Me.AgaPrizes.AutoSize = True
+        Me.AgaPrizes.BackColor = System.Drawing.Color.Black
+        Me.AgaPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgaPrizes.ForeColor = System.Drawing.Color.White
+        Me.AgaPrizes.Location = New System.Drawing.Point(169, 187)
+        Me.AgaPrizes.Margin = New System.Windows.Forms.Padding(0)
+        Me.AgaPrizes.MinimumSize = New System.Drawing.Size(28, 28)
+        Me.AgaPrizes.Name = "AgaPrizes"
+        Me.AgaPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
+        Me.AgaPrizes.Size = New System.Drawing.Size(28, 28)
+        Me.AgaPrizes.TabIndex = 386
+        Me.AgaPrizes.Text = "2"
+        Me.AgaPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AgaLabel
+        '
+        Me.AgaLabel.AutoSize = True
+        Me.AgaLabel.BackColor = System.Drawing.Color.Red
+        Me.AgaLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgaLabel.ForeColor = System.Drawing.Color.Black
+        Me.AgaLabel.Location = New System.Drawing.Point(137, 187)
+        Me.AgaLabel.Margin = New System.Windows.Forms.Padding(0)
+        Me.AgaLabel.MinimumSize = New System.Drawing.Size(32, 28)
+        Me.AgaLabel.Name = "AgaLabel"
+        Me.AgaLabel.Padding = New System.Windows.Forms.Padding(6, 4, 2, 3)
+        Me.AgaLabel.Size = New System.Drawing.Size(32, 28)
+        Me.AgaLabel.TabIndex = 385
+        Me.AgaLabel.Text = "AG"
+        Me.AgaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button10
+        '
+        Me.Button10.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button10.Location = New System.Drawing.Point(731, 439)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(30, 30)
+        Me.Button10.TabIndex = 398
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button9.Location = New System.Drawing.Point(642, 584)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(30, 30)
+        Me.Button9.TabIndex = 397
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button8.Location = New System.Drawing.Point(642, 526)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(30, 30)
+        Me.Button8.TabIndex = 396
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button7.Location = New System.Drawing.Point(642, 497)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(30, 30)
+        Me.Button7.TabIndex = 395
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button6.Location = New System.Drawing.Point(642, 323)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(30, 30)
+        Me.Button6.TabIndex = 394
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button5.Location = New System.Drawing.Point(553, 352)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(30, 30)
+        Me.Button5.TabIndex = 393
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button4.Location = New System.Drawing.Point(553, 236)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(30, 30)
+        Me.Button4.TabIndex = 392
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button3.Location = New System.Drawing.Point(465, 555)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(30, 30)
+        Me.Button3.TabIndex = 391
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button2.Location = New System.Drawing.Point(465, 526)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(30, 30)
+        Me.Button2.TabIndex = 390
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Image = Global.WindowsApp1.My.Resources.Resources.chestmaybe
+        Me.Button1.Location = New System.Drawing.Point(465, 236)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 30)
+        Me.Button1.TabIndex = 389
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'AG2
+        '
+        Me.AG2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.AG2.AutoSize = True
+        Me.AG2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.AG2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AG2.Image = CType(resources.GetObject("AG2.Image"), System.Drawing.Image)
+        Me.AG2.Location = New System.Drawing.Point(229, 186)
+        Me.AG2.Name = "AG2"
+        Me.AG2.Size = New System.Drawing.Size(30, 30)
+        Me.AG2.TabIndex = 388
+        Me.AG2.TabStop = False
+        Me.AG2.UseVisualStyleBackColor = False
+        '
+        'AG1
+        '
+        Me.AG1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.AG1.AutoSize = True
+        Me.AG1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.AG1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AG1.Image = CType(resources.GetObject("AG1.Image"), System.Drawing.Image)
+        Me.AG1.Location = New System.Drawing.Point(200, 186)
+        Me.AG1.Name = "AG1"
+        Me.AG1.Size = New System.Drawing.Size(30, 30)
+        Me.AG1.TabIndex = 387
+        Me.AG1.TabStop = False
+        Me.AG1.UseVisualStyleBackColor = False
+        '
+        'TRBoss
+        '
+        Me.TRBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.TRBoss.AutoSize = True
+        Me.TRBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TRBoss.Enabled = False
+        Me.TRBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.TRBoss.Location = New System.Drawing.Point(272, 546)
+        Me.TRBoss.Name = "TRBoss"
+        Me.TRBoss.Size = New System.Drawing.Size(30, 30)
+        Me.TRBoss.TabIndex = 384
+        Me.TRBoss.TabStop = False
+        Me.TRBoss.UseVisualStyleBackColor = False
+        '
+        'MMBoss
+        '
+        Me.MMBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.MMBoss.AutoSize = True
+        Me.MMBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.MMBoss.Enabled = False
+        Me.MMBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.MMBoss.Location = New System.Drawing.Point(243, 510)
+        Me.MMBoss.Name = "MMBoss"
+        Me.MMBoss.Size = New System.Drawing.Size(30, 30)
+        Me.MMBoss.TabIndex = 383
+        Me.MMBoss.TabStop = False
+        Me.MMBoss.UseVisualStyleBackColor = False
+        '
+        'IPBoss
+        '
+        Me.IPBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.IPBoss.AutoSize = True
+        Me.IPBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.IPBoss.Enabled = False
+        Me.IPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.IPBoss.Location = New System.Drawing.Point(214, 474)
+        Me.IPBoss.Name = "IPBoss"
+        Me.IPBoss.Size = New System.Drawing.Size(30, 30)
+        Me.IPBoss.TabIndex = 382
+        Me.IPBoss.TabStop = False
+        Me.IPBoss.UseVisualStyleBackColor = False
+        '
+        'TTBoss
+        '
+        Me.TTBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.TTBoss.AutoSize = True
+        Me.TTBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TTBoss.Enabled = False
+        Me.TTBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.TTBoss.Location = New System.Drawing.Point(185, 438)
+        Me.TTBoss.Name = "TTBoss"
+        Me.TTBoss.Size = New System.Drawing.Size(30, 30)
+        Me.TTBoss.TabIndex = 381
+        Me.TTBoss.TabStop = False
+        Me.TTBoss.UseVisualStyleBackColor = False
+        '
+        'SWBoss
+        '
+        Me.SWBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.SWBoss.AutoSize = True
+        Me.SWBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.SWBoss.Enabled = False
+        Me.SWBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.SWBoss.Location = New System.Drawing.Point(243, 402)
+        Me.SWBoss.Name = "SWBoss"
+        Me.SWBoss.Size = New System.Drawing.Size(30, 30)
+        Me.SWBoss.TabIndex = 380
+        Me.SWBoss.TabStop = False
+        Me.SWBoss.UseVisualStyleBackColor = False
+        '
+        'SPBoss
+        '
+        Me.SPBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.SPBoss.AutoSize = True
+        Me.SPBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.SPBoss.Enabled = False
+        Me.SPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.SPBoss.Location = New System.Drawing.Point(185, 366)
+        Me.SPBoss.Name = "SPBoss"
+        Me.SPBoss.Size = New System.Drawing.Size(30, 30)
+        Me.SPBoss.TabIndex = 379
+        Me.SPBoss.TabStop = False
+        Me.SPBoss.UseVisualStyleBackColor = False
+        '
+        'PODBoss
+        '
+        Me.PODBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.PODBoss.AutoSize = True
+        Me.PODBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PODBoss.Enabled = False
+        Me.PODBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.PODBoss.Location = New System.Drawing.Point(330, 331)
+        Me.PODBoss.Name = "PODBoss"
+        Me.PODBoss.Size = New System.Drawing.Size(30, 30)
+        Me.PODBoss.TabIndex = 378
+        Me.PODBoss.TabStop = False
+        Me.PODBoss.UseVisualStyleBackColor = False
+        '
+        'HeraBoss
+        '
+        Me.HeraBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.HeraBoss.AutoSize = True
+        Me.HeraBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.HeraBoss.Enabled = False
+        Me.HeraBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HeraBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.HeraBoss.Location = New System.Drawing.Point(185, 294)
+        Me.HeraBoss.Name = "HeraBoss"
+        Me.HeraBoss.Size = New System.Drawing.Size(30, 30)
+        Me.HeraBoss.TabIndex = 377
+        Me.HeraBoss.TabStop = False
+        Me.HeraBoss.UseVisualStyleBackColor = False
+        '
+        'DPBoss
+        '
+        Me.DPBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.DPBoss.AutoSize = True
+        Me.DPBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.DPBoss.Enabled = False
+        Me.DPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.DPBoss.Location = New System.Drawing.Point(185, 258)
+        Me.DPBoss.Name = "DPBoss"
+        Me.DPBoss.Size = New System.Drawing.Size(30, 30)
+        Me.DPBoss.TabIndex = 376
+        Me.DPBoss.TabStop = False
+        Me.DPBoss.UseVisualStyleBackColor = False
+        '
+        'EPBoss
+        '
+        Me.EPBoss.Appearance = System.Windows.Forms.Appearance.Button
+        Me.EPBoss.AutoSize = True
+        Me.EPBoss.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.EPBoss.Enabled = False
+        Me.EPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
+        Me.EPBoss.Location = New System.Drawing.Point(156, 222)
+        Me.EPBoss.Name = "EPBoss"
+        Me.EPBoss.Size = New System.Drawing.Size(30, 30)
+        Me.EPBoss.TabIndex = 375
+        Me.EPBoss.TabStop = False
+        Me.EPBoss.UseVisualStyleBackColor = False
+        '
+        'HC2
+        '
+        Me.HC2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.HC2.AutoSize = True
+        Me.HC2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.HC2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HC2.Image = Global.WindowsApp1.My.Resources.Resources.nomap1
+        Me.HC2.Location = New System.Drawing.Point(98, 186)
+        Me.HC2.Name = "HC2"
+        Me.HC2.Size = New System.Drawing.Size(30, 30)
+        Me.HC2.TabIndex = 368
+        Me.HC2.TabStop = False
+        Me.HC2.UseVisualStyleBackColor = False
+        '
+        'HC1
+        '
+        Me.HC1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.HC1.AutoSize = True
+        Me.HC1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.HC1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HC1.Image = CType(resources.GetObject("HC1.Image"), System.Drawing.Image)
+        Me.HC1.Location = New System.Drawing.Point(69, 186)
+        Me.HC1.Name = "HC1"
+        Me.HC1.Size = New System.Drawing.Size(30, 30)
+        Me.HC1.TabIndex = 367
+        Me.HC1.TabStop = False
+        Me.HC1.UseVisualStyleBackColor = False
+        '
+        'GT4
+        '
+        Me.GT4.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT4.AutoSize = True
+        Me.GT4.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT4.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT4.ForeColor = System.Drawing.Color.White
+        Me.GT4.Image = CType(resources.GetObject("GT4.Image"), System.Drawing.Image)
+        Me.GT4.Location = New System.Drawing.Point(156, 582)
+        Me.GT4.Name = "GT4"
+        Me.GT4.Size = New System.Drawing.Size(30, 30)
+        Me.GT4.TabIndex = 366
+        Me.GT4.TabStop = False
+        Me.GT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.GT4.UseVisualStyleBackColor = False
+        '
+        'GT5
+        '
+        Me.GT5.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT5.AutoSize = True
+        Me.GT5.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT5.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT5.ForeColor = System.Drawing.Color.White
+        Me.GT5.Image = CType(resources.GetObject("GT5.Image"), System.Drawing.Image)
+        Me.GT5.Location = New System.Drawing.Point(185, 582)
+        Me.GT5.Name = "GT5"
+        Me.GT5.Size = New System.Drawing.Size(30, 30)
+        Me.GT5.TabIndex = 363
+        Me.GT5.TabStop = False
+        Me.GT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.GT5.UseVisualStyleBackColor = False
+        '
+        'GT3
+        '
+        Me.GT3.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT3.AutoSize = True
+        Me.GT3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT3.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT3.ForeColor = System.Drawing.Color.White
+        Me.GT3.Image = CType(resources.GetObject("GT3.Image"), System.Drawing.Image)
+        Me.GT3.Location = New System.Drawing.Point(127, 582)
+        Me.GT3.Name = "GT3"
+        Me.GT3.Size = New System.Drawing.Size(30, 30)
+        Me.GT3.TabIndex = 361
+        Me.GT3.TabStop = False
+        Me.GT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.GT3.UseVisualStyleBackColor = False
+        '
+        'GT2
+        '
+        Me.GT2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT2.AutoSize = True
+        Me.GT2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT2.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT2.ForeColor = System.Drawing.Color.White
+        Me.GT2.Image = CType(resources.GetObject("GT2.Image"), System.Drawing.Image)
+        Me.GT2.Location = New System.Drawing.Point(98, 582)
+        Me.GT2.Name = "GT2"
+        Me.GT2.Size = New System.Drawing.Size(30, 30)
+        Me.GT2.TabIndex = 360
+        Me.GT2.TabStop = False
+        Me.GT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.GT2.UseVisualStyleBackColor = False
+        '
+        'GT7
+        '
+        Me.GT7.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT7.AutoSize = True
+        Me.GT7.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT7.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT7.Image = CType(resources.GetObject("GT7.Image"), System.Drawing.Image)
+        Me.GT7.Location = New System.Drawing.Point(243, 582)
+        Me.GT7.Name = "GT7"
+        Me.GT7.Size = New System.Drawing.Size(30, 30)
+        Me.GT7.TabIndex = 359
+        Me.GT7.TabStop = False
+        Me.GT7.UseVisualStyleBackColor = False
+        '
+        'GT6
+        '
+        Me.GT6.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT6.AutoSize = True
+        Me.GT6.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT6.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT6.Image = CType(resources.GetObject("GT6.Image"), System.Drawing.Image)
+        Me.GT6.Location = New System.Drawing.Point(214, 582)
+        Me.GT6.Name = "GT6"
+        Me.GT6.Size = New System.Drawing.Size(30, 30)
+        Me.GT6.TabIndex = 358
+        Me.GT6.TabStop = False
+        Me.GT6.UseVisualStyleBackColor = False
+        '
+        'GT1
+        '
+        Me.GT1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GT1.AutoSize = True
+        Me.GT1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GT1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GT1.Image = CType(resources.GetObject("GT1.Image"), System.Drawing.Image)
+        Me.GT1.Location = New System.Drawing.Point(69, 582)
+        Me.GT1.Name = "GT1"
+        Me.GT1.Size = New System.Drawing.Size(30, 30)
+        Me.GT1.TabIndex = 357
+        Me.GT1.TabStop = False
+        Me.GT1.UseVisualStyleBackColor = False
         '
         'TRButton
         '
@@ -3263,438 +3668,22 @@ Partial Class Form1
         Me.PictureBox2.TabIndex = 316
         Me.PictureBox2.TabStop = False
         '
-        'GTPrizes
-        '
-        Me.GTPrizes.AutoSize = True
-        Me.GTPrizes.BackColor = System.Drawing.Color.Black
-        Me.GTPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GTPrizes.ForeColor = System.Drawing.Color.White
-        Me.GTPrizes.Location = New System.Drawing.Point(38, 583)
-        Me.GTPrizes.Margin = New System.Windows.Forms.Padding(0)
-        Me.GTPrizes.MinimumSize = New System.Drawing.Size(28, 28)
-        Me.GTPrizes.Name = "GTPrizes"
-        Me.GTPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
-        Me.GTPrizes.Size = New System.Drawing.Size(28, 28)
-        Me.GTPrizes.TabIndex = 365
-        Me.GTPrizes.Text = "27"
-        Me.GTPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'GTLabel
-        '
-        Me.GTLabel.AutoSize = True
-        Me.GTLabel.BackColor = System.Drawing.Color.Red
-        Me.GTLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GTLabel.ForeColor = System.Drawing.Color.Black
-        Me.GTLabel.Location = New System.Drawing.Point(6, 583)
-        Me.GTLabel.Margin = New System.Windows.Forms.Padding(0)
-        Me.GTLabel.MinimumSize = New System.Drawing.Size(32, 28)
-        Me.GTLabel.Name = "GTLabel"
-        Me.GTLabel.Padding = New System.Windows.Forms.Padding(4, 4, 3, 3)
-        Me.GTLabel.Size = New System.Drawing.Size(32, 28)
-        Me.GTLabel.TabIndex = 364
-        Me.GTLabel.Text = "GT"
-        Me.GTLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'GT5
-        '
-        Me.GT5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT5.AutoSize = True
-        Me.GT5.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT5.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT5.ForeColor = System.Drawing.Color.White
-        Me.GT5.Image = CType(resources.GetObject("GT5.Image"), System.Drawing.Image)
-        Me.GT5.Location = New System.Drawing.Point(185, 582)
-        Me.GT5.Name = "GT5"
-        Me.GT5.Size = New System.Drawing.Size(30, 30)
-        Me.GT5.TabIndex = 363
-        Me.GT5.TabStop = False
-        Me.GT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.GT5.UseVisualStyleBackColor = False
-        '
-        'GT3
-        '
-        Me.GT3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT3.AutoSize = True
-        Me.GT3.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT3.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT3.ForeColor = System.Drawing.Color.White
-        Me.GT3.Image = CType(resources.GetObject("GT3.Image"), System.Drawing.Image)
-        Me.GT3.Location = New System.Drawing.Point(127, 582)
-        Me.GT3.Name = "GT3"
-        Me.GT3.Size = New System.Drawing.Size(30, 30)
-        Me.GT3.TabIndex = 361
-        Me.GT3.TabStop = False
-        Me.GT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.GT3.UseVisualStyleBackColor = False
-        '
-        'GT2
-        '
-        Me.GT2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT2.AutoSize = True
-        Me.GT2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT2.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT2.ForeColor = System.Drawing.Color.White
-        Me.GT2.Image = CType(resources.GetObject("GT2.Image"), System.Drawing.Image)
-        Me.GT2.Location = New System.Drawing.Point(98, 582)
-        Me.GT2.Name = "GT2"
-        Me.GT2.Size = New System.Drawing.Size(30, 30)
-        Me.GT2.TabIndex = 360
-        Me.GT2.TabStop = False
-        Me.GT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.GT2.UseVisualStyleBackColor = False
-        '
-        'GT7
-        '
-        Me.GT7.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT7.AutoSize = True
-        Me.GT7.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT7.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT7.Image = CType(resources.GetObject("GT7.Image"), System.Drawing.Image)
-        Me.GT7.Location = New System.Drawing.Point(243, 582)
-        Me.GT7.Name = "GT7"
-        Me.GT7.Size = New System.Drawing.Size(30, 30)
-        Me.GT7.TabIndex = 359
-        Me.GT7.TabStop = False
-        Me.GT7.UseVisualStyleBackColor = False
-        '
-        'GT6
-        '
-        Me.GT6.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT6.AutoSize = True
-        Me.GT6.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT6.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT6.Image = CType(resources.GetObject("GT6.Image"), System.Drawing.Image)
-        Me.GT6.Location = New System.Drawing.Point(214, 582)
-        Me.GT6.Name = "GT6"
-        Me.GT6.Size = New System.Drawing.Size(30, 30)
-        Me.GT6.TabIndex = 358
-        Me.GT6.TabStop = False
-        Me.GT6.UseVisualStyleBackColor = False
-        '
-        'GT1
-        '
-        Me.GT1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT1.AutoSize = True
-        Me.GT1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT1.Image = CType(resources.GetObject("GT1.Image"), System.Drawing.Image)
-        Me.GT1.Location = New System.Drawing.Point(69, 582)
-        Me.GT1.Name = "GT1"
-        Me.GT1.Size = New System.Drawing.Size(30, 30)
-        Me.GT1.TabIndex = 357
-        Me.GT1.TabStop = False
-        Me.GT1.UseVisualStyleBackColor = False
-        '
-        'GT4
-        '
-        Me.GT4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GT4.AutoSize = True
-        Me.GT4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GT4.Font = New System.Drawing.Font("Arial Black", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GT4.ForeColor = System.Drawing.Color.White
-        Me.GT4.Image = CType(resources.GetObject("GT4.Image"), System.Drawing.Image)
-        Me.GT4.Location = New System.Drawing.Point(156, 582)
-        Me.GT4.Name = "GT4"
-        Me.GT4.Size = New System.Drawing.Size(30, 30)
-        Me.GT4.TabIndex = 366
-        Me.GT4.TabStop = False
-        Me.GT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.GT4.UseVisualStyleBackColor = False
-        '
-        'HCPrizes
-        '
-        Me.HCPrizes.AutoSize = True
-        Me.HCPrizes.BackColor = System.Drawing.Color.Black
-        Me.HCPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HCPrizes.ForeColor = System.Drawing.Color.White
-        Me.HCPrizes.Location = New System.Drawing.Point(38, 187)
-        Me.HCPrizes.Margin = New System.Windows.Forms.Padding(0)
-        Me.HCPrizes.MinimumSize = New System.Drawing.Size(28, 28)
-        Me.HCPrizes.Name = "HCPrizes"
-        Me.HCPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
-        Me.HCPrizes.Size = New System.Drawing.Size(28, 28)
-        Me.HCPrizes.TabIndex = 372
-        Me.HCPrizes.Text = "8"
-        Me.HCPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'HCLabel
-        '
-        Me.HCLabel.AutoSize = True
-        Me.HCLabel.BackColor = System.Drawing.Color.Yellow
-        Me.HCLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HCLabel.ForeColor = System.Drawing.Color.Black
-        Me.HCLabel.Location = New System.Drawing.Point(6, 187)
-        Me.HCLabel.Margin = New System.Windows.Forms.Padding(0)
-        Me.HCLabel.MinimumSize = New System.Drawing.Size(32, 28)
-        Me.HCLabel.Name = "HCLabel"
-        Me.HCLabel.Padding = New System.Windows.Forms.Padding(6, 4, 2, 3)
-        Me.HCLabel.Size = New System.Drawing.Size(32, 28)
-        Me.HCLabel.TabIndex = 371
-        Me.HCLabel.Text = "HC"
-        Me.HCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'HC2
-        '
-        Me.HC2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.HC2.AutoSize = True
-        Me.HC2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.HC2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HC2.Image = Global.WindowsApp1.My.Resources.Resources.nomap1
-        Me.HC2.Location = New System.Drawing.Point(98, 186)
-        Me.HC2.Name = "HC2"
-        Me.HC2.Size = New System.Drawing.Size(30, 30)
-        Me.HC2.TabIndex = 368
-        Me.HC2.TabStop = False
-        Me.HC2.UseVisualStyleBackColor = False
-        '
-        'HC1
-        '
-        Me.HC1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.HC1.AutoSize = True
-        Me.HC1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.HC1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HC1.Image = CType(resources.GetObject("HC1.Image"), System.Drawing.Image)
-        Me.HC1.Location = New System.Drawing.Point(69, 186)
-        Me.HC1.Name = "HC1"
-        Me.HC1.Size = New System.Drawing.Size(30, 30)
-        Me.HC1.TabIndex = 367
-        Me.HC1.TabStop = False
-        Me.HC1.UseVisualStyleBackColor = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(404, 127)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(156, 13)
-        Me.Label6.TabIndex = 373
-        Me.Label6.Text = "Shift-click keys to mark as used"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(404, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(159, 13)
-        Me.Label1.TabIndex = 374
-        Me.Label1.Text = "Green/White locations are open"
-        '
-        'EPBoss
-        '
-        Me.EPBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.EPBoss.AutoSize = True
-        Me.EPBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.EPBoss.Enabled = False
-        Me.EPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.EPBoss.Location = New System.Drawing.Point(156, 222)
-        Me.EPBoss.Name = "EPBoss"
-        Me.EPBoss.Size = New System.Drawing.Size(30, 30)
-        Me.EPBoss.TabIndex = 375
-        Me.EPBoss.TabStop = False
-        Me.EPBoss.UseVisualStyleBackColor = False
-        '
-        'DPBoss
-        '
-        Me.DPBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.DPBoss.AutoSize = True
-        Me.DPBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.DPBoss.Enabled = False
-        Me.DPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.DPBoss.Location = New System.Drawing.Point(185, 258)
-        Me.DPBoss.Name = "DPBoss"
-        Me.DPBoss.Size = New System.Drawing.Size(30, 30)
-        Me.DPBoss.TabIndex = 376
-        Me.DPBoss.TabStop = False
-        Me.DPBoss.UseVisualStyleBackColor = False
-        '
-        'HeraBoss
-        '
-        Me.HeraBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.HeraBoss.AutoSize = True
-        Me.HeraBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.HeraBoss.Enabled = False
-        Me.HeraBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HeraBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.HeraBoss.Location = New System.Drawing.Point(185, 294)
-        Me.HeraBoss.Name = "HeraBoss"
-        Me.HeraBoss.Size = New System.Drawing.Size(30, 30)
-        Me.HeraBoss.TabIndex = 377
-        Me.HeraBoss.TabStop = False
-        Me.HeraBoss.UseVisualStyleBackColor = False
-        '
-        'PODBoss
-        '
-        Me.PODBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.PODBoss.AutoSize = True
-        Me.PODBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.PODBoss.Enabled = False
-        Me.PODBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PODBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.PODBoss.Location = New System.Drawing.Point(328, 330)
-        Me.PODBoss.Name = "PODBoss"
-        Me.PODBoss.Size = New System.Drawing.Size(30, 30)
-        Me.PODBoss.TabIndex = 378
-        Me.PODBoss.TabStop = False
-        Me.PODBoss.UseVisualStyleBackColor = False
-        '
-        'SPBoss
-        '
-        Me.SPBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.SPBoss.AutoSize = True
-        Me.SPBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.SPBoss.Enabled = False
-        Me.SPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.SPBoss.Location = New System.Drawing.Point(185, 366)
-        Me.SPBoss.Name = "SPBoss"
-        Me.SPBoss.Size = New System.Drawing.Size(30, 30)
-        Me.SPBoss.TabIndex = 379
-        Me.SPBoss.TabStop = False
-        Me.SPBoss.UseVisualStyleBackColor = False
-        '
-        'SWBoss
-        '
-        Me.SWBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.SWBoss.AutoSize = True
-        Me.SWBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.SWBoss.Enabled = False
-        Me.SWBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SWBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.SWBoss.Location = New System.Drawing.Point(243, 402)
-        Me.SWBoss.Name = "SWBoss"
-        Me.SWBoss.Size = New System.Drawing.Size(30, 30)
-        Me.SWBoss.TabIndex = 380
-        Me.SWBoss.TabStop = False
-        Me.SWBoss.UseVisualStyleBackColor = False
-        '
-        'TTBoss
-        '
-        Me.TTBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.TTBoss.AutoSize = True
-        Me.TTBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TTBoss.Enabled = False
-        Me.TTBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TTBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.TTBoss.Location = New System.Drawing.Point(185, 438)
-        Me.TTBoss.Name = "TTBoss"
-        Me.TTBoss.Size = New System.Drawing.Size(30, 30)
-        Me.TTBoss.TabIndex = 381
-        Me.TTBoss.TabStop = False
-        Me.TTBoss.UseVisualStyleBackColor = False
-        '
-        'IPBoss
-        '
-        Me.IPBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.IPBoss.AutoSize = True
-        Me.IPBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.IPBoss.Enabled = False
-        Me.IPBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IPBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.IPBoss.Location = New System.Drawing.Point(214, 474)
-        Me.IPBoss.Name = "IPBoss"
-        Me.IPBoss.Size = New System.Drawing.Size(30, 30)
-        Me.IPBoss.TabIndex = 382
-        Me.IPBoss.TabStop = False
-        Me.IPBoss.UseVisualStyleBackColor = False
-        '
-        'MMBoss
-        '
-        Me.MMBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.MMBoss.AutoSize = True
-        Me.MMBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.MMBoss.Enabled = False
-        Me.MMBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MMBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.MMBoss.Location = New System.Drawing.Point(243, 510)
-        Me.MMBoss.Name = "MMBoss"
-        Me.MMBoss.Size = New System.Drawing.Size(30, 30)
-        Me.MMBoss.TabIndex = 383
-        Me.MMBoss.TabStop = False
-        Me.MMBoss.UseVisualStyleBackColor = False
-        '
-        'TRBoss
-        '
-        Me.TRBoss.Appearance = System.Windows.Forms.Appearance.Button
-        Me.TRBoss.AutoSize = True
-        Me.TRBoss.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TRBoss.Enabled = False
-        Me.TRBoss.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TRBoss.Image = Global.WindowsApp1.My.Resources.Resources.boss
-        Me.TRBoss.Location = New System.Drawing.Point(272, 546)
-        Me.TRBoss.Name = "TRBoss"
-        Me.TRBoss.Size = New System.Drawing.Size(30, 30)
-        Me.TRBoss.TabIndex = 384
-        Me.TRBoss.TabStop = False
-        Me.TRBoss.UseVisualStyleBackColor = False
-        '
-        'AgaPrizes
-        '
-        Me.AgaPrizes.AutoSize = True
-        Me.AgaPrizes.BackColor = System.Drawing.Color.Black
-        Me.AgaPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AgaPrizes.ForeColor = System.Drawing.Color.White
-        Me.AgaPrizes.Location = New System.Drawing.Point(169, 187)
-        Me.AgaPrizes.Margin = New System.Windows.Forms.Padding(0)
-        Me.AgaPrizes.MinimumSize = New System.Drawing.Size(28, 28)
-        Me.AgaPrizes.Name = "AgaPrizes"
-        Me.AgaPrizes.Padding = New System.Windows.Forms.Padding(4, 4, 0, 3)
-        Me.AgaPrizes.Size = New System.Drawing.Size(28, 28)
-        Me.AgaPrizes.TabIndex = 386
-        Me.AgaPrizes.Text = "2"
-        Me.AgaPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AgaLabel
-        '
-        Me.AgaLabel.AutoSize = True
-        Me.AgaLabel.BackColor = System.Drawing.Color.Red
-        Me.AgaLabel.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AgaLabel.ForeColor = System.Drawing.Color.Black
-        Me.AgaLabel.Location = New System.Drawing.Point(137, 187)
-        Me.AgaLabel.Margin = New System.Windows.Forms.Padding(0)
-        Me.AgaLabel.MinimumSize = New System.Drawing.Size(32, 28)
-        Me.AgaLabel.Name = "AgaLabel"
-        Me.AgaLabel.Padding = New System.Windows.Forms.Padding(6, 4, 2, 3)
-        Me.AgaLabel.Size = New System.Drawing.Size(32, 28)
-        Me.AgaLabel.TabIndex = 385
-        Me.AgaLabel.Text = "AG"
-        Me.AgaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AG1
-        '
-        Me.AG1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.AG1.AutoSize = True
-        Me.AG1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.AG1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AG1.Image = CType(resources.GetObject("AG1.Image"), System.Drawing.Image)
-        Me.AG1.Location = New System.Drawing.Point(200, 186)
-        Me.AG1.Name = "AG1"
-        Me.AG1.Size = New System.Drawing.Size(30, 30)
-        Me.AG1.TabIndex = 387
-        Me.AG1.TabStop = False
-        Me.AG1.UseVisualStyleBackColor = False
-        '
-        'AG2
-        '
-        Me.AG2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.AG2.AutoSize = True
-        Me.AG2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.AG2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AG2.Image = CType(resources.GetObject("AG2.Image"), System.Drawing.Image)
-        Me.AG2.Location = New System.Drawing.Point(229, 186)
-        Me.AG2.Name = "AG2"
-        Me.AG2.Size = New System.Drawing.Size(30, 30)
-        Me.AG2.TabIndex = 388
-        Me.AG2.TabStop = False
-        Me.AG2.UseVisualStyleBackColor = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(738, 616)
+        Me.ClientSize = New System.Drawing.Size(769, 621)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.AG2)
         Me.Controls.Add(Me.AG1)
         Me.Controls.Add(Me.AgaPrizes)
@@ -3756,13 +3745,10 @@ Partial Class Form1
         Me.Controls.Add(Me.EPLabel2)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.CheckBox10)
         Me.Controls.Add(Me.AgaButton)
         Me.Controls.Add(Me.ShieldButton)
         Me.Controls.Add(Me.ArmorButton)
@@ -3793,15 +3779,6 @@ Partial Class Form1
         Me.Controls.Add(Me.HookButton)
         Me.Controls.Add(Me.BoomButton)
         Me.Controls.Add(Me.BowButton)
-        Me.Controls.Add(Me.CheckBox9)
-        Me.Controls.Add(Me.CheckBox8)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.DW16)
         Me.Controls.Add(Me.DW15)
         Me.Controls.Add(Me.DW14)
@@ -4103,15 +4080,6 @@ Partial Class Form1
     Friend WithEvents DW4 As CheckBox
     Friend WithEvents DW3 As CheckBox
     Friend WithEvents DW2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents CheckBox9 As CheckBox
     Friend WithEvents BowButton As PictureBox
     Friend WithEvents BoomButton As PictureBox
     Friend WithEvents HookButton As PictureBox
@@ -4143,13 +4111,10 @@ Partial Class Form1
     Friend WithEvents ShieldButton As PictureBox
     Friend WithEvents AgaButton As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents SPLabel2 As Label
@@ -4211,4 +4176,14 @@ Partial Class Form1
     Friend WithEvents AgaLabel As Label
     Friend WithEvents AG1 As CheckBox
     Friend WithEvents AG2 As CheckBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
 End Class
