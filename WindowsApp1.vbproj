@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -288,6 +288,16 @@
     <Content Include="quakeMMTR.png" />
     <Content Include="redboom.png" />
     <Content Include="redmail.png" />
+    <None Include="Resources\bigkey.png" />
+    <None Include="Resources\compass.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\map.png" />
+    <None Include="Resources\nobigkey.png" />
+    <None Include="Resources\nocompass.png" />
+    <None Include="Resources\nokey.png" />
+    <None Include="Resources\nomap.png" />
+    <None Include="Resources\greenchest.png" />
+    <None Include="Resources\redchest.png" />
     <Content Include="shield1.png" />
     <Content Include="shield2.png" />
     <Content Include="shield3.png" />

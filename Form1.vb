@@ -1,23 +1,14 @@
 ﻿Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, MazeRace, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
     Public Sub LWCheck()
-        '' Castle - Partially blocked by lamp
-        If Lamp = True Then
-            LW3.Enabled = True
-            LW3.BackColor = Color.WhiteSmoke
+        '' Hyrule Castle - Dark chest lamp blocked; sewer chests blocked by glove or Key, then boots or bombs
+        If Lamp = True And (Glove > 0 Or HCKeys.Text = 1) And (Bombs = True Or Boots = True) Then
+            HCLabel.BackColor = Color.Green
+            HCLabel.ForeColor = Color.White
         Else
-            LW3.Enabled = True
-            LW3.BackColor = Color.Yellow
-        End If
-
-        '' Escape - Bombs/Boots with Glove (sequence break)
-        If Glove > 0 And (Bombs = True Or Boots = True) Then
-            LW4.Enabled = True
-            LW4.BackColor = Color.WhiteSmoke
-        Else
-            LW4.Enabled = True
-            LW4.BackColor = Color.Orange
+            HCLabel.BackColor = Color.Yellow
+            HCLabel.ForeColor = Color.Black
         End If
 
         '' Lumberjack Tree - Aganhim and Boots
@@ -344,9 +335,6 @@
 
         If LW1.Checked = True Then LW1.BackColor = Color.FromArgb(64, 64, 64)
         If LW2.Checked = True Then LW2.BackColor = Color.FromArgb(64, 64, 64)
-        If LW3.Checked = True Then LW3.BackColor = Color.FromArgb(64, 64, 64)
-        If LW4.Checked = True Then LW4.BackColor = Color.FromArgb(64, 64, 64)
-        If LW5.Checked = True Then LW5.BackColor = Color.FromArgb(64, 64, 64)
         If LW6.Checked = True Then LW6.BackColor = Color.FromArgb(64, 64, 64)
         If LW7.Checked = True Then LW7.BackColor = Color.FromArgb(64, 64, 64)
         If LW8.Checked = True Then LW8.BackColor = Color.FromArgb(64, 64, 64)
@@ -562,7 +550,7 @@
 
     End Sub
 
-    Private Sub LocationClick(sender As Object, e As EventArgs) Handles LW1.CheckedChanged, LW2.CheckedChanged, LW3.CheckedChanged, LW4.CheckedChanged, LW5.CheckedChanged, LW6.CheckedChanged, LW7.CheckedChanged, LW8.CheckedChanged, LW9.CheckedChanged, LW10.CheckedChanged, LW11.CheckedChanged, LW12.CheckedChanged, LW13.CheckedChanged, LW14.CheckedChanged, LW15.CheckedChanged, LW16.CheckedChanged,
+    Private Sub LocationClick(sender As Object, e As EventArgs) Handles LW1.CheckedChanged, LW2.CheckedChanged, LW6.CheckedChanged, LW7.CheckedChanged, LW8.CheckedChanged, LW9.CheckedChanged, LW10.CheckedChanged, LW11.CheckedChanged, LW12.CheckedChanged, LW13.CheckedChanged, LW14.CheckedChanged, LW15.CheckedChanged, LW16.CheckedChanged,
         LW17.CheckedChanged, LW18.CheckedChanged, LW19.CheckedChanged, LW20.CheckedChanged, LW21.CheckedChanged, LW22.CheckedChanged, LW23.CheckedChanged, LW24.CheckedChanged, LW25.CheckedChanged, LW26.CheckedChanged, LW27.CheckedChanged, LW28.CheckedChanged, LW29.CheckedChanged, LW30.CheckedChanged, LW31.CheckedChanged, LW32.CheckedChanged,
         LW33.CheckedChanged, LW34.CheckedChanged, LW35.CheckedChanged, LW36.CheckedChanged, LW37.CheckedChanged, LW38.CheckedChanged, LW39.CheckedChanged, LW40.CheckedChanged, LW41.CheckedChanged, LW42.CheckedChanged, LW43.CheckedChanged, LW44.CheckedChanged, LW45.CheckedChanged, LW46.CheckedChanged, LW47.CheckedChanged, DW1.CheckedChanged,
         DW2.CheckedChanged, DW3.CheckedChanged, DW4.CheckedChanged, DW5.CheckedChanged, DW6.CheckedChanged, DW7.CheckedChanged, DW8.CheckedChanged, DW9.CheckedChanged, DW10.CheckedChanged, DW11.CheckedChanged, DW12.CheckedChanged, DW13.CheckedChanged, DW14.CheckedChanged, DW15.CheckedChanged, DW16.CheckedChanged
@@ -571,551 +559,464 @@
         DWCheck()
     End Sub
 
-    Private Sub EPInfo(sender As Object, e As EventArgs) Handles EP1.MouseHover, EP2.MouseHover, EP3.MouseHover, EP4.MouseHover, EP5.MouseHover, EPBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "EP1"
-                If EP1.Checked = False Then PictureBox1.Image = My.Resources.EP1
-            Case "EP2"
-                If EP2.Checked = False Then PictureBox1.Image = My.Resources.EP2
-            Case "EP3"
-                If EP3.Checked = False Then PictureBox1.Image = My.Resources.EP3
-            Case "EP4"
-                If EP4.Checked = False Then PictureBox1.Image = My.Resources.EP4
-            Case "EP5"
-                If EP5.Checked = False Then PictureBox1.Image = My.Resources.EP5
-            Case "EPBoss"
-                If EPBoss.Checked = False Then PictureBox1.Image = My.Resources.EPBoss
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        AgaTree = (AgaTree + 1) Mod 3
+        Select Case AgaTree
+            Case 1
+                Button1.Image = My.Resources.redchest
+            Case 2
+                Button1.Image = My.Resources.greenchest
+            Case Else
+                Button1.Image = My.Resources.chestmaybe
         End Select
     End Sub
-    Private Sub EPClick(sender As Object, e As EventArgs) Handles EP1.CheckedChanged, EP2.CheckedChanged, EP3.CheckedChanged, EP4.CheckedChanged, EP5.CheckedChanged, EPBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "EPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Library = (Library + 1) Mod 3
+        Select Case Library
+            Case 1
+                Button2.Image = My.Resources.redchest
+            Case 2
+                Button2.Image = My.Resources.greenchest
+            Case Else
+                Button2.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        MazeRace = (MazeRace + 1) Mod 3
+        Select Case MazeRace
+            Case 1
+                Button3.Image = My.Resources.redchest
+            Case 2
+                Button3.Image = My.Resources.greenchest
+            Case Else
+                Button3.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        SpecRock = (SpecRock + 1) Mod 3
+        Select Case SpecRock
+            Case 1
+                Button4.Image = My.Resources.redchest
+            Case 2
+                Button4.Image = My.Resources.greenchest
+            Case Else
+                Button4.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        EtherTab = (EtherTab + 1) Mod 3
+        Select Case EtherTab
+            Case 1
+                Button5.Image = My.Resources.redchest
+            Case 2
+                Button5.Image = My.Resources.greenchest
+            Case Else
+                Button5.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Floating = (Floating + 1) Mod 3
+        Select Case Floating
+            Case 1
+                Button6.Image = My.Resources.redchest
+            Case 2
+                Button6.Image = My.Resources.greenchest
+            Case Else
+                Button6.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        DPLedge = (DPLedge + 1) Mod 3
+        Select Case DPLedge
+            Case 1
+                Button7.Image = My.Resources.redchest
+            Case 2
+                Button7.Image = My.Resources.greenchest
+            Case Else
+                Button7.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        BombosTab = (BombosTab + 1) Mod 3
+        Select Case BombosTab
+            Case 1
+                Button8.Image = My.Resources.redchest
+            Case 2
+                Button8.Image = My.Resources.greenchest
+            Case Else
+                Button8.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        ZoraLedge = (ZoraLedge + 1) Mod 3
+        Select Case ZoraLedge
+            Case 1
+                Button9.Image = My.Resources.redchest
+            Case 2
+                Button9.Image = My.Resources.greenchest
+            Case Else
+                Button9.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        LakeIsle = (LakeIsle + 1) Mod 3
+        Select Case LakeIsle
+            Case 1
+                Button10.Image = My.Resources.redchest
+            Case 2
+                Button10.Image = My.Resources.greenchest
+            Case Else
+                Button10.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Pedestal = (Pedestal + 1) Mod 3
+        Select Case Pedestal
+            Case 1
+                Button11.Image = My.Resources.redchest
+            Case 2
+                Button11.Image = My.Resources.greenchest
+            Case Else
+                Button11.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Bumper = (Bumper + 1) Mod 3
+        Select Case Bumper
+            Case 1
+                Button12.Image = My.Resources.redchest
+            Case 2
+                Button12.Image = My.Resources.greenchest
+            Case Else
+                Button12.Image = My.Resources.chestmaybe
+        End Select
+    End Sub
+
+    Private Sub HCClick(sender As Object, e As EventArgs)
+        If DirectCast(sender, CheckBox).Name = "HC1" Then
+            If DirectCast(sender, CheckBox).Checked = True Then
+                DirectCast(sender, CheckBox).Image = My.Resources.key
+            ElseIf My.Computer.Keyboard.ShiftKeyDown Then
+                DirectCast(sender, CheckBox).Checked = True
+                DirectCast(sender, CheckBox).BackColor = Color.Green
+            Else
+                DirectCast(sender, CheckBox).Image = My.Resources.nokey
+                DirectCast(sender, CheckBox).BackColor = Color.WhiteSmoke
+            End If
         Else
-            If DirectCast(sender, CheckBox).Name = "EPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            If DirectCast(sender, CheckBox).Name = "EP5" Then DirectCast(sender, CheckBox).Image = My.Resources.chestbigkey Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            EPCheck()
+            If DirectCast(sender, CheckBox).Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
         End If
+    End Sub
+
+    Private Sub HCPrizes_MouseDown(sender As Object, e As EventArgs) Handles HCPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If HCPrizes.Text > 0 Then HCPrizes.Text = HCPrizes.Text - 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If HCPrizes.Text < 8 Then HCPrizes.Text = HCPrizes.Text + 1
+        End If
+    End Sub
+
+    Private Sub HCKeys_MouseDown(sender As Object, e As EventArgs) Handles HCKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then HCPrizes.Text = 1
+        If MouseButtons = MouseButtons.Right = True Then HCPrizes.Text = 0
+        LWCheck()
+    End Sub
+
+    Private Sub EPClick(sender As Object, e As EventArgs) Handles EPMap.CheckedChanged, EPBigKey.CheckedChanged, EPBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "EPMap"
+                If EPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "EPBigKey"
+                If EPBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    EPBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    EPBigKey.BackColor = Color.Red
+                End If
+            Case "EPBoss"
+                If EPBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    EPButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    EPButton.BackColor = Color.Black
+                End If
+        End Select
+        EPCheck()
         CrystalCheck()
+    End Sub
+
+    Private Sub EPPrizes_MouseDown(sender As Object, e As EventArgs) Handles EPPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If EPPrizes.Text > 0 Then EPPrizes.Text = EPPrizes.Text - 1
+            If EPPrizes.Text = 0 Then EPLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If EPPrizes.Text < 6 Then EPPrizes.Text = EPPrizes.Text + 1
+            EPLabel2.BackColor = Color.Black
+        End If
     End Sub
 
     Public Sub EPCheck()
-        If Lamp = True Then EP4.Image = My.Resources.chest Else EP4.Image = My.Resources.chestlamp
-        If Bow > 0 And Lamp = True Then
+        If Bow > 0 And EPBigKey.Checked = True Then
+            EPLabel.ForeColor = Color.White
             EPBoss.Enabled = True
-            EPBoss.Image = My.Resources.boss
-        ElseIf Bow > 0 And Lamp = False Then
-            EPBoss.Enabled = True
-            EPBoss.Image = My.Resources.bosslamp
+            If Lamp = True Then EPLabel.BackColor = Color.Green Else EPLabel.BackColor = Color.Orange
         Else
+            EPLabel.BackColor = Color.Yellow
+            EPLabel.ForeColor = Color.Black
             EPBoss.Enabled = False
-            EPBoss.Image = My.Resources.boss
         End If
-        If EP1.Checked = True Then EP1.Image = My.Resources.chestopen
-        If EP2.Checked = True Then EP2.Image = My.Resources.chestopen
-        If EP3.Checked = True Then EP3.Image = My.Resources.chestopen
-        If EP4.Checked = True Then EP4.Image = My.Resources.chestopen
-        If EP5.Checked = True Then EP5.Image = My.Resources.chestopen
-        If EPBoss.Checked = True Then EPBoss.Image = My.Resources.bossdead
     End Sub
 
-    Private Sub DPClick(sender As Object, e As EventArgs) Handles DP1.CheckedChanged, DP2.CheckedChanged, DP3.CheckedChanged, DP4.CheckedChanged, DP5.CheckedChanged, DPBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Name = "DP4" Then
-            If DP4.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.chestopen Else DirectCast(sender, CheckBox).Image = My.Resources.torch
-        ElseIf DirectCast(sender, CheckBox).Name = "DPBoss" Then
-            If DPBoss.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.boss
-        Else
-            If DirectCast(sender, CheckBox).Checked = True Then
-                DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-            Else
-                DirectCast(sender, CheckBox).Image = My.Resources.chest
-            End If
-            DPCheck()
-        End If
-        CrystalCheck()
-    End Sub
-    Public Sub DPCheck()
-        If Book = True Or (Flute = True And Mirror = True And Glove = 2) Then
-            DP1.Enabled = True
-            If Boots = True Then
-                DP2.Enabled = True
-                DP2.Image = My.Resources.chest
-                DP3.Enabled = True
-                DP3.Image = My.Resources.chest
-                DP4.Enabled = True
-                DP4.Image = My.Resources.torch
-                DP5.Enabled = True
-                DP5.Image = My.Resources.chestbigkey
-            Else
-                DP2.Enabled = True
-                DP2.Image = My.Resources.chestmaybe
-                DP3.Enabled = True
-                DP3.Image = My.Resources.chestmaybe
-                DP4.Enabled = False
-                DP4.Image = My.Resources.torch
-                DP5.Enabled = True
-                DP5.Image = My.Resources.chestbigkeymaybe
-            End If
-            If Glove > 0 And (Lamp = True Or FireRod = True) Then
-                DPBoss.Enabled = True
-                If Boots = True Then DPBoss.Image = My.Resources.boss Else DPBoss.Image = My.Resources.bossmaybe
-            Else
-                DPBoss.Enabled = False
-                DPBoss.Image = My.Resources.boss
-            End If
-        Else
-            DP1.Enabled = False
-            DP1.Image = My.Resources.chest
-            DP2.Enabled = False
-            DP2.Image = My.Resources.chest
-            DP3.Enabled = False
-            DP3.Image = My.Resources.chest
-            DP4.Enabled = False
-            DP4.Image = My.Resources.torch
-            DP5.Enabled = False
-            DP5.Image = My.Resources.chestbigkey
-            DPBoss.Enabled = False
-            DPBoss.Image = My.Resources.boss
-        End If
-        If DP1.Checked = True Then DP1.Image = My.Resources.chestopen
-        If DP2.Checked = True Then DP2.Image = My.Resources.chestopen
-        If DP3.Checked = True Then DP3.Image = My.Resources.chestopen
-        If DP4.Checked = True Then DP4.Image = My.Resources.chestopen
-        If DP5.Checked = True Then DP5.Image = My.Resources.chestopen
-        If DPBoss.Checked = True Then DPBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub DPInfo(sender As Object, e As EventArgs) Handles DP1.MouseHover, DP2.MouseHover, DP3.MouseHover, DP4.MouseHover, DP5.MouseHover, DPBoss.MouseHover
+    Private Sub DPClick(sender As Object, e As EventArgs) Handles DPMap.CheckedChanged, DPBigKey.CheckedChanged, DPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
-            Case "DP1"
-                If DP1.Checked = False Then PictureBox1.Image = My.Resources.DP1
-            Case "DP2"
-                If DP2.Checked = False Then PictureBox1.Image = My.Resources.DP2
-            Case "DP3"
-                If DP3.Checked = False Then PictureBox1.Image = My.Resources.DP3
-            Case "DP4"
-                If DP4.Checked = False Then PictureBox1.Image = My.Resources.DP4
-            Case "DP5"
-                If DP5.Checked = False Then PictureBox1.Image = My.Resources.DP5
+            Case "DPMap"
+                If DPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "DPBigKey"
+                If DPBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    DPBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    DPBigKey.BackColor = Color.Red
+                End If
             Case "DPBoss"
-                If DPBoss.Checked = False Then PictureBox1.Image = My.Resources.DPBoss
+                If DPBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    DPButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    DPButton.BackColor = Color.Black
+                End If
         End Select
-    End Sub
-    Private Sub TOHClick(sender As Object, e As EventArgs) Handles Hera1.CheckedChanged, Hera2.CheckedChanged, Hera3.CheckedChanged, Hera4.CheckedChanged, Hera5.CheckedChanged, HeraBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "HeraBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "HeraBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            TOHCheck()
-        End If
+        DPCheck()
         CrystalCheck()
+    End Sub
+    Private Sub DPPrizes_MouseDown(sender As Object, e As EventArgs) Handles DPPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If DPPrizes.Text > 0 Then DPPrizes.Text = DPPrizes.Text - 1
+            If DPPrizes.Text = 0 Then DPLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If DPPrizes.Text < 6 Then DPPrizes.Text = DPPrizes.Text + 1
+            DPLabel2.BackColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub DPKeys_MouseDown(sender As Object, e As EventArgs) Handles DPKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then DPKeys.Text = 1
+        If MouseButtons = MouseButtons.Right = True Then DPKeys.Text = 0
+        DPCheck()
+    End Sub
+
+    Public Sub DPCheck()
+        If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
+            DPLabel.BackColor = Color.Green
+            DPLabel.ForeColor = Color.White
+            DPBoss.Enabled = True
+        ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) Then
+            DPLabel.BackColor = Color.Yellow
+            DPLabel.ForeColor = Color.Black
+            DPBoss.Enabled = False
+        Else
+            DPLabel.BackColor = Color.Red
+            DPLabel.ForeColor = Color.Black
+            DPBoss.Enabled = False
+        End If
+    End Sub
+    Private Sub TOHClick(sender As Object, e As EventArgs) Handles HeraMap.CheckedChanged, HeraBigKey.CheckedChanged, HeraBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "HeraMap"
+                If HeraMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "HeraBigKey"
+                If HeraBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    HeraBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    HeraBigKey.BackColor = Color.Red
+                End If
+            Case "HeraBoss"
+                If HeraBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    TOHButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    TOHButton.BackColor = Color.Black
+                End If
+        End Select
+        TOHCheck()
+        CrystalCheck()
+    End Sub
+    Private Sub TOHPrizes_MouseDown(sender As Object, e As EventArgs) Handles TOHPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If TOHPrizes.Text > 0 Then TOHPrizes.Text = TOHPrizes.Text - 1
+            If TOHPrizes.Text = 0 Then TOHLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If TOHPrizes.Text < 6 Then TOHPrizes.Text = TOHPrizes.Text + 1
+            TOHLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub HeraKeys_MouseDown(sender As Object, e As EventArgs) Handles HeraKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then HeraKeys.Text = 1
+        If MouseButtons = MouseButtons.Right = True Then HeraKeys.Text = 0
+        TOHCheck()
     End Sub
     Public Sub TOHCheck()
-        If Flute = True And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-            Hera1.Enabled = True
-            Hera1.Image = My.Resources.chest
-            Hera2.Enabled = True
-            Hera2.Image = My.Resources.chest
-            If Lamp = True Or FireRod = True Then
-                Hera3.Enabled = True
-                Hera3.Image = My.Resources.chest
-                Hera4.Enabled = True
-                Hera4.Image = My.Resources.chest
-                Hera5.Enabled = True
-                Hera5.Image = My.Resources.chestbigkey
-                HeraBoss.Enabled = True
-                HeraBoss.Image = My.Resources.boss
-            Else
-                Hera3.Enabled = False
-                Hera3.Image = My.Resources.chest
-                Hera4.Enabled = True
-                Hera4.Image = My.Resources.chestmaybe
-                Hera5.Enabled = True
-                Hera5.Image = My.Resources.chestbigkeymaybe
-                HeraBoss.Enabled = True
-                HeraBoss.Image = My.Resources.bossmaybe
-            End If
-        ElseIf Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-            If Lamp = True Then
-                Hera1.Enabled = True
-                Hera1.Image = My.Resources.chest
-                Hera2.Enabled = True
-                Hera2.Image = My.Resources.chest
-                Hera3.Enabled = True
-                Hera3.Image = My.Resources.chest
-                Hera4.Enabled = True
-                Hera4.Image = My.Resources.chest
-                Hera5.Enabled = True
-                Hera5.Image = My.Resources.chestbigkey
-                HeraBoss.Enabled = True
-                HeraBoss.Image = My.Resources.boss
-            ElseIf FireRod = True Then
-                Hera1.Enabled = True
-                Hera1.Image = My.Resources.chestlamp
-                Hera2.Enabled = True
-                Hera2.Image = My.Resources.chestlamp
-                Hera3.Enabled = True
-                Hera3.Image = My.Resources.chestlamp
-                Hera4.Enabled = True
-                Hera4.Image = My.Resources.chestlamp
-                Hera5.Enabled = True
-                Hera5.Image = My.Resources.chestbigkeylamp
-                HeraBoss.Enabled = True
-                HeraBoss.Image = My.Resources.bosslamp
-            Else
-                Hera1.Enabled = True
-                Hera1.Image = My.Resources.chestlamp
-                Hera2.Enabled = True
-                Hera2.Image = My.Resources.chestlamp
-                Hera3.Enabled = False
-                Hera3.Image = My.Resources.chest
-                Hera4.Enabled = True
-                Hera4.Image = My.Resources.chestmaybe
-                Hera5.Enabled = True
-                Hera5.Image = My.Resources.chestbigkeymaybe
-                HeraBoss.Enabled = True
-                HeraBoss.Image = My.Resources.bossmaybe
-            End If
-        Else
-            Hera1.Enabled = False
-            Hera1.Image = My.Resources.chest
-            Hera2.Enabled = False
-            Hera2.Image = My.Resources.chest
-            Hera3.Enabled = False
-            Hera3.Image = My.Resources.chest
-            Hera4.Enabled = False
-            Hera4.Image = My.Resources.chest
-            Hera5.Enabled = False
-            Hera5.Image = My.Resources.chestbigkey
+        If Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And HeraBigKey.Checked = True Then
+            TOHLabel.ForeColor = Color.White
+            HeraBoss.Enabled = True
+            If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+        ElseIf (Flute = True Or Glove > 0) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+            TOHLabel.BackColor = Color.Yellow
+            TOHLabel.ForeColor = Color.Black
             HeraBoss.Enabled = False
-            HeraBoss.Image = My.Resources.boss
-        End If
-        If Hera1.Checked = True Then Hera1.Image = My.Resources.chestopen
-        If Hera2.Checked = True Then Hera2.Image = My.Resources.chestopen
-        If Hera3.Checked = True Then Hera3.Image = My.Resources.chestopen
-        If Hera4.Checked = True Then Hera4.Image = My.Resources.chestopen
-        If Hera5.Checked = True Then Hera5.Image = My.Resources.chestopen
-        If HeraBoss.Checked = True Then HeraBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub TOHInfo(sender As Object, e As EventArgs) Handles Hera1.MouseHover, Hera2.MouseHover, Hera3.MouseHover, Hera4.MouseHover, Hera5.MouseHover, HeraBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "Hera1"
-                If DP1.Checked = False Then PictureBox1.Image = My.Resources.TOH1
-            Case "Hera2"
-                If DP2.Checked = False Then PictureBox1.Image = My.Resources.TOH2
-            Case "Hera3"
-                If DP3.Checked = False Then PictureBox1.Image = My.Resources.TOH3
-            Case "Hera4"
-                If DP4.Checked = False Then PictureBox1.Image = My.Resources.TOH4
-            Case "Hera5"
-                If DP5.Checked = False Then PictureBox1.Image = My.Resources.TOH5
-            Case "HeraBoss"
-                If DPBoss.Checked = False Then PictureBox1.Image = My.Resources.TOHBoss
-        End Select
-    End Sub
-    Public Sub AgaCheck()
-        If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
-            AgaButton.Visible = True
         Else
-            AgaButton.Visible = False
+            TOHLabel.BackColor = Color.Red
+            TOHLabel.ForeColor = Color.Black
+            HeraBoss.Enabled = False
         End If
     End Sub
-    Private Sub PODClick(sender As Object, e As EventArgs) Handles POD1.CheckedChanged, POD2.CheckedChanged, POD3.CheckedChanged, POD4.CheckedChanged, POD5.CheckedChanged, POD6.CheckedChanged, POD7.CheckedChanged, POD8.CheckedChanged, POD9.CheckedChanged, POD10.CheckedChanged, POD11.CheckedChanged, POD12.CheckedChanged, POD13.CheckedChanged, PODBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "PODBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "PODBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            PODCheck()
+    Private Sub AGKeys_MouseDown(sender As Object, e As EventArgs) Handles AGKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If AGKeys.Text < 2 Then AGKeys.Text = AGKeys.Text + 1
         End If
-        CrystalCheck()
-    End Sub
-    Public Sub PODCheck()
-        If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
-            POD1.Enabled = True
-            POD1.Image = My.Resources.chest
-            If Bow > 0 And Lamp = True Then
-                POD2.Enabled = True
-                POD2.Image = My.Resources.chest
-                POD3.Enabled = True
-                POD3.Image = My.Resources.chest
-                POD4.Enabled = True
-                POD4.Image = My.Resources.chest
-                POD5.Enabled = True
-                POD5.Image = My.Resources.chest
-                POD6.Enabled = True
-                POD6.Image = My.Resources.chest
-                POD7.Enabled = True
-                POD7.Image = My.Resources.chest
-                POD8.Enabled = True
-                POD8.Image = My.Resources.chest
-                POD9.Enabled = True
-                POD9.Image = My.Resources.chest
-                POD10.Enabled = True
-                POD10.Image = My.Resources.chest
-                POD11.Enabled = True
-                POD11.Image = My.Resources.chest
-                POD12.Enabled = True
-                POD12.Image = My.Resources.chest
-                POD13.Enabled = True
-                POD13.Image = My.Resources.chestbigkey
-                If Hammer = True Then
-                    PODBoss.Enabled = True
-                    PODBoss.Image = My.Resources.boss
-                Else
-                    PODBoss.Enabled = False
-                    PODBoss.Image = My.Resources.boss
-                End If
-            ElseIf Bow > 0 And Lamp = False Then
-                POD2.Enabled = True
-                POD2.Image = My.Resources.chest
-                POD3.Enabled = True
-                POD3.Image = My.Resources.chest
-                POD4.Enabled = True
-                POD4.Image = My.Resources.chest
-                POD5.Enabled = True
-                POD5.Image = My.Resources.chest
-                POD6.Enabled = True
-                POD6.Image = My.Resources.chest
-                POD7.Enabled = True
-                POD7.Image = My.Resources.chest
-                POD8.Enabled = True
-                POD8.Image = My.Resources.chest
-                POD9.Enabled = True
-                POD9.Image = My.Resources.chestlamp
-                POD10.Enabled = True
-                POD10.Image = My.Resources.chestlamp
-                POD11.Enabled = True
-                POD11.Image = My.Resources.chestlamp
-                POD12.Enabled = True
-                POD12.Image = My.Resources.chestlamp
-                POD13.Enabled = True
-                POD13.Image = My.Resources.chestbigkeylamp
-                If Hammer = True Then
-                    PODBoss.Enabled = True
-                    PODBoss.Image = My.Resources.bosslamp
-                Else
-                    PODBoss.Enabled = False
-                    PODBoss.Image = My.Resources.boss
-                End If
-            Else
-                POD2.Enabled = True
-                POD2.Image = My.Resources.chestmaybe
-                POD3.Enabled = True
-                POD3.Image = My.Resources.chestmaybe
-                POD4.Enabled = True
-                POD4.Image = My.Resources.chestmaybe
-                POD5.Enabled = False
-                POD5.Image = My.Resources.chest
-                POD6.Enabled = False
-                POD6.Image = My.Resources.chest
-                POD7.Enabled = True
-                POD7.Image = My.Resources.chestmaybe
-                POD8.Enabled = True
-                POD8.Image = My.Resources.chestmaybe
-                POD9.Enabled = True
-                POD9.Image = My.Resources.chestmaybe
-                POD10.Enabled = True
-                POD10.Image = My.Resources.chestmaybe
-                POD11.Enabled = True
-                POD11.Image = My.Resources.chestmaybe
-                POD12.Enabled = True
-                POD12.Image = My.Resources.chestmaybe
-                POD13.Enabled = True
-                POD13.Image = My.Resources.chestbigkeymaybe
-                PODBoss.Enabled = False
-                PODBoss.Image = My.Resources.boss
-            End If
-        Else
-            POD1.Enabled = False
-            POD1.Image = My.Resources.chest
-            POD2.Enabled = False
-            POD2.Image = My.Resources.chest
-            POD3.Enabled = False
-            POD3.Image = My.Resources.chest
-            POD4.Enabled = False
-            POD4.Image = My.Resources.chest
-            POD5.Enabled = False
-            POD5.Image = My.Resources.chest
-            POD6.Enabled = False
-            POD6.Image = My.Resources.chest
-            POD7.Enabled = False
-            POD7.Image = My.Resources.chest
-            POD8.Enabled = False
-            POD8.Image = My.Resources.chest
-            POD9.Enabled = False
-            POD9.Image = My.Resources.chest
-            POD10.Enabled = False
-            POD10.Image = My.Resources.chest
-            POD11.Enabled = False
-            POD11.Image = My.Resources.chest
-            POD12.Enabled = False
-            POD12.Image = My.Resources.chest
-            POD13.Enabled = False
-            POD13.Image = My.Resources.chestbigkey
-            PODBoss.Enabled = False
-            PODBoss.Image = My.Resources.boss
+        If MouseButtons = MouseButtons.Right = True Then
+            If AGKeys.Text > 0 Then AGKeys.Text = AGKeys.Text - 1
         End If
-        If POD1.Checked = True Then POD1.Image = My.Resources.chestopen
-        If POD2.Checked = True Then POD2.Image = My.Resources.chestopen
-        If POD3.Checked = True Then POD3.Image = My.Resources.chestopen
-        If POD4.Checked = True Then POD4.Image = My.Resources.chestopen
-        If POD5.Checked = True Then POD5.Image = My.Resources.chestopen
-        If POD6.Checked = True Then POD6.Image = My.Resources.chestopen
-        If POD7.Checked = True Then POD7.Image = My.Resources.chestopen
-        If POD8.Checked = True Then POD8.Image = My.Resources.chestopen
-        If POD9.Checked = True Then POD9.Image = My.Resources.chestopen
-        If POD10.Checked = True Then POD10.Image = My.Resources.chestopen
-        If POD11.Checked = True Then POD11.Image = My.Resources.chestopen
-        If POD12.Checked = True Then POD12.Image = My.Resources.chestopen
-        If POD13.Checked = True Then POD13.Image = My.Resources.chestopen
-        If PODBoss.Checked = True Then PODBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub PODInfo(sender As Object, e As EventArgs) Handles POD1.MouseHover, POD2.MouseHover, POD3.MouseHover, POD4.MouseHover, POD5.MouseHover, POD6.MouseHover, POD7.MouseHover, POD8.MouseHover, POD9.MouseHover, POD10.MouseHover, POD11.MouseHover, POD12.MouseHover, POD13.MouseHover, PODBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "POD1"
-                If POD1.Checked = False Then PictureBox1.Image = My.Resources.POD1
-            Case "POD2"
-                If POD2.Checked = False Then PictureBox1.Image = My.Resources.POD2
-            Case "POD3"
-                If POD3.Checked = False Then PictureBox1.Image = My.Resources.POD3
-            Case "POD4"
-                If POD4.Checked = False Then PictureBox1.Image = My.Resources.POD4
-            Case "POD5"
-                If POD5.Checked = False Then PictureBox1.Image = My.Resources.POD5
-            Case "POD6"
-                If POD6.Checked = False Then PictureBox1.Image = My.Resources.POD6
-            Case "POD7"
-                If POD7.Checked = False Then PictureBox1.Image = My.Resources.POD7
-            Case "POD8"
-                If POD8.Checked = False Then PictureBox1.Image = My.Resources.POD8
-            Case "POD9"
-                If POD9.Checked = False Then PictureBox1.Image = My.Resources.POD9
-            Case "POD10"
-                If POD10.Checked = False Then PictureBox1.Image = My.Resources.POD10
-            Case "POD11"
-                If POD11.Checked = False Then PictureBox1.Image = My.Resources.POD11
-            Case "POD12"
-                If POD12.Checked = False Then PictureBox1.Image = My.Resources.POD12
-            Case "POD13"
-                If POD13.Checked = False Then PictureBox1.Image = My.Resources.POD13
-            Case "PODBoss"
-                If PODBoss.Checked = False Then PictureBox1.Image = My.Resources.PODBoss
-        End Select
-    End Sub
-    Private Sub SPClick(sender As Object, e As EventArgs) Handles SP1.CheckedChanged, SP2.CheckedChanged, SP3.CheckedChanged, SP4.CheckedChanged, SP5.CheckedChanged, SP6.CheckedChanged, SP7.CheckedChanged, SP8.CheckedChanged, SP9.CheckedChanged, SPBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "SPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "SPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            SPCheck()
-        End If
-        CrystalCheck()
-    End Sub
-    Public Sub SPCheck()
-        If Pearl = True And Flippers = True And Mirror = True And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And Glove > 0) Or Glove = 2) Then
-            SP1.Enabled = True
-            SP1.Image = My.Resources.chest
-            If Bombs = True Then
-                SP2.Enabled = True
-                SP2.Image = My.Resources.chest
-            Else
-                SP2.Enabled = False
-                SP2.Image = My.Resources.chest
-            End If
-            If Hammer = True Then
-                SP3.Enabled = True
-                SP3.Image = My.Resources.chest
-                SP4.Enabled = True
-                SP4.Image = My.Resources.chest
-                SP5.Enabled = True
-                SP5.Image = My.Resources.chest
-            Else
-                SP3.Enabled = False
-                SP3.Image = My.Resources.chest
-                SP4.Enabled = False
-                SP4.Image = My.Resources.chest
-                SP5.Enabled = False
-                SP5.Image = My.Resources.chest
-            End If
-            If Hammer = True And Hookshot = True Then
-                SP6.Enabled = True
-                SP6.Image = My.Resources.chest
-                SP7.Enabled = True
-                SP7.Image = My.Resources.chest
-                SP8.Enabled = True
-                SP8.Image = My.Resources.chest
-                SP9.Enabled = True
-                SP9.Image = My.Resources.chestbigkey
-                SPBoss.Enabled = True
-                SPBoss.Image = My.Resources.boss
-            Else
-                SP6.Enabled = False
-                SP6.Image = My.Resources.chest
-                SP7.Enabled = False
-                SP7.Image = My.Resources.chest
-                SP8.Enabled = False
-                SP8.Image = My.Resources.chest
-                SP9.Enabled = True
-                SP9.Image = My.Resources.chestbigkeymaybe
-                SPBoss.Enabled = False
-                SPBoss.Image = My.Resources.boss
-            End If
-        Else
-            SP1.Enabled = False
-            SP1.Image = My.Resources.chest
-            SP2.Enabled = False
-            SP2.Image = My.Resources.chest
-            SP3.Enabled = False
-            SP3.Image = My.Resources.chest
-            SP4.Enabled = False
-            SP4.Image = My.Resources.chest
-            SP5.Enabled = False
-            SP5.Image = My.Resources.chest
-            SP6.Enabled = False
-            SP6.Image = My.Resources.chest
-            SP7.Enabled = False
-            SP7.Image = My.Resources.chest
-            SP8.Enabled = False
-            SP8.Image = My.Resources.chest
-            SP9.Enabled = False
-            SP9.Image = My.Resources.chestbigkey
-            SPBoss.Enabled = False
-            SPBoss.Image = My.Resources.boss
-        End If
-        If SP1.Checked = True Then SP1.Image = My.Resources.chestopen
-        If SP2.Checked = True Then SP2.Image = My.Resources.chestopen
-        If SP3.Checked = True Then SP3.Image = My.Resources.chestopen
-        If SP4.Checked = True Then SP4.Image = My.Resources.chestopen
-        If SP5.Checked = True Then SP5.Image = My.Resources.chestopen
-        If SP6.Checked = True Then SP6.Image = My.Resources.chestopen
-        If SP7.Checked = True Then SP7.Image = My.Resources.chestopen
-        If SP8.Checked = True Then SP8.Image = My.Resources.chestopen
-        If SP9.Checked = True Then SP9.Image = My.Resources.chestopen
-        If SPBoss.Checked = True Then SPBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub SPInfo(sender As Object, e As EventArgs) Handles SP1.MouseHover, SP2.MouseHover, SP3.MouseHover, SP4.MouseHover, SP5.MouseHover, SP6.MouseHover, SP7.MouseHover, SP8.MouseHover, SP9.MouseHover, SPBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "SP1"
-                If SP1.Checked = False Then PictureBox1.Image = My.Resources.SP1
-            Case "SP2"
-                If SP2.Checked = False Then PictureBox1.Image = My.Resources.SP2
-            Case "SP3"
-                If SP3.Checked = False Then PictureBox1.Image = My.Resources.SP3
-            Case "SP4"
-                If SP4.Checked = False Then PictureBox1.Image = My.Resources.SP4
-            Case "SP5"
-                If SP5.Checked = False Then PictureBox1.Image = My.Resources.SP5
-            Case "SP6"
-                If SP6.Checked = False Then PictureBox1.Image = My.Resources.SP6
-            Case "SP7"
-                If SP7.Checked = False Then PictureBox1.Image = My.Resources.SP7
-            Case "SP8"
-                If SP8.Checked = False Then PictureBox1.Image = My.Resources.SP8
-            Case "SP9"
-                If SP9.Checked = False Then PictureBox1.Image = My.Resources.SP9
-            Case "SPBoss"
-                If SPBoss.Checked = False Then PictureBox1.Image = My.Resources.SPBoss
-        End Select
+        AgaCheck()
     End Sub
 
+    Public Sub AgaCheck()
+        If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
+            AgaButton.Visible = True
+            AGLabel.BackColor = Color.Green
+            AGLabel.ForeColor = Color.White
+        Else
+            AgaButton.Visible = False
+            AGLabel.BackColor = Color.Red
+            AGLabel.ForeColor = Color.Black
+        End If
+    End Sub
+    Private Sub PODClick(sender As Object, e As EventArgs) Handles PODMap.CheckedChanged, PODBigKey.CheckedChanged, PODBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "PODMap"
+                If PODMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "PODBigKey"
+                If PODBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    PODBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    PODBigKey.BackColor = Color.Red
+                End If
+            Case "PODBoss"
+                If PODBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    PODButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    PODButton.BackColor = Color.Black
+                End If
+        End Select
+        PODCheck()
+        CrystalCheck()
+    End Sub
+    Private Sub PODPrizes_MouseDown(sender As Object, e As EventArgs) Handles PODPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If PODPrizes.Text > 0 Then PODPrizes.Text = PODPrizes.Text - 1
+            If PODPrizes.Text = 0 Then PODLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If PODPrizes.Text < 14 Then PODPrizes.Text = PODPrizes.Text + 1
+            PODLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub PODKeys_MouseDown(sender As Object, e As EventArgs) Handles PODKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If PODKeys.Text < 6 Then PODKeys.Text = PODKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If PODKeys.Text > 0 Then PODKeys.Text = PODKeys.Text - 1
+        End If
+    End Sub
+    Public Sub PODCheck()
+        If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 0 And Hammer = True And PODBigKey.Checked = True Then
+            If Lamp = True Then PODLabel.BackColor = Color.Green Else PODLabel.BackColor = Color.Orange
+            PODLabel.ForeColor = Color.White
+            PODBoss.Enabled = True
+        ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
+            PODLabel.BackColor = Color.Yellow
+            PODLabel.ForeColor = Color.Black
+            PODBoss.Enabled = False
+        Else
+            PODLabel.BackColor = Color.Red
+            PODLabel.ForeColor = Color.Black
+            PODBoss.Enabled = False
+        End If
+    End Sub
+    Private Sub SPClick(sender As Object, e As EventArgs) Handles SPMap.CheckedChanged, SPBigKey.CheckedChanged, SPBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "SPMap"
+                If SPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "SPBigKey"
+                If SPBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+            Case "SPBoss"
+                If SPBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    SPButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    SPButton.BackColor = Color.Black
+                End If
+        End Select
+        SPCheck()
+        CrystalCheck()
+    End Sub
+    Private Sub SPPrizes_MouseDown(sender As Object, e As EventArgs) Handles SPPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If SPPrizes.Text > 0 Then SPPrizes.Text = SPPrizes.Text - 1
+            If SPPrizes.Text = 0 Then SPLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If SPPrizes.Text < 10 Then SPPrizes.Text = SPPrizes.Text + 1
+            SPLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub SPKeys_MouseDown(sender As Object, e As EventArgs) Handles SPKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then SPKeys.Text = 1
+        If MouseButtons = MouseButtons.Right = True Then SPKeys.Text = 0
+    End Sub
+    Public Sub SPCheck()
+        If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) And SPKeys.Text = 1 Then
+            SPLabel.BackColor = Color.Green
+            SPLabel.ForeColor = Color.White
+            SPBoss.Enabled = True
+        ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or (Hammer = True And (Glove > 0 Or Aganhim = True))) Then
+            SPLabel.BackColor = Color.Yellow
+            SPLabel.ForeColor = Color.Black
+            SPBoss.Enabled = False
+        Else
+            SPLabel.BackColor = Color.Red
+            SPLabel.ForeColor = Color.Black
+            SPBoss.Enabled = False
+        End If
+    End Sub
     Private Sub DPLabel_Click(sender As Object, e As EventArgs) Handles DPLabel.Click
         If DPLabel.BackColor = Color.Black Then DPLabel.BackColor = Color.Green Else DPLabel.BackColor = Color.Black
     End Sub
@@ -1152,418 +1053,240 @@
         If TRLabel.BackColor = Color.Black Then TRLabel.BackColor = Color.Green Else TRLabel.BackColor = Color.Black
     End Sub
 
-    Private Sub ResetButton_Click(sender As Object, e As EventArgs)
-        MsgBox("LOL. Close program and reopen.")
-    End Sub
-
     Private Sub EPLabel_Click(sender As Object, e As EventArgs) Handles EPLabel.Click
         If EPLabel.BackColor = Color.Black Then EPLabel.BackColor = Color.Green Else EPLabel.BackColor = Color.Black
     End Sub
 
-    Private Sub SWClick(sender As Object, e As EventArgs) Handles SW1.CheckedChanged, SW2.CheckedChanged, SW3.CheckedChanged, SW4.CheckedChanged, SW5.CheckedChanged, SW6.CheckedChanged, SW7.CheckedChanged, SWBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "SWBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "SWBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            SWCheck()
-        End If
+    Private Sub SWClick(sender As Object, e As EventArgs) Handles SWMap.CheckedChanged, SWBigKey.CheckedChanged, SWBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "SWMap"
+                If SWMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "SWBigKey"
+                If SWBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+            Case "SWBoss"
+                If SWBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    SWButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    SWButton.BackColor = Color.Black
+                End If
+        End Select
+        SWCheck()
         CrystalCheck()
     End Sub
-    Public Sub SWCheck()
-        If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-            SW1.Enabled = True
-            SW1.Image = My.Resources.chest
-            SW2.Enabled = True
-            SW2.Image = My.Resources.chest
-            SW3.Enabled = True
-            SW3.Image = My.Resources.chest
-            SW4.Enabled = True
-            SW4.Image = My.Resources.chest
-            SW5.Enabled = True
-            SW5.Image = My.Resources.chest
-            If FireRod = True Then
-                SW6.Enabled = True
-                SW6.Image = My.Resources.chest
-                SW7.Enabled = True
-                SW7.Image = My.Resources.chestbigkey
-                If Sword > 0 Then
-                    SWBoss.Enabled = True
-                    SWBoss.Image = My.Resources.boss
-                Else
-                    SWBoss.Enabled = False
-                    SWBoss.Image = My.Resources.boss
-                End If
-            Else
-                SW6.Enabled = False
-                SW6.Image = My.Resources.chest
-                SW7.Enabled = True
-                SW7.Image = My.Resources.chestbigkeymaybe
-                SWBoss.Enabled = False
-                SWBoss.Image = My.Resources.boss
-            End If
-        Else
-            SW1.Enabled = False
-            SW1.Image = My.Resources.chest
-            SW2.Enabled = False
-            SW2.Image = My.Resources.chest
-            SW3.Enabled = False
-            SW3.Image = My.Resources.chest
-            SW4.Enabled = False
-            SW4.Image = My.Resources.chest
-            SW5.Enabled = False
-            SW5.Image = My.Resources.chest
-            SW6.Enabled = False
-            SW6.Image = My.Resources.chest
-            SW7.Enabled = False
-            SW7.Image = My.Resources.chestbigkey
-            SWBoss.Enabled = False
-            SWBoss.Image = My.Resources.boss
+    Private Sub SWPrizes_MouseDown(sender As Object, e As EventArgs) Handles SWPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If SWPrizes.Text > 0 Then SWPrizes.Text = SWPrizes.Text - 1
+            If SWPrizes.Text = 0 Then SWLabel2.BackColor = Color.Green
         End If
-        If SW1.Checked = True Then SW1.Image = My.Resources.chestopen
-        If SW2.Checked = True Then SW2.Image = My.Resources.chestopen
-        If SW3.Checked = True Then SW3.Image = My.Resources.chestopen
-        If SW4.Checked = True Then SW4.Image = My.Resources.chestopen
-        If SW5.Checked = True Then SW5.Image = My.Resources.chestopen
-        If SW6.Checked = True Then SW6.Image = My.Resources.chestopen
-        If SW7.Checked = True Then SW7.Image = My.Resources.chestopen
-        If SWBoss.Checked = True Then SWBoss.Image = My.Resources.bossdead
+        If MouseButtons = MouseButtons.Right = True Then
+            If SWPrizes.Text < 8 Then SWPrizes.Text = SWPrizes.Text + 1
+            SWLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub SWKeys_MouseDown(sender As Object, e As EventArgs) Handles SWKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If SWKeys.Text < 3 Then SWKeys.Text = SWKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If SWKeys.Text > 0 Then SWKeys.Text = SWKeys.Text - 1
+        End If
     End Sub
 
-    Private Sub PictureBox1_MouseHover(sender As Object, e As EventArgs) Handles PictureBox1.MouseHover
-        PictureBox1.Image = Nothing
+    Public Sub SWCheck()
+        If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
+            SWLabel.BackColor = Color.Green
+            SWLabel.ForeColor = Color.White
+            SWBoss.Enabled = True
+        ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+            SWLabel.BackColor = Color.Yellow
+            SWLabel.ForeColor = Color.Black
+            SWBoss.Enabled = False
+        Else
+            SWLabel.BackColor = Color.Red
+            SWLabel.ForeColor = Color.Black
+            SWBoss.Enabled = False
+        End If
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        EPReward = -1
+        DPReward = -1
+        TOHReward = -1
+        PODReward = -1
+        SPReward = -1
+        SWReward = -1
+        TTReward = -1
+        IPReward = -1
+        MMReward = -1
+        TRReward = -1
     End Sub
 
-    Private Sub SWInfo(sender As Object, e As EventArgs) Handles SW1.MouseHover, SW2.MouseHover, SW3.MouseHover, SW4.MouseHover, SW5.MouseHover, SW6.MouseHover, SW7.MouseHover, SWBoss.MouseHover
+    Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
-            Case "SW1"
-                If SW1.Checked = False Then PictureBox1.Image = My.Resources.SW1
-            Case "SW2"
-                If SW2.Checked = False Then PictureBox1.Image = My.Resources.SW2
-            Case "SW3"
-                If SW3.Checked = False Then PictureBox1.Image = My.Resources.SW3
-            Case "SW4"
-                If SW4.Checked = False Then PictureBox1.Image = My.Resources.SW4
-            Case "SW5"
-                If SW5.Checked = False Then PictureBox1.Image = My.Resources.SW5
-            Case "SW6"
-                If SW6.Checked = False Then PictureBox1.Image = My.Resources.SW6
-            Case "SW7"
-                If SW7.Checked = False Then PictureBox1.Image = My.Resources.SW7
-            Case "SWBoss"
-                If SWBoss.Checked = False Then PictureBox1.Image = My.Resources.SWBoss
-        End Select
-    End Sub
-    Private Sub TTClick(sender As Object, e As EventArgs) Handles TT1.CheckedChanged, TT2.CheckedChanged, TT3.CheckedChanged, TT4.CheckedChanged, TT5.CheckedChanged, TT6.CheckedChanged, TT7.CheckedChanged, TTBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "TTBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "TTBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            TTCheck()
-        End If
-        CrystalCheck()
-    End Sub
-    Public Sub TTCheck()
-        If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-            TT1.Enabled = True
-            TT1.Image = My.Resources.chest
-            TT2.Enabled = True
-            TT2.Image = My.Resources.chest
-            TT3.Enabled = True
-            TT3.Image = My.Resources.chest
-            TT4.Enabled = True
-            TT4.Image = My.Resources.chest
-            TT5.Enabled = True
-            TT5.Image = My.Resources.chest
-            TT6.Enabled = True
-            TT6.Image = My.Resources.chest
-            TTBoss.Enabled = True
-            TTBoss.Image = My.Resources.boss
-            If Hammer = True Then
-                TT7.Enabled = True
-                TT7.Image = My.Resources.chestbigkey
-            Else
-                TT7.Enabled = False
-                TT7.Image = My.Resources.chestbigkey
-            End If
-        Else
-            TT1.Enabled = False
-            TT1.Image = My.Resources.chest
-            TT2.Enabled = False
-            TT2.Image = My.Resources.chest
-            TT3.Enabled = False
-            TT3.Image = My.Resources.chest
-            TT4.Enabled = False
-            TT4.Image = My.Resources.chest
-            TT5.Enabled = False
-            TT5.Image = My.Resources.chest
-            TT6.Enabled = False
-            TT6.Image = My.Resources.chest
-            TT7.Enabled = False
-            TT7.Image = My.Resources.chestbigkey
-            TTBoss.Enabled = False
-            TTBoss.Image = My.Resources.boss
-        End If
-        If TT1.Checked = True Then TT1.Image = My.Resources.chestopen
-        If TT2.Checked = True Then TT2.Image = My.Resources.chestopen
-        If TT3.Checked = True Then TT3.Image = My.Resources.chestopen
-        If TT4.Checked = True Then TT4.Image = My.Resources.chestopen
-        If TT5.Checked = True Then TT5.Image = My.Resources.chestopen
-        If TT6.Checked = True Then TT6.Image = My.Resources.chestopen
-        If TT7.Checked = True Then TT7.Image = My.Resources.chestopen
-        If TTBoss.Checked = True Then TTBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub TTInfo(sender As Object, e As EventArgs) Handles TT1.MouseHover, TT2.MouseHover, TT3.MouseHover, TT4.MouseHover, TT5.MouseHover, TT6.MouseHover, TT7.MouseHover, TTBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "TT1"
-                If TT1.Checked = False Then PictureBox1.Image = My.Resources.TT1
-            Case "TT2"
-                If TT2.Checked = False Then PictureBox1.Image = My.Resources.TT2
-            Case "TT3"
-                If TT3.Checked = False Then PictureBox1.Image = My.Resources.TT3
-            Case "TT4"
-                If TT4.Checked = False Then PictureBox1.Image = My.Resources.TT4
-            Case "TT5"
-                If TT5.Checked = False Then PictureBox1.Image = My.Resources.TT5
-            Case "TT6"
-                If TT6.Checked = False Then PictureBox1.Image = My.Resources.TT6
-            Case "TT7"
-                If TT7.Checked = False Then PictureBox1.Image = My.Resources.TT7
+            Case "TTMap"
+                If TTMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "TTBigKey"
+                If TTBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    TTBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    TTBigKey.BackColor = Color.Red
+                End If
             Case "TTBoss"
-                If TTBoss.Checked = False Then PictureBox1.Image = My.Resources.TTBoss
+                If TTBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    TTButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    TTButton.BackColor = Color.Black
+                End If
         End Select
-    End Sub
-    Private Sub IPClick(sender As Object, e As EventArgs) Handles IP1.CheckedChanged, IP2.CheckedChanged, IP3.CheckedChanged, IP4.CheckedChanged, IP5.CheckedChanged, IP6.CheckedChanged, IP7.CheckedChanged, IPBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "IPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "IP7" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            If DirectCast(sender, CheckBox).Name = "IPBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            IPCheck()
-        End If
+        TTCheck()
         CrystalCheck()
     End Sub
-    Public Sub IPCheck()
-        If Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) Then
-            If Flippers = True Then
-                IP1.Enabled = True
-                IP1.Image = My.Resources.chest
-                IP2.Enabled = True
-                IP2.Image = My.Resources.chest
-                IP3.Enabled = True
-                IP3.Image = My.Resources.chest
-                If Hookshot = True Then
-                    IP4.Enabled = True
-                    IP4.Image = My.Resources.chest
-                Else
-                    IP4.Enabled = True
-                    IP4.Image = My.Resources.chestmaybe
-                    IP5.Enabled = True
-                    IP5.Image = My.Resources.chestmaybe
-                    IP6.Enabled = True
-                    IP6.Image = My.Resources.chestmaybe
-                End If
-                If Hammer = True Then
-                    IP5.Enabled = True
-                    IP5.Image = My.Resources.chest
-                    IP6.Enabled = True
-                    IP6.Image = My.Resources.chest
-                    IP7.Enabled = True
-                    IP7.Image = My.Resources.chestbigkey
-                    IPBoss.Enabled = True
-                    IPBoss.Image = My.Resources.boss
-                Else
-                    IP5.Enabled = False
-                    IP5.Image = My.Resources.chest
-                    IP6.Enabled = False
-                    IP6.Image = My.Resources.chest
-                    IP7.Enabled = True
-                    IP7.Image = My.Resources.chestbigkeymaybe
-                    IPBoss.Enabled = False
-                    IPBoss.Image = My.Resources.boss
-                End If
-            Else
-                IP1.Enabled = True
-                IP1.Image = My.Resources.chestflippers
-                IP2.Enabled = True
-                IP2.Image = My.Resources.chestflippers
-                IP3.Enabled = True
-                IP3.Image = My.Resources.chestflippers
-                If Hookshot = True Then
-                    IP4.Enabled = True
-                    IP4.Image = My.Resources.chestflippers
-                    IP5.Enabled = True
-                    IP5.Image = My.Resources.chestflippers
-                    IP6.Enabled = True
-                    IP6.Image = My.Resources.chestflippers
-                Else
-                    IP4.Enabled = True
-                    IP4.Image = My.Resources.chestmaybe
-                    IP5.Enabled = True
-                    IP5.Image = My.Resources.chestmaybe
-                    IP6.Enabled = True
-                    IP6.Image = My.Resources.chestmaybe
-                End If
-                If Hammer = True Then
-                    IP5.Enabled = True
-                    IP5.Image = My.Resources.chestflippers
-                    IP6.Enabled = True
-                    IP6.Image = My.Resources.chestflippers
-                    IP7.Enabled = True
-                    IP7.Image = My.Resources.chestbigkeyflipper
-                    IPBoss.Enabled = True
-                    IPBoss.Image = My.Resources.bossflippers
-                Else
-                    IP5.Enabled = False
-                    IP5.Image = My.Resources.chest
-                    IP6.Enabled = False
-                    IP6.Image = My.Resources.chest
-                    IP7.Enabled = True
-                    IP7.Image = My.Resources.chestbigkeymaybe
-                    IPBoss.Enabled = False
-                    IPBoss.Image = My.Resources.boss
-                End If
-            End If
-        Else
-            IP1.Enabled = False
-            IP1.Image = My.Resources.chest
-            IP2.Enabled = False
-            IP2.Image = My.Resources.chest
-            IP3.Enabled = False
-            IP3.Image = My.Resources.chest
-            IP4.Enabled = False
-            IP4.Image = My.Resources.chest
-            IP5.Enabled = False
-            IP5.Image = My.Resources.chest
-            IP6.Enabled = False
-            IP6.Image = My.Resources.chest
-            IP7.Enabled = False
-            IP7.Image = My.Resources.chestbigkey
-            IPBoss.Enabled = False
-            IPBoss.Image = My.Resources.boss
+    Private Sub TTPrizes_MouseDown(sender As Object, e As EventArgs) Handles TTPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If TTPrizes.Text > 0 Then TTPrizes.Text = TTPrizes.Text - 1
+            If TTPrizes.Text = 0 Then TTLabel2.BackColor = Color.Green
         End If
-        If IP1.Checked = True Then IP1.Image = My.Resources.chestopen
-        If IP2.Checked = True Then IP2.Image = My.Resources.chestopen
-        If IP3.Checked = True Then IP3.Image = My.Resources.chestopen
-        If IP4.Checked = True Then IP4.Image = My.Resources.chestopen
-        If IP5.Checked = True Then IP5.Image = My.Resources.chestopen
-        If IP6.Checked = True Then IP6.Image = My.Resources.chestopen
-        If IP7.Checked = True Then IP7.Image = My.Resources.chestopen
-        If IPBoss.Checked = True Then IPBoss.Image = My.Resources.bossdead
+        If MouseButtons = MouseButtons.Right = True Then
+            If TTPrizes.Text < 8 Then TTPrizes.Text = TTPrizes.Text + 1
+            TTLabel2.BackColor = Color.Black
+        End If
     End Sub
-    Private Sub IPInfo(sender As Object, e As EventArgs) Handles IP1.MouseHover, IP2.MouseHover, IP3.MouseHover, IP4.MouseHover, IP5.MouseHover, IP6.MouseHover, IP7.MouseHover, IPBoss.MouseHover
+
+    Private Sub TTKeys_MouseDown(sender As Object, e As EventArgs) Handles TTKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then TTKeys.Text = 1
+        If MouseButtons = MouseButtons.Right = True Then TTKeys.Text = 0
+    End Sub
+
+    Public Sub TTCheck()
+        If Pearl = True And TTBigKey.Checked = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+            TTLabel.BackColor = Color.Green
+            TTLabel.ForeColor = Color.White
+            TTBoss.Enabled = True
+        ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+            TTLabel.BackColor = Color.Yellow
+            TTLabel.ForeColor = Color.Black
+            TTBoss.Enabled = False
+        Else
+            TTLabel.BackColor = Color.Red
+            TTLabel.ForeColor = Color.Black
+            TTBoss.Enabled = False
+        End If
+    End Sub
+    Private Sub IPClick(sender As Object, e As EventArgs) Handles IPMap.CheckedChanged, IPBigKey.CheckedChanged, IPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
-            Case "IP1"
-                If IP1.Checked = False Then PictureBox1.Image = My.Resources.IP1
-            Case "IP2"
-                If IP2.Checked = False Then PictureBox1.Image = My.Resources.IP2
-            Case "IP3"
-                If IP3.Checked = False Then PictureBox1.Image = My.Resources.IP3
-            Case "IP4"
-                If IP4.Checked = False Then PictureBox1.Image = My.Resources.IP4
-            Case "IP5"
-                If IP5.Checked = False Then PictureBox1.Image = My.Resources.IP5
-            Case "IP6"
-                If IP6.Checked = False Then PictureBox1.Image = My.Resources.IP6
-            Case "IP7"
-                If IP7.Checked = False Then PictureBox1.Image = My.Resources.IP7
+            Case "IPMap"
+                If IPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "IPBigKey"
+                If IPBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
             Case "IPBoss"
-                If IPBoss.Checked = False Then PictureBox1.Image = My.Resources.IPBoss
+                If IPBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    IPButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    IPButton.BackColor = Color.Black
+                End If
         End Select
-    End Sub
-    Private Sub MMClick(sender As Object, e As EventArgs) Handles MM1.CheckedChanged, MM2.CheckedChanged, MM3.CheckedChanged, MM4.CheckedChanged, MM5.CheckedChanged, MM6.CheckedChanged, MM7.CheckedChanged, MMBoss.CheckedChanged
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "MMBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "MMBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            MMCheck()
-        End If
+        IPCheck()
         CrystalCheck()
+    End Sub
+    Private Sub IPPrizes_MouseDown(sender As Object, e As EventArgs) Handles IPPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If IPPrizes.Text > 0 Then IPPrizes.Text = IPPrizes.Text - 1
+            If IPPrizes.Text = 0 Then IPLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If IPPrizes.Text < 8 Then IPPrizes.Text = IPPrizes.Text + 1
+            IPLabel2.BackColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub IPKeys_MouseDown(sender As Object, e As EventArgs) Handles IPKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If IPKeys.Text < 3 Then IPKeys.Text = IPKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If IPKeys.Text < 3 Then IPKeys.Text = IPKeys.Text - 1
+        End If
+    End Sub
+
+    Public Sub IPCheck()
+        If Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
+            If Flippers = True And Hookshot = True And (Somaria = True Or IPBigKey.Checked = True) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
+            IPLabel.ForeColor = Color.White
+            IPBoss.Enabled = True
+        ElseIf Pearl = True And Glove = 2 And Flippers = True And (FireRod = True Or Bombos = True) Then
+            IPLabel.BackColor = Color.Yellow
+            IPLabel.ForeColor = Color.Black
+            IPBoss.Enabled = False
+        Else
+            IPLabel.BackColor = Color.Red
+            IPLabel.ForeColor = Color.Black
+            IPBoss.Enabled = False
+        End If
+    End Sub
+    Private Sub MMClick(sender As Object, e As EventArgs) Handles MMMap.CheckedChanged, MMBigKey.CheckedChanged, MMBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "MMMap"
+                If MMMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "MMBigKey"
+                If MMBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    MMBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    MMBigKey.BackColor = Color.Red
+                End If
+            Case "MMBoss"
+                If MMBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    MMButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    MMButton.BackColor = Color.Black
+                End If
+        End Select
+        MMCheck()
+        CrystalCheck()
+    End Sub
+    Private Sub MMPrizes_MouseDown(sender As Object, e As EventArgs) Handles MMPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If MMPrizes.Text > 0 Then MMPrizes.Text = MMPrizes.Text - 1
+            If MMPrizes.Text = 0 Then MMLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If MMPrizes.Text < 8 Then MMPrizes.Text = MMPrizes.Text + 1
+            MMLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub MMKeys_MouseDown(sender As Object, e As EventArgs) Handles MMKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If MMKeys.Text < 3 Then MMKeys.Text = MMKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If MMKeys.Text > 0 Then MMKeys.Text = MMKeys.Text - 1
+        End If
     End Sub
     Public Sub MMCheck()
-        If Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
-            MM1.Enabled = True
-            MM1.Image = My.Resources.chest
-            MM2.Enabled = True
-            If Byrna = True Or Cape = True Then MM2.Image = My.Resources.chest Else MM2.Image = My.Resources.chestheart
-            MM3.Enabled = True
-            MM3.Image = My.Resources.chest
-            MM4.Enabled = True
-            MM4.Image = My.Resources.chest
-            If Lamp = True Or FireRod = True Then
-                MM5.Enabled = True
-                MM5.Image = My.Resources.chest
-                MM6.Enabled = True
-                MM6.Image = My.Resources.chest
-                MM7.Enabled = True
-                MM7.Image = My.Resources.chestbigkey
-            Else
-                MM5.Enabled = False
-                MM5.Image = My.Resources.chest
-                MM6.Enabled = False
-                MM6.Image = My.Resources.chest
-                MM7.Enabled = True
-                MM7.Image = My.Resources.chestbigkeymaybe
-            End If
-            If Lamp = True And Somaria = True Then
-                MMBoss.Enabled = True
-                MMBoss.Image = My.Resources.boss
-            ElseIf Lamp = False And Somaria = True Then
-                MMBoss.Enabled = True
-                MMBoss.Image = My.Resources.bosslamp
-            Else
-                MMBoss.Enabled = False
-                MMBoss.Image = My.Resources.boss
-            End If
-        Else
-            MM1.Enabled = False
-            MM1.Image = My.Resources.chest
-            MM2.Enabled = False
-            MM2.Image = My.Resources.chest
-            MM3.Enabled = False
-            MM3.Image = My.Resources.chest
-            MM4.Enabled = False
-            MM4.Image = My.Resources.chest
-            MM5.Enabled = False
-            MM5.Image = My.Resources.chest
-            MM6.Enabled = False
-            MM6.Image = My.Resources.chest
-            MM7.Enabled = False
-            MM7.Image = My.Resources.chestbigkey
+        If Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
+            If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
+            MMLabel.ForeColor = Color.White
+            MMBoss.Enabled = True
+        ElseIf Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+            MMLabel.BackColor = Color.Yellow
+            MMLabel.ForeColor = Color.Black
             MMBoss.Enabled = False
-            MMBoss.Image = My.Resources.boss
+        Else
+            MMLabel.BackColor = Color.Red
+            MMLabel.ForeColor = Color.Black
+            MMBoss.Enabled = False
         End If
-        If MM1.Checked = True Then MM1.Image = My.Resources.chestopen
-        If MM2.Checked = True Then MM2.Image = My.Resources.chestopen
-        If MM3.Checked = True Then MM3.Image = My.Resources.chestopen
-        If MM4.Checked = True Then MM4.Image = My.Resources.chestopen
-        If MM5.Checked = True Then MM5.Image = My.Resources.chestopen
-        If MM6.Checked = True Then MM6.Image = My.Resources.chestopen
-        If MM7.Checked = True Then MM7.Image = My.Resources.chestopen
-        If MMBoss.Checked = True Then MMBoss.Image = My.Resources.bossdead
-    End Sub
-    Private Sub MMInfo(sender As Object, e As EventArgs) Handles MM1.MouseHover, MM2.MouseHover, MM3.MouseHover, MM4.MouseHover, MM5.MouseHover, MM6.MouseHover, MM7.MouseHover, MMBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "MM1"
-                If MM1.Checked = False Then PictureBox1.Image = My.Resources.MM1
-            Case "MM2"
-                If MM2.Checked = False Then PictureBox1.Image = My.Resources.MM2
-            Case "MM3"
-                If MM3.Checked = False Then PictureBox1.Image = My.Resources.MM3
-            Case "MM4"
-                If MM4.Checked = False Then PictureBox1.Image = My.Resources.MM4
-            Case "MM5"
-                If MM5.Checked = False Then PictureBox1.Image = My.Resources.MM5
-            Case "MM6"
-                If MM6.Checked = False Then PictureBox1.Image = My.Resources.MM6
-            Case "MM7"
-                If MM7.Checked = False Then PictureBox1.Image = My.Resources.MM7
-            Case "MMBoss"
-                If MMBoss.Checked = False Then PictureBox1.Image = My.Resources.MMBoss
-        End Select
     End Sub
 
     Private Sub MireBEQ_Click(sender As Object, e As EventArgs) Handles MireBEQ.Click
@@ -1580,175 +1303,65 @@
         End Select
         MMCheck()
     End Sub
-    Private Sub TRClick(sender As Object, e As EventArgs) Handles TR1.CheckedChanged, TR2.CheckedChanged, TR3.CheckedChanged, TR4.CheckedChanged, TR5.CheckedChanged, TR6.CheckedChanged, TR7.CheckedChanged, TR8.CheckedChanged, TR9.CheckedChanged, TR10.CheckedChanged, TR11.CheckedChanged, TR8.CheckedChanged, TR9.CheckedChanged, TRBoss.CheckedChanged
-
-        If DirectCast(sender, CheckBox).Checked = True Then
-            If DirectCast(sender, CheckBox).Name = "TRBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.bossdead Else DirectCast(sender, CheckBox).Image = My.Resources.chestopen
-        Else
-            If DirectCast(sender, CheckBox).Name = "TRBoss" Then DirectCast(sender, CheckBox).Image = My.Resources.boss Else DirectCast(sender, CheckBox).Image = My.Resources.chest
-            TRCheck()
-        End If
+    Private Sub TRClick(sender As Object, e As EventArgs) Handles TRMap.CheckedChanged, TRBigKey.CheckedChanged, TRBoss.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "TRMap"
+                If TRMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "TRBigKey"
+                If TRBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    TRBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    TRBigKey.BackColor = Color.Red
+                End If
+            Case "TRBoss"
+                If TRBoss.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bossdead
+                    TRButton.BackColor = Color.Green
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.boss
+                    TRButton.BackColor = Color.Black
+                End If
+        End Select
+        TRCheck()
         CrystalCheck()
     End Sub
+    Private Sub TRPrizes_MouseDown(sender As Object, e As EventArgs) Handles TRPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If TRPrizes.Text > 0 Then TRPrizes.Text = TRPrizes.Text - 1
+            If TRPrizes.Text = 0 Then TRLabel2.BackColor = Color.Green
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If TRPrizes.Text < 12 Then TRPrizes.Text = TRPrizes.Text + 1
+            TRLabel2.BackColor = Color.Black
+        End If
+    End Sub
+    Private Sub TRKeys_MouseDown(sender As Object, e As EventArgs) Handles TRKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If TRKeys.Text < 4 Then TRKeys.Text = TRKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If TRKeys.Text > 0 Then TRKeys.Text = TRKeys.Text - 1
+        End If
+    End Sub
     Public Sub TRCheck()
-        If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+        If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
             TRAccess = True
-            TR1.Enabled = True
-            TR1.Image = My.Resources.chest
-            If FireRod = True Then
-                TR2.Enabled = True
-                TR2.Image = My.Resources.chest
-                TR3.Enabled = True
-                TR3.Image = My.Resources.chest
-                TR4.Enabled = True
-                TR4.Image = My.Resources.chest
-                TR5.Enabled = True
-                TR5.Image = My.Resources.chest
-                TR6.Enabled = True
-                TR6.Image = My.Resources.chest
-                TR11.Enabled = True
-                TR11.Image = My.Resources.chestbigkey
-                If Lamp = True And (Byrna = True Or Cape = True Or Shield = 3) Then
-                    TR7.Enabled = True
-                    TR7.Image = My.Resources.chest
-                    TR8.Enabled = True
-                    TR8.Image = My.Resources.chest
-                    TR9.Enabled = True
-                    TR9.Image = My.Resources.chest
-                    TR10.Enabled = True
-                    TR10.Image = My.Resources.chest
-                    If IceRod = True Then
-                        TRBoss.Enabled = True
-                        TRBoss.Image = My.Resources.boss
-                    Else
-                        TRBoss.Enabled = False
-                        TRBoss.Image = My.Resources.boss
-                    End If
-                ElseIf Lamp = True And Byrna = False And Cape = False And Shield < 3 Then
-                    TR7.Enabled = True
-                    TR7.Image = My.Resources.chestheart
-                    TR8.Enabled = True
-                    TR8.Image = My.Resources.chestheart
-                    TR9.Enabled = True
-                    TR9.Image = My.Resources.chestheart
-                    TR10.Enabled = True
-                    TR10.Image = My.Resources.chestheart
-                    If IceRod = True Then
-                        TRBoss.Enabled = True
-                        TRBoss.Image = My.Resources.boss
-                    Else
-                        TRBoss.Enabled = False
-                        TRBoss.Image = My.Resources.boss
-                    End If
-                Else
-                    TR7.Enabled = True
-                    TR7.Image = My.Resources.chestlamp
-                    TR8.Enabled = True
-                    TR8.Image = My.Resources.chestlamp
-                    TR9.Enabled = True
-                    TR9.Image = My.Resources.chestlamp
-                    TR10.Enabled = True
-                    TR10.Image = My.Resources.chestlamp
-                    If IceRod = True Then
-                        TRBoss.Enabled = True
-                        TRBoss.Image = My.Resources.bosslamp
-                    Else
-                        TRBoss.Enabled = False
-                        TRBoss.Image = My.Resources.boss
-                    End If
-                End If
-            Else
-                TR2.Enabled = False
-                TR2.Image = My.Resources.chest
-                TR3.Enabled = False
-                TR3.Image = My.Resources.chest
-                TR4.Enabled = True
-                TR4.Image = My.Resources.chestmaybe
-                TR5.Enabled = True
-                TR5.Image = My.Resources.chestmaybe
-                TR6.Enabled = True
-                TR6.Image = My.Resources.chestmaybe
-                TR7.Enabled = True
-                TR7.Image = My.Resources.chestmaybe
-                TR8.Enabled = True
-                TR8.Image = My.Resources.chestmaybe
-                TR9.Enabled = True
-                TR9.Image = My.Resources.chestmaybe
-                TR10.Enabled = True
-                TR10.Image = My.Resources.chestmaybe
-                TR11.Enabled = True
-                TR11.Image = My.Resources.chestbigkeymaybe
-                TRBoss.Enabled = False
-                TRBoss.Image = My.Resources.boss
-            End If
+            If Lamp = True And Sword > 1 Then TRLabel.BackColor = Color.Green Else TRLabel.BackColor = Color.Orange
+            TRLabel.ForeColor = Color.White
+            TRBoss.Enabled = True
+        ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+            TRAccess = True
+            TRLabel.BackColor = Color.Yellow
+            TRLabel.ForeColor = Color.Black
+            TRBoss.Enabled = False
         Else
             TRAccess = False
-            TR1.Enabled = False
-            TR1.Image = My.Resources.chest
-            TR2.Enabled = False
-            TR2.Image = My.Resources.chest
-            TR3.Enabled = False
-            TR3.Image = My.Resources.chest
-            TR4.Enabled = False
-            TR4.Image = My.Resources.chest
-            TR5.Enabled = False
-            TR5.Image = My.Resources.chest
-            TR6.Enabled = False
-            TR6.Image = My.Resources.chest
-            TR7.Enabled = False
-            TR7.Image = My.Resources.chest
-            TR8.Enabled = False
-            TR8.Image = My.Resources.chest
-            TR9.Enabled = False
-            TR9.Image = My.Resources.chest
-            TR10.Enabled = False
-            TR10.Image = My.Resources.chest
-            TR11.Enabled = False
-            TR11.Image = My.Resources.chestbigkey
+            TRLabel.BackColor = Color.Red
+            TRLabel.ForeColor = Color.Black
             TRBoss.Enabled = False
-            TRBoss.Image = My.Resources.boss
         End If
-        If TR1.Checked = True Then TR1.Image = My.Resources.chestopen
-        If TR2.Checked = True Then TR2.Image = My.Resources.chestopen
-        If TR3.Checked = True Then TR3.Image = My.Resources.chestopen
-        If TR4.Checked = True Then TR4.Image = My.Resources.chestopen
-        If TR5.Checked = True Then TR5.Image = My.Resources.chestopen
-        If TR6.Checked = True Then TR6.Image = My.Resources.chestopen
-        If TR7.Checked = True Then TR7.Image = My.Resources.chestopen
-        If TR8.Checked = True Then TR8.Image = My.Resources.chestopen
-        If TR9.Checked = True Then TR9.Image = My.Resources.chestopen
-        If TR10.Checked = True Then TR10.Image = My.Resources.chestopen
-        If TR11.Checked = True Then TR11.Image = My.Resources.chestopen
-        If TRBoss.Checked = True Then TRBoss.Image = My.Resources.bossdead
-    End Sub
-
-    Private Sub TRInfo(sender As Object, e As EventArgs) Handles TR1.MouseHover, TR2.MouseHover, TR3.MouseHover, TR4.MouseHover, TR5.MouseHover, TR6.MouseHover, TR7.MouseHover, TR8.MouseHover, TR9.MouseHover, TR10.MouseHover, TR11.MouseHover, TRBoss.MouseHover
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "TR1"
-                If TR1.Checked = False Then PictureBox1.Image = My.Resources.TR1
-            Case "TR2"
-                If TR2.Checked = False Then PictureBox1.Image = My.Resources.TR2
-            Case "TR3"
-                If TR3.Checked = False Then PictureBox1.Image = My.Resources.TR3
-            Case "TR4"
-                If TR4.Checked = False Then PictureBox1.Image = My.Resources.TR4
-            Case "TR5"
-                If TR5.Checked = False Then PictureBox1.Image = My.Resources.TR5
-            Case "TR6"
-                If TR6.Checked = False Then PictureBox1.Image = My.Resources.TR6
-            Case "TR7"
-                If TR7.Checked = False Then PictureBox1.Image = My.Resources.TR7
-            Case "TR8"
-                If TR8.Checked = False Then PictureBox1.Image = My.Resources.TR8
-            Case "TR9"
-                If TR9.Checked = False Then PictureBox1.Image = My.Resources.TR9
-            Case "TR10"
-                If TR10.Checked = False Then PictureBox1.Image = My.Resources.TR10
-            Case "TR11"
-                If TR11.Checked = False Then PictureBox1.Image = My.Resources.TR11
-            Case "TRBoss"
-                If TRBoss.Checked = False Then PictureBox1.Image = My.Resources.TRBoss
-        End Select
     End Sub
 
     Private Sub TurtleBEQ_Click(sender As Object, e As EventArgs) Handles TurtleBEQ.Click
@@ -1766,8 +1379,56 @@
         TRCheck()
     End Sub
 
+    Private Sub GTClick(sender As Object, e As EventArgs) Handles GTMap.CheckedChanged, GTBigKey.CheckedChanged
+        Select Case DirectCast(sender, CheckBox).Name
+            Case "GTMap"
+                If GTMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+            Case "GTBigKey"
+                If GTBigKey.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+                    GTBigKey.BackColor = Color.WhiteSmoke
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+                    GTBigKey.BackColor = Color.Red
+                End If
+        End Select
+        GTCheck()
+        CrystalCheck()
+    End Sub
+
+    Private Sub GTPrizes_MouseDown(sender As Object, e As EventArgs) Handles GTPrizes.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If GTPrizes.Text > 0 Then GTPrizes.Text = GTPrizes.Text - 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If GTPrizes.Text < 27 Then GTPrizes.Text = GTPrizes.Text + 1
+        End If
+    End Sub
+
+    Private Sub GTKeys_MouseDown(sender As Object, e As EventArgs) Handles GTKeys.MouseDown
+        If MouseButtons = MouseButtons.Left Then
+            If GTKeys.Text < 3 Then GTKeys.Text = GTKeys.Text + 1
+        End If
+        If MouseButtons = MouseButtons.Right = True Then
+            If GTKeys.Text > 0 Then GTKeys.Text = GTKeys.Text - 1
+        End If
+    End Sub
+
+    Public Sub GTCheck()
+        If CrystalCount = 7 And GTBigKey.Checked = True Then
+            GTLabel.BackColor = Color.Green
+            GTLabel.ForeColor = Color.White
+        ElseIf CrystalCount = 7 Then
+            GTLabel.BackColor = Color.Yellow
+            GTLabel.ForeColor = Color.Black
+        Else
+            GTLabel.BackColor = Color.Red
+            GTLabel.ForeColor = Color.Black
+        End If
+    End Sub
+
     Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.Click, DPButton.Click, TOHButton.Click, PODButton.Click, SPButton.Click, SWButton.Click, TTButton.Click, IPButton.Click, MMButton.Click, TRButton.Click
-        Select Case DirectCast(sender, Button).Name
+        Select Case DirectCast(sender, PictureBox).Name
             Case "EPButton"
                 EPReward = (EPReward + 1) Mod 4
                 Select Case EPReward
@@ -1889,6 +1550,8 @@
                         TRButton.Image = My.Resources.greenpendant
                 End Select
         End Select
+        LWCheck()
+        DWCheck()
         CrystalCheck()
     End Sub
     Public Sub CrystalCheck()
@@ -2038,6 +1701,7 @@
         End If
         LWCheck()
         DWCheck()
+        GTCheck()
     End Sub
 
     Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.Click
@@ -2372,200 +2036,98 @@
         TRCheck()
     End Sub
 
+    Private Sub Form1_KeyDown() Handles Me.KeyDown
+        If My.Computer.Keyboard.ShiftKeyDown Then
+            EPLabel.Text = "1"
+            DPLabel.Text = "2"
+            TOHLabel.Text = "3"
+            PODLabel.Text = "4"
+            SPLabel.Text = "5"
+            SWLabel.Text = "6"
+            TTLabel.Text = "7"
+            IPLabel.Text = "8"
+            MMLabel.Text = "9"
+            TRLabel.Text = "0"
+        End If
+    End Sub
+
+    Private Sub Form1_KeyUp() Handles Me.KeyUp
+        EPLabel.Text = "EP"
+        DPLabel.Text = "DP"
+        TOHLabel.Text = "TOH"
+        PODLabel.Text = "POD"
+        SPLabel.Text = "SP"
+        SWLabel.Text = "SW"
+        TTLabel.Text = "TT"
+        IPLabel.Text = "IP"
+        MMLabel.Text = "MM"
+        TRLabel.Text = "TR"
+    End Sub
+
+
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
         Select Case (e.KeyChar)
             Case "!"
-                EP1.Checked = True
-                EP1.Image = My.Resources.chestopen
-                EP2.Checked = True
-                EP2.Image = My.Resources.chestopen
-                EP3.Checked = True
-                EP3.Image = My.Resources.chestopen
-                EP4.Checked = True
-                EP4.Image = My.Resources.chestopen
-                EP5.Checked = True
-                EP5.Image = My.Resources.chestopen
                 EPBoss.Checked = True
                 EPBoss.Image = My.Resources.bossdead
                 EPLabel.BackColor = Color.Green
+                EPPrizes.Text = 0
+                EPLabel2.BackColor = Color.Green
             Case "@"
-                DP1.Checked = True
-                DP1.Image = My.Resources.chestopen
-                DP2.Checked = True
-                DP2.Image = My.Resources.chestopen
-                DP3.Checked = True
-                DP3.Image = My.Resources.chestopen
-                DP4.Checked = True
-                DP4.Image = My.Resources.chestopen
-                DP5.Checked = True
-                DP5.Image = My.Resources.chestopen
                 DPBoss.Checked = True
                 DPBoss.Image = My.Resources.bossdead
                 DPLabel.BackColor = Color.Green
+                DPPrizes.Text = 0
+                DPLabel2.BackColor = Color.Green
             Case "#"
-                Hera1.Checked = True
-                Hera1.Image = My.Resources.chestopen
-                Hera2.Checked = True
-                Hera2.Image = My.Resources.chestopen
-                Hera3.Checked = True
-                Hera3.Image = My.Resources.chestopen
-                Hera4.Checked = True
-                Hera4.Image = My.Resources.chestopen
-                Hera5.Checked = True
-                Hera5.Image = My.Resources.chestopen
                 HeraBoss.Checked = True
                 HeraBoss.Image = My.Resources.bossdead
                 TOHLabel.BackColor = Color.Green
+                TOHPrizes.Text = 0
+                TOHLabel2.BackColor = Color.Green
             Case "$"
-                POD1.Checked = True
-                POD1.Image = My.Resources.chestopen
-                POD2.Checked = True
-                POD2.Image = My.Resources.chestopen
-                POD3.Checked = True
-                POD3.Image = My.Resources.chestopen
-                POD4.Checked = True
-                POD4.Image = My.Resources.chestopen
-                POD5.Checked = True
-                POD5.Image = My.Resources.chestopen
-                POD6.Checked = True
-                POD6.Image = My.Resources.chestopen
-                POD7.Checked = True
-                POD7.Image = My.Resources.chestopen
-                POD8.Checked = True
-                POD8.Image = My.Resources.chestopen
-                POD9.Checked = True
-                POD9.Image = My.Resources.chestopen
-                POD10.Checked = True
-                POD10.Image = My.Resources.chestopen
-                POD11.Checked = True
-                POD11.Image = My.Resources.chestopen
-                POD12.Checked = True
-                POD12.Image = My.Resources.chestopen
-                POD13.Checked = True
-                POD13.Image = My.Resources.chestopen
                 PODBoss.Checked = True
                 PODBoss.Image = My.Resources.bossdead
                 PODLabel.BackColor = Color.Green
+                PODPrizes.Text = 0
+                PODLabel2.BackColor = Color.Green
             Case "%"
-                SP1.Checked = True
-                SP1.Image = My.Resources.chestopen
-                SP2.Checked = True
-                SP2.Image = My.Resources.chestopen
-                SP3.Checked = True
-                SP3.Image = My.Resources.chestopen
-                SP4.Checked = True
-                SP4.Image = My.Resources.chestopen
-                SP5.Checked = True
-                SP5.Image = My.Resources.chestopen
-                SP6.Checked = True
-                SP6.Image = My.Resources.chestopen
-                SP7.Checked = True
-                SP7.Image = My.Resources.chestopen
-                SP8.Checked = True
-                SP8.Image = My.Resources.chestopen
-                SP9.Checked = True
-                SP9.Image = My.Resources.chestopen
                 SPBoss.Checked = True
                 SPBoss.Image = My.Resources.bossdead
                 SPLabel.BackColor = Color.Green
+                SPPrizes.Text = 0
+                SPLabel2.BackColor = Color.Green
             Case "^"
-                SW1.Checked = True
-                SW1.Image = My.Resources.chestopen
-                SW2.Checked = True
-                SW2.Image = My.Resources.chestopen
-                SW3.Checked = True
-                SW3.Image = My.Resources.chestopen
-                SW4.Checked = True
-                SW4.Image = My.Resources.chestopen
-                SW5.Checked = True
-                SW5.Image = My.Resources.chestopen
-                SW6.Checked = True
-                SW6.Image = My.Resources.chestopen
-                SW7.Checked = True
-                SW7.Image = My.Resources.chestopen
                 SWBoss.Checked = True
                 SWBoss.Image = My.Resources.bossdead
                 SWLabel.BackColor = Color.Green
+                SWPrizes.Text = 0
+                SWLabel2.BackColor = Color.Green
             Case "&"
-                TT1.Checked = True
-                TT1.Image = My.Resources.chestopen
-                TT2.Checked = True
-                TT2.Image = My.Resources.chestopen
-                TT3.Checked = True
-                TT3.Image = My.Resources.chestopen
-                TT4.Checked = True
-                TT4.Image = My.Resources.chestopen
-                TT5.Checked = True
-                TT5.Image = My.Resources.chestopen
-                TT6.Checked = True
-                TT6.Image = My.Resources.chestopen
-                TT7.Checked = True
-                TT7.Image = My.Resources.chestopen
                 TTBoss.Checked = True
                 TTBoss.Image = My.Resources.bossdead
                 TTLabel.BackColor = Color.Green
+                TTPrizes.Text = 0
+                TTLabel2.BackColor = Color.Green
             Case "*"
-                IP1.Checked = True
-                IP1.Image = My.Resources.chestopen
-                IP2.Checked = True
-                IP2.Image = My.Resources.chestopen
-                IP3.Checked = True
-                IP3.Image = My.Resources.chestopen
-                IP4.Checked = True
-                IP4.Image = My.Resources.chestopen
-                IP5.Checked = True
-                IP5.Image = My.Resources.chestopen
-                IP6.Checked = True
-                IP6.Image = My.Resources.chestopen
-                IP7.Checked = True
-                IP7.Image = My.Resources.chestopen
                 IPBoss.Checked = True
                 IPBoss.Image = My.Resources.bossdead
                 IPLabel.BackColor = Color.Green
+                IPPrizes.Text = 0
+                IPLabel2.BackColor = Color.Green
             Case "("
-                MM1.Checked = True
-                MM1.Image = My.Resources.chestopen
-                MM2.Checked = True
-                MM2.Image = My.Resources.chestopen
-                MM3.Checked = True
-                MM3.Image = My.Resources.chestopen
-                MM4.Checked = True
-                MM4.Image = My.Resources.chestopen
-                MM5.Checked = True
-                MM5.Image = My.Resources.chestopen
-                MM6.Checked = True
-                MM6.Image = My.Resources.chestopen
-                MM7.Checked = True
-                MM7.Image = My.Resources.chestopen
                 MMBoss.Checked = True
                 MMBoss.Image = My.Resources.bossdead
                 MMLabel.BackColor = Color.Green
+                MMPrizes.Text = 0
+                MMLabel2.BackColor = Color.Green
             Case ")"
-                TR1.Checked = True
-                TR1.Image = My.Resources.chestopen
-                TR2.Checked = True
-                TR2.Image = My.Resources.chestopen
-                TR3.Checked = True
-                TR3.Image = My.Resources.chestopen
-                TR4.Checked = True
-                TR4.Image = My.Resources.chestopen
-                TR5.Checked = True
-                TR5.Image = My.Resources.chestopen
-                TR6.Checked = True
-                TR6.Image = My.Resources.chestopen
-                TR7.Checked = True
-                TR7.Image = My.Resources.chestopen
-                TR8.Checked = True
-                TR8.Image = My.Resources.chestopen
-                TR9.Checked = True
-                TR10.Image = My.Resources.chestopen
-                TR10.Checked = True
-                TR11.Image = My.Resources.chestopen
-                TR11.Checked = True
-                TR11.Image = My.Resources.chestopen
                 TRBoss.Checked = True
                 TRBoss.Image = My.Resources.bossdead
                 TRLabel.BackColor = Color.Green
+                TRPrizes.Text = 0
+                TRLabel2.BackColor = Color.Green
         End Select
+        CrystalCheck()
     End Sub
 End Class
